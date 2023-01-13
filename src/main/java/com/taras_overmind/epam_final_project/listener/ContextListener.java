@@ -32,11 +32,11 @@ public class ContextListener implements ServletContextListener {
     }
 
     private void initCommandContainer() {
-//        try {
-//            Class.forName("");//TODO path to command container
-//        } catch (ClassNotFoundException ex) {
-//            throw new IllegalStateException("Cannot initialize Command Container");
-//        }
+        try {
+            Class.forName("com.taras_overmind.epam_final_project.command.CommandContainer");
+        } catch (ClassNotFoundException ex) {
+            throw new IllegalStateException("Cannot initialize Command Container");
+        }
     }
 
 

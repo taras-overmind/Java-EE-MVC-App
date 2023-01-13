@@ -52,3 +52,12 @@
 2023-01-13 16:26:23 INFO  EncodingFilter:18 - Filter destruction starts
 2023-01-13 16:26:23 INFO  EncodingFilter:19 - Filter destruction finished
 2023-01-13 16:26:23 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-13 16:52:43 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-13 16:52:43 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-13 16:52:43 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-13 16:52:43 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-13 16:52:43 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-13 16:53:00 TRACE EncodingFilter:17 - =========================================================================
+2023-01-13 16:53:00 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-13 16:53:00 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-13 16:53:00 TRACE ContextListener:31 - Servlet context destroyed
