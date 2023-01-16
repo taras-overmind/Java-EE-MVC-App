@@ -14,6 +14,7 @@ public class CommandContainer {
     private static final Map<String, Command> commands = new TreeMap<>();
 
     static {
+        commands.put("languageCommand", new LanguageCommand());
       //TODO
     }
 

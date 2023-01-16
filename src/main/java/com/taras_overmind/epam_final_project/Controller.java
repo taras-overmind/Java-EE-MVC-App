@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "controller", value = "/controller")
+@WebServlet(name = "controller")
 public class Controller extends HttpServlet {
     private static final Logger LOG = Logger.getLogger(Controller.class);
 
@@ -48,5 +48,6 @@ public class Controller extends HttpServlet {
         LOG.debug("Controller finished, now go to forward address --> " + forward);
 
         request.getRequestDispatcher(forward).forward(request, response);
+       //response.sendRedirect(request.getContextPath()+forward);
     }
 }
