@@ -1,6 +1,8 @@
 package com.taras_overmind.epam_final_project.command;
 
 
+import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
+import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -23,7 +25,7 @@ public class LanguageCommand extends Command {
     private static final long serialVersionUID = 5063715519941606153L;
 
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         LOG.trace("Start tracing LanguageCommand");
         HttpSession session = request.getSession();
         List<String> languages = Arrays.asList("en", "uk");
@@ -39,9 +41,11 @@ public class LanguageCommand extends Command {
             request.setAttribute("errorMessage", "Invalid value for language");
             throw new ServletException();
         } else {
+            LOG.trace("Language is switched to "+language);
             session.setAttribute("language", language);
         }
-        System.out.println("Context path: "+request.getContextPath());
-        return request.getContextPath();
+        session.setAttribute("redirect", request.getParameter("redirect"));
+        return new RedirectResult(request.getParameter("redirect"));
+    //    return new RedirectResult(request.getContextPath());
     }
 }

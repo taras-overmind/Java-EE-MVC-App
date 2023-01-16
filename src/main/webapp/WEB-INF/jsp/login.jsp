@@ -14,12 +14,14 @@
 <div id="flags">
     <form action="controller" method="post">
         <input type="hidden" name="command" value="languageCommand">
+        <input type="hidden" name="redirect" value="?command=goToLoginCommand">
         <input type="hidden" name="language" value="en">
         <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
         <input type="image" src="../../img/us.png" alt="en">
     </form>
     <form action="controller" method="post">
         <input type="hidden" name="command" value="languageCommand">
+        <input type="hidden" name="redirect" value="?command=goToLoginCommand">
         <input type="hidden" name="language" value="uk">
         <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
         <input type="image" src="../../img/ua.png" alt="ua">

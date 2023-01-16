@@ -2,6 +2,7 @@ package com.taras_overmind.epam_final_project;
 
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.CommandContainer;
+import com.taras_overmind.epam_final_project.command.commandResult.*;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -10,10 +11,31 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @WebServlet(name = "controller")
 public class Controller extends HttpServlet {
     private static final Logger LOG = Logger.getLogger(Controller.class);
+
+    private static final Map<Class<?>, View> views = new HashMap<>();
+
+    static {
+        views.put(ForwardResult.class, (commandResult, request, response) -> {
+            LOG.trace("Forward address --> " + commandResult.getResource());
+            LOG.debug("Controller finished, now go to forward address --> " + commandResult.getResource());
+
+            request.getRequestDispatcher(commandResult.getResource()).forward(request, response);
+
+        });
+        views.put(RedirectResult.class, (commandResult, request, response) -> {
+            LOG.trace("Redirect address --> " + commandResult.getResource());
+            LOG.debug("Controller finished, now redirect to address --> " + commandResult.getResource());
+
+            response.sendRedirect(request.getContextPath() + commandResult.getResource());
+        });
+
+    }
 
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -37,17 +59,14 @@ public class Controller extends HttpServlet {
 
         LOG.trace("Obtained command --> " + command);
 
-        String forward = "/WEB-INF/jsp/error_page.jsp";
+        CommandResult commandResult = new ForwardResult("?command=goToErrorPage");
         try {
-            forward = command.execute(request, response);
+            commandResult = command.execute(request, response);
         } catch (Exception ex) {
             request.setAttribute("errorMessage", ex.getMessage());
         }
-        LOG.trace("Forward address --> " + forward);
 
-        LOG.debug("Controller finished, now go to forward address --> " + forward);
-
-        request.getRequestDispatcher(forward).forward(request, response);
-       //response.sendRedirect(request.getContextPath()+forward);
+        views.get(commandResult.getClass()).render(commandResult, request, response);
+//        request.getRequestDispatcher(commandResult.getResource()).forward(request, response);
     }
 }
