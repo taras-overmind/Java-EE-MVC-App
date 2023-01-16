@@ -6,7 +6,8 @@
 <html>
 <head>
     <title><my:Locale value="page.login.title"/></title>
-<%--    <link rel="stylesheet" type="text/css" href="../../styles/login.css">--%>
+    <link rel="stylesheet" type="text/css" href="../../styles/login.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -39,6 +40,10 @@
                    required>
         </div>
         <button type="submit" id="login"><my:Locale value="page.login.login"/></button>
+    </form>
+    <form action="controller" method="post">
+        <input type="hidden" name="command" value="goToRegistration">      <!--TODO-->
+        <button type="submit" id="forget"><my:Locale value="page.login.registration"/></button>
     </form>
     <form action="controller" method="post">
         <input type="hidden" name="command" value="forgetCommand">

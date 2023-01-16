@@ -2709,3 +2709,781 @@
 2023-01-16 15:39:57 INFO  EncodingFilter:18 - Filter destruction starts
 2023-01-16 15:39:57 INFO  EncodingFilter:19 - Filter destruction finished
 2023-01-16 15:39:57 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-16 15:42:38 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-16 15:42:38 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-16 15:42:38 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-16 15:42:38 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-16 15:42:38 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:40 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:44 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 15:42:44 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 15:42:44 TRACE Controller:24 - *****************POST*****************
+2023-01-16 15:42:44 DEBUG Controller:31 - Controller starts
+2023-01-16 15:42:44 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 15:42:44 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 15:42:44 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 15:42:44 TRACE Controller:46 - Forward address --> 
+2023-01-16 15:42:44 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 15:42:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:42:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:42:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:42:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:42:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:42:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:42:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:42:45 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 15:42:45 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 15:42:45 TRACE Controller:24 - *****************POST*****************
+2023-01-16 15:42:45 DEBUG Controller:31 - Controller starts
+2023-01-16 15:42:45 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 15:42:45 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 15:42:45 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 15:42:45 TRACE Controller:46 - Forward address --> 
+2023-01-16 15:42:45 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 15:42:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:42:59 TRACE EncodingFilter:17 - =========================================================================
+2023-01-16 15:42:59 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-16 15:42:59 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-16 15:42:59 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-16 15:43:09 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-16 15:43:09 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-16 15:43:09 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-16 15:43:09 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-16 15:43:09 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:43:10 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:37 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:37 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:37 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:37 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:37 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:37 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:37 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:44 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 15:44:44 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 15:44:44 TRACE Controller:24 - *****************POST*****************
+2023-01-16 15:44:44 DEBUG Controller:31 - Controller starts
+2023-01-16 15:44:44 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 15:44:44 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 15:44:44 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 15:44:44 TRACE Controller:46 - Forward address --> 
+2023-01-16 15:44:44 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 15:44:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:48 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 15:44:48 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 15:44:48 TRACE Controller:24 - *****************POST*****************
+2023-01-16 15:44:48 DEBUG Controller:31 - Controller starts
+2023-01-16 15:44:48 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 15:44:48 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 15:44:48 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 15:44:48 TRACE Controller:46 - Forward address --> 
+2023-01-16 15:44:48 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 15:44:48 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:48 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:48 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:48 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:48 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:48 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:48 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:50 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 15:44:50 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 15:44:50 TRACE Controller:24 - *****************POST*****************
+2023-01-16 15:44:50 DEBUG Controller:31 - Controller starts
+2023-01-16 15:44:50 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 15:44:50 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 15:44:50 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 15:44:50 TRACE Controller:46 - Forward address --> 
+2023-01-16 15:44:50 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 15:44:50 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:50 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:50 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:50 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:50 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:50 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:50 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:51 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 15:44:51 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 15:44:51 TRACE Controller:24 - *****************POST*****************
+2023-01-16 15:44:51 DEBUG Controller:31 - Controller starts
+2023-01-16 15:44:51 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 15:44:51 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 15:44:51 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 15:44:51 TRACE Controller:46 - Forward address --> 
+2023-01-16 15:44:51 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 15:44:51 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:51 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:51 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:51 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:51 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:51 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:51 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:52 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 15:44:52 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 15:44:52 TRACE Controller:24 - *****************POST*****************
+2023-01-16 15:44:52 DEBUG Controller:31 - Controller starts
+2023-01-16 15:44:52 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 15:44:52 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 15:44:52 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 15:44:52 TRACE Controller:46 - Forward address --> 
+2023-01-16 15:44:52 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 15:44:52 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:52 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:52 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:52 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:52 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:52 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:52 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:53 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 15:44:53 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 15:44:53 TRACE Controller:24 - *****************POST*****************
+2023-01-16 15:44:53 DEBUG Controller:31 - Controller starts
+2023-01-16 15:44:53 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 15:44:53 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 15:44:53 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 15:44:53 TRACE Controller:46 - Forward address --> 
+2023-01-16 15:44:53 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 15:44:53 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:53 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:53 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:53 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:53 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:53 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:53 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:44:54 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 15:44:54 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 15:44:54 TRACE Controller:24 - *****************POST*****************
+2023-01-16 15:44:54 DEBUG Controller:31 - Controller starts
+2023-01-16 15:44:54 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 15:44:54 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 15:44:54 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 15:44:54 TRACE Controller:46 - Forward address --> 
+2023-01-16 15:44:54 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 15:44:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:44:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 15:46:32 TRACE EncodingFilter:17 - =========================================================================
+2023-01-16 15:46:32 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-16 15:46:32 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-16 15:46:32 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-16 15:46:41 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-16 15:46:41 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-16 15:46:41 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-16 15:46:41 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-16 15:46:41 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:46:42 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:27 TRACE EncodingFilter:17 - =========================================================================
+2023-01-16 15:47:27 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-16 15:47:27 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-16 15:47:27 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-16 15:47:37 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-16 15:47:37 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-16 15:47:37 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-16 15:47:37 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-16 15:47:37 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:47:38 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:44 TRACE EncodingFilter:17 - =========================================================================
+2023-01-16 15:50:44 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-16 15:50:44 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-16 15:50:44 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-16 15:50:54 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-16 15:50:54 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-16 15:50:54 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-16 15:50:54 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-16 15:50:54 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:50:56 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:24 TRACE EncodingFilter:17 - =========================================================================
+2023-01-16 15:51:24 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-16 15:51:24 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-16 15:51:24 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-16 15:51:33 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-16 15:51:33 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-16 15:51:33 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-16 15:51:33 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-16 15:51:33 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 15:51:34 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:02:54 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:02:54 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:02:54 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:02:54 DEBUG Controller:31 - Controller starts
+2023-01-16 16:02:54 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:02:54 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:02:54 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:02:54 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:02:54 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:02:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:54 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:55 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:02:55 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:02:55 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:02:55 DEBUG Controller:31 - Controller starts
+2023-01-16 16:02:55 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:02:55 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:02:55 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:02:55 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:02:55 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:02:55 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:02:55 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:02:55 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:02:55 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:02:55 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:02:55 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:02:55 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:02:55 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:02:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:02:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:02:56 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:02:56 DEBUG Controller:31 - Controller starts
+2023-01-16 16:02:56 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:02:56 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:02:56 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:02:56 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:02:56 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:02:56 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:56 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:56 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:56 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:56 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:56 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:56 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:02:56 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:01 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:01 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:01 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:01 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:01 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:01 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:01 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:01 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:01 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:01 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:01 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:01 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:01 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:01 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:01 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:01 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:01 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:02 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:02 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:02 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:02 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:02 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:02 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:02 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:02 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:02 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:02 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:02 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:02 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:02 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:02 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:02 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:02 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:02 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:04 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:04 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:04 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:04 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:04 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:04 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:04 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:04 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:04 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:04 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:04 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:04 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:04 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:04 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:04 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:04 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:04 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:05 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:05 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:05 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:05 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:05 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:05 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:05 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:05 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:05 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:05 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:05 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:05 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:05 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:05 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:05 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:05 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:05 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:06 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:06 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:06 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:06 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:06 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:06 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:06 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:06 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:06 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:06 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:06 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:06 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:06 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:06 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:06 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:06 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:06 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:07 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:07 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:07 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:07 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:07 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:07 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:07 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:07 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:07 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:07 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:07 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:07 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:07 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:07 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:07 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:07 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:07 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:08 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:08 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:08 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:08 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:08 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:08 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:08 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:08 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:08 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:08 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:08 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:08 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:08 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:08 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:08 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:08 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:08 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:09 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:09 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:09 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:09 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:09 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:09 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:09 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:09 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:09 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:09 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:09 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:09 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:09 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:09 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:09 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:09 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:09 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:09 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:09 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:11 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:11 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:11 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:11 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:11 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:11 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:11 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:11 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:11 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:11 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:11 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:11 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:11 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:11 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:11 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:12 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:12 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:12 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:12 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:12 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:12 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:12 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:12 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:12 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:12 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:12 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:12 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:12 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:12 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:12 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:12 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:12 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:13 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:13 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:13 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:13 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:13 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:13 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:13 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:13 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:13 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:13 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:13 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:13 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:13 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:13 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:13 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:13 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:13 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:13 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:13 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:15 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:15 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:15 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:15 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:15 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:15 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:15 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:15 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:15 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:15 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:15 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:15 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:15 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:15 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:15 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:15 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:15 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:03:17 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:03:17 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:03:17 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:03:17 DEBUG Controller:31 - Controller starts
+2023-01-16 16:03:17 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:03:17 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:03:17 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:03:17 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:03:17 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:03:17 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:17 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:17 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:17 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:17 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:17 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:17 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:03:17 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:26 TRACE EncodingFilter:17 - =========================================================================
+2023-01-16 16:16:26 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-16 16:16:26 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-16 16:16:26 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-16 16:16:39 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-16 16:16:39 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-16 16:16:39 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-16 16:16:39 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-16 16:16:39 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:41 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:43 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:16:43 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:16:43 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:16:43 DEBUG Controller:31 - Controller starts
+2023-01-16 16:16:43 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:16:43 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:16:43 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:16:43 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:16:43 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:16:43 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:43 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:43 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:43 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:43 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:43 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:43 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:43 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:44 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:16:44 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:16:44 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:16:44 DEBUG Controller:31 - Controller starts
+2023-01-16 16:16:44 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:16:44 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:16:44 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:16:44 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:16:44 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:44 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:16:44 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:16:44 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:16:44 DEBUG Controller:31 - Controller starts
+2023-01-16 16:16:44 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:16:44 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:16:44 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:16:44 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:16:44 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:44 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:45 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:16:45 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:16:45 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:16:45 DEBUG Controller:31 - Controller starts
+2023-01-16 16:16:45 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:16:45 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:16:45 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:16:45 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:16:45 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:16:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:45 INFO  LocaleTag:48 - Language is switched to EN
+2023-01-16 16:16:46 INFO  EncodingFilter:23 - Filter starts
+2023-01-16 16:16:46 INFO  EncodingFilter:29 - Filter finished
+2023-01-16 16:16:46 TRACE Controller:24 - *****************POST*****************
+2023-01-16 16:16:46 DEBUG Controller:31 - Controller starts
+2023-01-16 16:16:46 TRACE Controller:34 - Request parameter: command --> languageCommand
+2023-01-16 16:16:46 TRACE Controller:38 - Obtained command --> LanguageCommand
+2023-01-16 16:16:46 TRACE LanguageCommand:27 - Start tracing LanguageCommand
+2023-01-16 16:16:46 TRACE Controller:46 - Forward address --> 
+2023-01-16 16:16:46 DEBUG Controller:48 - Controller finished, now go to forward address --> 
+2023-01-16 16:16:46 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:46 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:46 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:46 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:46 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:46 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:46 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:16:46 INFO  LocaleTag:48 - Language is switched to UK
+2023-01-16 16:29:09 TRACE EncodingFilter:17 - =========================================================================
+2023-01-16 16:29:09 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-16 16:29:09 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-16 16:29:09 TRACE ContextListener:31 - Servlet context destroyed

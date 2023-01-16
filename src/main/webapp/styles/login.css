@@ -1,0 +1,84 @@
+body{
+    margin: 0 auto;
+    background: url("../img/background.png") no-repeat center center fixed;
+    background-size: cover;
+    display: block;
+}
+
+#flags{
+    display: inline-flex;
+    margin-left: 91%;
+}
+
+#flags input{
+    padding: 0 4px;
+    width: 30px;
+    height: 25px;
+}
+
+#container{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(52, 73, 94, 0.8);
+    margin: 150px auto 0;
+    border-radius: 6px;
+}
+
+#container img{
+    width: 120px;
+    height: 120px;
+    margin: -60px 0 30px 0;
+}
+
+input[type="text"], input[type="password"]{
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+    border:none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding-left: 46px;
+}
+
+input[type="text"]{
+    background: white url("../img/user.png") no-repeat 10px 10px;
+    background-size: 9%;
+}
+
+input[type="password"]{
+    background: white url("../img/pass.png") no-repeat 10px 10px;
+    background-size: 9%;
+}
+
+#login{
+    cursor: pointer;
+    padding: 15px 30px;
+    color:#fff;
+    border-radius: 6px;
+    border: none;
+    background-color: #151515;
+    border-bottom: 4px solid #27AE60;
+    margin-bottom: 35px;
+}
+
+b{
+    margin: 48%;
+    padding-top: 60%;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+#forget{
+    background-color: rgba(52, 73, 94, 0.8);
+    color:white;
+    border: rgba(52, 73, 94, 0.8) 0 solid;
+    cursor:pointer;
+}
+
+button{
+    font-size:15px;
+}
