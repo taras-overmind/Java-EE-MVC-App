@@ -27,6 +27,13 @@
         <input type="image" src="../../img/ua.png" alt="ua">
     </form>
 </div>
+<c:if test="${not empty sessionScope.wrongData}">
+    <div class="alertError">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Помилка: </strong> <text>${sessionScope.wrongData} </text>
+    </div>
+    <c:remove var="wrongData" scope="session" />
+</c:if>
 <div id="container">
 <%--    <img src="../../img/man.png">--%>
     <form action="controller" method="post">

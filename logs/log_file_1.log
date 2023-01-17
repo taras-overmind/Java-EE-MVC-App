@@ -5929,3 +5929,1271 @@
 2023-01-17 00:15:46 INFO  EncodingFilter:18 - Filter destruction starts
 2023-01-17 00:15:46 INFO  EncodingFilter:19 - Filter destruction finished
 2023-01-17 00:15:46 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:20:18 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:20:18 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:20:18 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:20:18 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:20:18 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:20:22 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:20:22 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:20:22 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:20:22 DEBUG Controller:53 - Controller starts
+2023-01-17 01:20:22 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:20:22 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:20:22 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:20:22 TRACE Controller:25 - Forward address --> ?command=goToCoursesCommand
+2023-01-17 01:20:22 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToCoursesCommand
+2023-01-17 01:20:32 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:20:32 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:20:32 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:20:32 DEBUG Controller:53 - Controller starts
+2023-01-17 01:20:32 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:20:32 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:20:32 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:20:32 TRACE Controller:25 - Forward address --> ?command=goToCoursesCommand
+2023-01-17 01:20:32 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToCoursesCommand
+2023-01-17 01:23:58 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:23:58 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:23:58 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:23:58 DEBUG Controller:53 - Controller starts
+2023-01-17 01:23:58 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:23:58 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:23:58 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:23:58 TRACE Controller:25 - Forward address --> ?command=goToCoursesCommand
+2023-01-17 01:23:58 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToCoursesCommand
+2023-01-17 01:23:59 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:23:59 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:23:59 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:23:59 DEBUG Controller:53 - Controller starts
+2023-01-17 01:23:59 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:23:59 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:23:59 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:23:59 TRACE Controller:25 - Forward address --> ?command=goToCoursesCommand
+2023-01-17 01:23:59 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToCoursesCommand
+2023-01-17 01:24:03 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:03 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:03 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:24:03 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:03 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:24:03 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:24:03 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:24:03 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 01:24:03 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:24:03 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:24:03 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:03 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:03 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:24:03 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:03 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:24:03 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:24:03 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:24:03 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:03 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:04 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:04 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:04 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:24:04 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:04 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:24:04 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:24:04 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:24:04 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 01:24:04 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:24:04 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:24:04 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:04 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:04 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:24:04 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:04 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:24:04 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:24:04 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:24:04 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:04 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:05 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:05 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:05 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:24:05 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:05 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:24:05 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:24:05 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:24:05 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 01:24:05 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:24:05 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:24:05 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:05 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:05 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:24:05 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:05 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:24:05 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:24:05 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:24:05 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:05 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:06 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:06 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:06 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:24:06 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:06 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:24:06 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:24:06 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:24:06 TRACE Controller:25 - Forward address --> ?command=goToCoursesCommand
+2023-01-17 01:24:06 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToCoursesCommand
+2023-01-17 01:24:37 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:24:37 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:24:37 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:24:37 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:24:45 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:24:45 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:24:45 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:24:45 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:24:45 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:24:48 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:48 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:48 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:24:48 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:48 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:24:48 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:24:48 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:24:48 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 01:24:48 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:24:48 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:24:48 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:48 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:48 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:24:48 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:48 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:24:48 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:24:48 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:24:48 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:48 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:49 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:49 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:49 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:24:49 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:49 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:24:49 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:24:49 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:24:49 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 01:24:49 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:24:49 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:24:49 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:49 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:49 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:24:49 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:49 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:24:49 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:24:49 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:24:49 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:49 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:24:55 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:55 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:55 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:24:55 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:55 TRACE Controller:56 - Request parameter: command --> null
+2023-01-17 01:24:55 TRACE CommandContainer:27 - Command not found, name --> null
+2023-01-17 01:24:55 TRACE Controller:60 - Obtained command --> null
+2023-01-17 01:24:55 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 01:24:55 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 01:24:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:56 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:24:56 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:56 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:24:56 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:24:56 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:24:56 TRACE Controller:25 - Forward address --> ?command=goToCoursesCommand
+2023-01-17 01:24:56 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToCoursesCommand
+2023-01-17 01:24:58 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:24:58 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:24:58 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:24:58 DEBUG Controller:53 - Controller starts
+2023-01-17 01:24:58 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:24:58 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:24:58 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:24:58 TRACE Controller:25 - Forward address --> ?command=goToCoursesCommand
+2023-01-17 01:24:58 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToCoursesCommand
+2023-01-17 01:26:47 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:26:47 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:26:47 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:26:47 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:26:54 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:26:54 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:26:54 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:26:54 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:26:54 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:26:57 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:26:57 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:26:57 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:26:57 DEBUG Controller:53 - Controller starts
+2023-01-17 01:26:57 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:26:57 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:26:57 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:26:57 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:26:57 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:26:58 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:26:58 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:26:58 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:26:58 DEBUG Controller:53 - Controller starts
+2023-01-17 01:26:58 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:26:58 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:26:58 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:26:58 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:26:58 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:26:59 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:26:59 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:26:59 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:26:59 DEBUG Controller:53 - Controller starts
+2023-01-17 01:26:59 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:26:59 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:26:59 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:26:59 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:26:59 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:27:00 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:00 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:00 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:27:00 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:00 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:27:00 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:27:00 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:27:00 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 01:27:00 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:27:00 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:27:00 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:00 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:00 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:27:00 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:00 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:27:00 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:27:00 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:27:00 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:00 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:01 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:01 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:01 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:27:01 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:01 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:27:01 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:27:01 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:27:01 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 01:27:01 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:27:01 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:27:01 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:01 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:01 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:27:01 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:01 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:27:01 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:27:01 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:27:01 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:01 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:01 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:01 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:01 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:27:01 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:01 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:27:01 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:27:01 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:27:01 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 01:27:01 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:27:01 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:27:01 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:01 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:01 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:27:01 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:01 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:27:01 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:27:01 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:27:01 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:01 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:02 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:02 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:02 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:27:02 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:02 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:27:02 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:27:02 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:27:02 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 01:27:02 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:27:02 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:27:02 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:02 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:02 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:27:02 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:02 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:27:02 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:27:02 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:27:02 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:02 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:03 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:03 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:03 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:27:03 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:03 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 01:27:03 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 01:27:03 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 01:27:03 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 01:27:03 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 01:27:03 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 01:27:03 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:03 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:03 TRACE Controller:42 - *****************GET*****************
+2023-01-17 01:27:03 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:03 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 01:27:03 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 01:27:03 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 01:27:03 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:03 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 01:27:35 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:27:35 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:27:35 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:27:35 DEBUG Controller:53 - Controller starts
+2023-01-17 01:27:35 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:27:35 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:27:35 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:27:35 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:27:35 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:31:22 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:31:22 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:31:22 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:31:22 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:31:29 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:31:29 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:31:29 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:31:29 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:31:29 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:31:31 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:31:31 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:31:31 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:31:31 DEBUG Controller:53 - Controller starts
+2023-01-17 01:31:31 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:31:31 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:31:31 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:31:31 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:31:31 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:31:32 ERROR ConnectionPool:35 - Column 'id' not found.
+2023-01-17 01:31:32 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 01:31:32 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 01:33:10 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:33:10 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:33:10 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:33:10 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:33:17 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:33:17 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:33:17 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:33:17 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:33:17 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:33:19 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:33:19 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:33:19 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:33:19 DEBUG Controller:53 - Controller starts
+2023-01-17 01:33:19 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:33:19 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:33:19 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:33:19 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:33:19 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:33:19 ERROR ConnectionPool:35 - Column 'id' not found.
+2023-01-17 01:33:19 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 01:33:19 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 01:34:04 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:34:04 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:34:04 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:34:04 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:34:12 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:34:12 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:34:12 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:34:12 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:34:12 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:34:14 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:34:14 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:34:14 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:34:14 DEBUG Controller:53 - Controller starts
+2023-01-17 01:34:14 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:34:14 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:34:14 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:34:14 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:34:14 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:34:14 ERROR ConnectionPool:35 - Parameter index out of range (1 > number of parameters, which is 0).
+2023-01-17 01:34:14 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 01:34:14 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 01:34:34 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:34:34 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:34:34 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:34:34 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:34:41 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:34:41 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:34:41 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:34:41 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:34:41 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:34:43 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:34:43 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:34:43 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:34:43 DEBUG Controller:53 - Controller starts
+2023-01-17 01:34:43 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:34:43 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:34:43 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:34:43 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:34:43 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:34:43 ERROR ConnectionPool:35 - Column 'id' not found.
+2023-01-17 01:34:43 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 01:34:43 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 01:37:09 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:37:09 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:37:09 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:37:09 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:37:16 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:37:16 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:37:16 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:37:16 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:37:16 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:37:19 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:37:19 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:37:19 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:37:19 DEBUG Controller:53 - Controller starts
+2023-01-17 01:37:19 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:37:19 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:37:19 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:37:19 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:37:19 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:37:19 ERROR ConnectionPool:36 - Column 'id' not found.
+2023-01-17 01:37:19 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 01:37:19 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 01:37:35 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:37:35 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:37:35 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:37:35 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:37:42 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:37:42 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:37:42 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:37:42 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:37:42 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:37:44 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:37:44 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:37:44 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:37:44 DEBUG Controller:53 - Controller starts
+2023-01-17 01:37:44 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:37:44 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:37:44 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:37:44 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:37:44 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:37:44 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:37:44 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:38:51 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:38:51 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:38:51 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:38:51 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:38:58 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:38:58 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:38:58 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:38:58 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:38:58 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:39:01 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:39:01 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:39:01 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:39:01 DEBUG Controller:53 - Controller starts
+2023-01-17 01:39:01 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:39:01 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:39:01 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:39:01 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:39:01 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:39:01 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:39:01 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:39:30 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:39:30 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:39:30 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:39:30 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:39:37 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:39:37 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:39:37 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:39:37 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:39:37 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:39:40 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:39:40 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:39:40 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:39:40 DEBUG Controller:53 - Controller starts
+2023-01-17 01:39:40 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:39:40 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:39:40 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:39:40 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:39:40 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:39:40 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 01:39:40 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 01:42:05 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:42:05 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:42:05 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:42:05 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:42:12 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:42:12 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:42:12 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:42:12 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:42:12 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:42:14 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:42:14 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:42:14 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:42:14 DEBUG Controller:53 - Controller starts
+2023-01-17 01:42:14 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:42:14 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:42:14 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:42:14 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:42:14 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:42:15 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 01:42:15 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 01:42:43 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:42:43 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:42:43 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:42:43 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:42:50 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:42:50 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:42:50 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:42:50 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:42:50 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:42:52 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:42:52 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:42:52 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:42:52 DEBUG Controller:53 - Controller starts
+2023-01-17 01:42:52 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:42:52 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:42:52 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:42:52 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:42:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:42:52 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 01:42:52 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 01:45:21 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:45:21 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:45:21 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:45:21 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:45:29 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:45:29 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:45:29 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:45:29 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:45:29 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:45:31 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:45:31 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:45:31 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:45:31 DEBUG Controller:53 - Controller starts
+2023-01-17 01:45:31 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:45:31 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:45:31 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:45:31 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:45:31 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:45:31 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:45:31 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:49:26 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:49:26 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:49:26 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:49:26 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:49:33 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:49:33 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:49:33 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:49:33 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:49:33 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:49:35 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:49:35 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:49:35 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:49:35 DEBUG Controller:53 - Controller starts
+2023-01-17 01:49:35 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:49:35 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:49:35 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:49:35 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:49:35 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:49:36 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:49:36 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:50:01 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:50:01 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:50:01 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:50:01 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:50:07 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:50:07 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:50:07 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:50:07 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:50:07 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:50:10 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:50:10 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:50:10 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:50:10 DEBUG Controller:53 - Controller starts
+2023-01-17 01:50:10 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:50:10 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:50:10 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:50:10 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:50:10 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:50:10 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:50:10 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:51:28 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:51:28 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:51:28 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:51:28 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:51:35 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:51:35 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:51:35 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:51:35 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:51:35 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:51:37 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:51:37 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:51:37 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:51:37 DEBUG Controller:53 - Controller starts
+2023-01-17 01:51:37 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:51:37 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:51:37 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:51:37 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:51:37 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:51:37 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:51:37 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:51:51 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:51:51 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:51:51 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:51:51 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:51:58 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:51:58 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:51:58 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:51:58 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:51:58 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:52:00 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:52:00 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:52:00 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:52:00 DEBUG Controller:53 - Controller starts
+2023-01-17 01:52:00 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:52:00 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:52:00 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:52:00 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:52:00 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:52:00 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:52:00 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:52:29 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:52:29 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:52:29 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:52:29 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:52:36 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:52:36 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:52:36 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:52:36 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:52:36 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:52:38 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:52:38 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:52:38 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:52:38 DEBUG Controller:53 - Controller starts
+2023-01-17 01:52:38 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:52:38 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:52:38 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:52:38 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:52:38 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:52:38 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:52:38 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:57:20 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:57:20 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:57:20 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:57:20 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:57:27 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:57:27 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:57:27 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:57:27 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:57:27 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:57:29 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:57:29 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:57:29 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:57:29 DEBUG Controller:53 - Controller starts
+2023-01-17 01:57:29 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:57:29 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:57:29 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:57:29 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:57:29 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:57:29 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:57:29 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 01:58:30 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 01:58:30 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 01:58:30 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 01:58:30 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 01:58:37 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 01:58:37 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 01:58:37 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 01:58:37 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 01:58:37 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 01:58:39 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 01:58:39 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 01:58:39 TRACE Controller:46 - *****************POST*****************
+2023-01-17 01:58:39 DEBUG Controller:53 - Controller starts
+2023-01-17 01:58:39 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 01:58:39 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 01:58:39 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 01:58:39 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 01:58:39 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 01:58:39 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 01:58:39 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 02:02:26 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 02:02:26 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 02:02:26 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 02:02:26 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 02:02:33 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 02:02:33 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 02:02:33 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 02:02:33 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 02:02:33 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 02:02:36 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:02:36 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:02:36 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:02:36 DEBUG Controller:53 - Controller starts
+2023-01-17 02:02:36 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:02:36 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:02:36 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 02:02:36 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:02:36 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:02:36 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 02:02:36 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 02:03:39 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 02:03:39 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 02:03:39 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 02:03:39 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 02:03:45 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 02:03:45 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 02:03:45 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 02:03:45 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 02:03:45 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 02:03:47 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:03:47 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:03:47 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:03:47 DEBUG Controller:53 - Controller starts
+2023-01-17 02:03:47 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:03:47 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:03:47 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 02:03:47 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:03:47 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:03:47 TRACE Controller:25 - Forward address --> ?command=goToLoginCommand
+2023-01-17 02:03:47 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToLoginCommand
+2023-01-17 02:04:31 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 02:04:31 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 02:04:31 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 02:04:31 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 02:04:38 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 02:04:38 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 02:04:38 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 02:04:38 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 02:04:38 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 02:04:40 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:04:40 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:04:40 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:04:40 DEBUG Controller:53 - Controller starts
+2023-01-17 02:04:40 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:04:40 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:04:40 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 02:04:40 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:04:40 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:04:40 TRACE Controller:25 - Forward address --> ?command=goToCoursesCommand
+2023-01-17 02:04:40 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToCoursesCommand
+2023-01-17 02:06:39 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 02:06:39 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 02:06:39 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 02:06:39 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 02:06:46 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 02:06:46 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 02:06:46 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 02:06:46 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 02:06:46 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 02:06:48 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:06:48 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:06:48 TRACE Controller:47 - *****************POST*****************
+2023-01-17 02:06:48 DEBUG Controller:54 - Controller starts
+2023-01-17 02:06:48 TRACE Controller:57 - Request parameter: command --> loginCommand
+2023-01-17 02:06:48 TRACE Controller:61 - Obtained command --> LoginCommand
+2023-01-17 02:06:48 TRACE LoginCommand:27 - Start tracing LoginCommand
+2023-01-17 02:06:48 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:06:48 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:06:48 TRACE Controller:25 - Forward address --> ?command=goToCoursesCommand
+2023-01-17 02:06:48 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToCoursesCommand
+2023-01-17 02:09:26 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 02:09:26 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 02:09:26 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 02:09:26 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 02:09:33 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 02:09:33 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 02:09:33 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 02:09:33 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 02:09:33 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 02:09:36 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:09:36 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:09:36 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:09:36 DEBUG Controller:53 - Controller starts
+2023-01-17 02:09:36 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:09:36 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:09:36 TRACE LoginCommand:28 - Start tracing LoginCommand
+2023-01-17 02:09:36 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:09:36 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:09:36 TRACE Controller:32 - Redirect address --> ?command=goToCoursesCommand
+2023-01-17 02:09:36 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToCoursesCommand
+2023-01-17 02:09:36 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:09:36 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:09:36 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:09:36 DEBUG Controller:53 - Controller starts
+2023-01-17 02:09:36 TRACE Controller:56 - Request parameter: command --> goToCoursesCommand
+2023-01-17 02:09:36 TRACE Controller:60 - Obtained command --> GoToCoursesCommand
+2023-01-17 02:09:36 TRACE GoToLoginCommand:17 - Start tracing GoToCoursesCommand
+2023-01-17 02:09:36 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:09:36 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:09:55 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 02:09:55 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 02:09:55 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 02:09:55 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 02:10:01 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 02:10:01 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 02:10:01 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 02:10:01 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 02:10:01 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 02:10:04 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:10:04 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:10:04 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:10:04 DEBUG Controller:53 - Controller starts
+2023-01-17 02:10:04 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:10:04 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:10:04 TRACE LoginCommand:28 - Start tracing LoginCommand
+2023-01-17 02:10:04 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:10:04 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:10:04 TRACE Controller:32 - Redirect address --> ?command=goToCoursesCommand
+2023-01-17 02:10:04 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToCoursesCommand
+2023-01-17 02:10:04 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:10:04 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:10:04 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:10:04 DEBUG Controller:53 - Controller starts
+2023-01-17 02:10:04 TRACE Controller:56 - Request parameter: command --> goToCoursesCommand
+2023-01-17 02:10:04 TRACE Controller:60 - Obtained command --> GoToCoursesCommand
+2023-01-17 02:10:04 TRACE GoToLoginCommand:17 - Start tracing GoToCoursesCommand
+2023-01-17 02:10:04 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:10:04 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:18:44 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 02:18:44 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 02:18:44 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 02:18:44 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 02:23:55 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 02:23:55 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 02:23:55 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 02:23:55 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 02:23:55 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 02:23:59 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:23:59 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:23:59 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:23:59 DEBUG Controller:53 - Controller starts
+2023-01-17 02:23:59 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:23:59 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:23:59 TRACE LoginCommand:28 - Start tracing LoginCommand
+2023-01-17 02:23:59 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:23:59 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:23:59 TRACE Controller:32 - Redirect address --> ?command=goToCoursesCommand
+2023-01-17 02:23:59 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToCoursesCommand
+2023-01-17 02:23:59 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:23:59 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:23:59 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:23:59 DEBUG Controller:53 - Controller starts
+2023-01-17 02:23:59 TRACE Controller:56 - Request parameter: command --> goToCoursesCommand
+2023-01-17 02:23:59 TRACE Controller:60 - Obtained command --> GoToCoursesCommand
+2023-01-17 02:23:59 TRACE GoToLoginCommand:17 - Start tracing GoToCoursesCommand
+2023-01-17 02:23:59 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:23:59 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:24:03 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:03 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:03 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:03 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:03 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:24:03 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:24:03 TRACE LoginCommand:28 - Start tracing LoginCommand
+2023-01-17 02:24:03 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:24:03 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:24:03 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:24:03 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:24:03 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:03 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:03 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:03 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:03 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:03 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:03 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:03 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:03 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:03 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:03 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:10 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:10 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:10 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:10 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:10 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:10 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:10 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:10 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 02:24:10 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:10 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:10 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:10 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:10 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:10 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:10 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:10 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:10 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:10 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:10 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:11 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:11 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:11 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:11 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:11 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:11 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 02:24:11 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:11 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:11 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:11 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:11 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:11 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:11 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:11 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:11 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:11 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:11 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:11 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:11 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:11 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:11 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 02:24:11 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:11 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:11 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:11 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:11 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:11 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:11 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:11 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:11 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:12 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:12 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:12 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:12 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:12 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:12 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:12 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:12 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 02:24:12 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:12 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:12 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:12 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:12 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:12 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:12 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:12 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:12 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:12 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:12 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:12 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:12 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:12 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:12 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:12 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:12 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:12 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:12 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 02:24:12 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:12 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:12 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:12 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:12 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:12 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:12 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:12 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:12 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:12 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:12 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:13 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:13 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:13 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:13 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:13 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:13 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:13 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:13 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 02:24:13 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:13 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:13 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:13 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:13 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:13 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:13 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:13 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:13 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:13 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:13 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:13 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:13 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:13 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:13 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:13 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:13 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:13 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:13 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 02:24:13 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:13 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:13 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:13 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:13 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:13 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:13 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:13 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:13 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:13 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:13 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:16 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:16 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:16 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:16 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:16 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:16 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:16 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:16 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 02:24:16 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:16 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:16 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:16 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:16 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:16 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:16 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:16 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:16 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:16 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:16 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:18 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:18 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:18 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:18 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:18 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:18 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:18 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:18 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 02:24:18 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:18 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:18 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:18 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:18 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:18 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:18 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:18 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:18 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:18 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:18 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:18 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:18 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:18 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:24:18 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:18 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:24:18 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:24:18 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:24:18 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 02:24:18 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:24:18 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:24:18 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:24:18 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:24:18 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:24:18 DEBUG Controller:53 - Controller starts
+2023-01-17 02:24:18 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:24:18 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:24:18 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:24:18 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:24:18 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:31:25 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 02:31:25 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 02:31:25 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 02:31:25 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 02:31:32 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 02:31:32 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 02:31:32 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 02:31:32 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 02:31:32 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 02:31:36 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:31:36 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:31:36 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:31:36 DEBUG Controller:53 - Controller starts
+2023-01-17 02:31:36 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:31:36 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:31:36 TRACE LoginCommand:28 - Start tracing LoginCommand
+2023-01-17 02:31:36 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:31:36 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:31:36 TRACE Controller:32 - Redirect address --> ?command=goToCoursesCommand
+2023-01-17 02:31:36 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToCoursesCommand
+2023-01-17 02:31:36 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:31:36 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:31:36 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:31:36 DEBUG Controller:53 - Controller starts
+2023-01-17 02:31:36 TRACE Controller:56 - Request parameter: command --> goToCoursesCommand
+2023-01-17 02:31:36 TRACE Controller:60 - Obtained command --> GoToCoursesCommand
+2023-01-17 02:31:36 TRACE GoToLoginCommand:17 - Start tracing GoToCoursesCommand
+2023-01-17 02:31:36 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:31:36 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:31:42 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:31:42 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:31:42 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:31:42 DEBUG Controller:53 - Controller starts
+2023-01-17 02:31:42 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:31:42 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:31:42 TRACE LoginCommand:28 - Start tracing LoginCommand
+2023-01-17 02:31:42 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:31:42 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:31:42 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:31:42 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:31:42 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:31:42 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:31:42 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:31:42 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:31:42 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:31:42 DEBUG Controller:53 - Controller starts
+2023-01-17 02:31:42 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:31:42 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:31:42 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:31:42 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:31:42 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:31:46 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:31:46 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:31:46 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:31:46 DEBUG Controller:53 - Controller starts
+2023-01-17 02:31:46 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:31:46 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:31:46 TRACE LoginCommand:28 - Start tracing LoginCommand
+2023-01-17 02:31:46 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:31:46 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:31:46 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:31:46 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:31:46 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:31:46 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:31:46 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:31:46 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:31:46 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:31:46 DEBUG Controller:53 - Controller starts
+2023-01-17 02:31:46 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:31:46 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:31:46 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:31:46 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:31:46 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:41:46 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 02:41:46 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 02:41:46 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 02:41:46 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-17 02:41:53 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-17 02:41:53 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-17 02:41:53 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-17 02:41:53 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-17 02:41:53 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-17 02:41:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:41:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:41:56 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:41:56 DEBUG Controller:53 - Controller starts
+2023-01-17 02:41:56 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:41:56 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:41:56 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:41:56 TRACE LanguageCommand:44 - Language is switched to en
+2023-01-17 02:41:56 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:41:56 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:41:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:41:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:41:56 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:41:56 DEBUG Controller:53 - Controller starts
+2023-01-17 02:41:56 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:41:56 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:41:56 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:41:56 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:41:56 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:41:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:41:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:41:56 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:41:56 DEBUG Controller:53 - Controller starts
+2023-01-17 02:41:56 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-17 02:41:56 TRACE Controller:60 - Obtained command --> LanguageCommand
+2023-01-17 02:41:56 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-17 02:41:56 TRACE LanguageCommand:44 - Language is switched to uk
+2023-01-17 02:41:56 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:41:56 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:41:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:41:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:41:56 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:41:56 DEBUG Controller:53 - Controller starts
+2023-01-17 02:41:56 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:41:56 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:41:56 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:41:56 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:41:56 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:41:58 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:41:58 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:41:58 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:41:58 DEBUG Controller:53 - Controller starts
+2023-01-17 02:41:58 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:41:58 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:41:58 TRACE LoginCommand:30 - Start tracing LoginCommand
+2023-01-17 02:41:58 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:41:58 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:41:58 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:41:58 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:41:58 TRACE Controller:32 - Redirect address --> ?command=goToCoursesCommand
+2023-01-17 02:41:58 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToCoursesCommand
+2023-01-17 02:41:58 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:41:58 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:41:58 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:41:58 DEBUG Controller:53 - Controller starts
+2023-01-17 02:41:58 TRACE Controller:56 - Request parameter: command --> goToCoursesCommand
+2023-01-17 02:41:58 TRACE Controller:60 - Obtained command --> GoToCoursesCommand
+2023-01-17 02:41:58 TRACE GoToLoginCommand:17 - Start tracing GoToCoursesCommand
+2023-01-17 02:41:58 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:41:58 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/index.jsp
+2023-01-17 02:42:04 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:42:04 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:42:04 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:42:04 DEBUG Controller:53 - Controller starts
+2023-01-17 02:42:04 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:42:04 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:42:04 TRACE LoginCommand:30 - Start tracing LoginCommand
+2023-01-17 02:42:04 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:42:04 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:42:04 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:42:04 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:42:04 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:42:04 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:42:04 TRACE Controller:32 - Redirect address --> ?command=goToLoginCommand
+2023-01-17 02:42:04 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=goToLoginCommand
+2023-01-17 02:42:04 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:42:04 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:42:04 TRACE Controller:42 - *****************GET*****************
+2023-01-17 02:42:04 DEBUG Controller:53 - Controller starts
+2023-01-17 02:42:04 TRACE Controller:56 - Request parameter: command --> goToLoginCommand
+2023-01-17 02:42:04 TRACE Controller:60 - Obtained command --> GoToLoginCommand
+2023-01-17 02:42:04 TRACE GoToLoginCommand:17 - Start tracing GoToLoginCommand
+2023-01-17 02:42:04 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:42:04 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-17 02:42:08 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:42:08 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:42:08 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:42:08 DEBUG Controller:53 - Controller starts
+2023-01-17 02:42:08 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-17 02:42:08 TRACE Controller:60 - Obtained command --> LoginCommand
+2023-01-17 02:42:08 TRACE LoginCommand:30 - Start tracing LoginCommand
+2023-01-17 02:42:08 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:42:08 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:42:08 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:42:08 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:42:08 TRACE ConnectionPool:15 - Start tracing UserDAO#getUserByName
+2023-01-17 02:42:08 TRACE ConnectionPool:25 - Connection is successful
+2023-01-17 02:42:08 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 02:42:08 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 02:42:12 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:42:12 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:42:12 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:42:12 DEBUG Controller:53 - Controller starts
+2023-01-17 02:42:12 TRACE Controller:56 - Request parameter: command --> goToRegistration
+2023-01-17 02:42:12 TRACE CommandContainer:27 - Command not found, name --> goToRegistration
+2023-01-17 02:42:12 TRACE Controller:60 - Obtained command --> null
+2023-01-17 02:42:12 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 02:42:12 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 02:42:14 INFO  EncodingFilter:23 - Filter starts
+2023-01-17 02:42:14 INFO  EncodingFilter:29 - Filter finished
+2023-01-17 02:42:14 TRACE Controller:46 - *****************POST*****************
+2023-01-17 02:42:14 DEBUG Controller:53 - Controller starts
+2023-01-17 02:42:14 TRACE Controller:56 - Request parameter: command --> goToRegistration
+2023-01-17 02:42:14 TRACE CommandContainer:27 - Command not found, name --> goToRegistration
+2023-01-17 02:42:14 TRACE Controller:60 - Obtained command --> null
+2023-01-17 02:42:14 TRACE Controller:25 - Forward address --> ?command=goToErrorPage
+2023-01-17 02:42:14 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=goToErrorPage
+2023-01-17 03:01:28 TRACE EncodingFilter:17 - =========================================================================
+2023-01-17 03:01:28 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-17 03:01:28 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-17 03:01:28 TRACE ContextListener:31 - Servlet context destroyed

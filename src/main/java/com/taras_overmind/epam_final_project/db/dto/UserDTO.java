@@ -15,7 +15,6 @@ public class UserDTO implements Serializable {
     private int roleId = -1;
     private int stateId = 1;
 
-
     public UserDTO() {}
 
     public UserDTO(String login, String password, int roleId) {
@@ -54,10 +53,6 @@ public class UserDTO implements Serializable {
 
 void setIdUser(int idUser) {
         this.idUser = idUser;
-    }
-
- String getLogin() {
-        return login;
     }
 
 
@@ -99,6 +94,8 @@ void setIdUser(int idUser) {
     public int getStateId() {
         return stateId;
     }
+
+    public String getLogin(){return login;}
 
 
     public void setStateId(int stateId) {
