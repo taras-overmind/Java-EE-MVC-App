@@ -12,7 +12,7 @@ public class UserRepo {
 
     private static Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
     public UserDTO getUserByName(String username) {
-        LOG.trace("Start tracing UserDAO#getUserByName");
+        LOG.trace("Start tracing UserRepo#getUserByName");
 
         UserDTO userDTO = null;
         try (Connection connection = ConnectionPool.getConnection()) {
@@ -40,6 +40,38 @@ public class UserRepo {
             LOG.error(ex.getLocalizedMessage());
         }
         return userDTO;
+    }
+    public UserDTO createUser(String login, String password, int role) {
+        LOG.trace("Start tracing UserRepo#createUser");
+        UserDTO user = null;
+        int id = -1;
+
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_USER, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, login);
+                    statement.setString(2, password);
+                    statement.setInt(3, role);
+                    statement.setInt(4, role==1?1:0);
+                    statement.executeUpdate();
+                    PreparedStatement stmt = connection.prepareStatement(Query.SELECT_LAST_USER_ID);
+                    stmt.execute();
+                    ResultSet resultSet = stmt.getResultSet();
+                    if (resultSet.next()) {
+                        id = resultSet.getInt("max(id_user)");
+                    }
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex.getLocalizedMessage());
+        }
+        user = new UserDTO(id, login, password, role, role==1?1:0);
+        return user;
     }
 
 }

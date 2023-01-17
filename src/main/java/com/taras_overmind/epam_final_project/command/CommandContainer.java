@@ -15,9 +15,9 @@ public class CommandContainer {
 
     static {
         commands.put("languageCommand", new LanguageCommand());
-        commands.put("goToLoginCommand", new GoToLoginCommand());
         commands.put("loginCommand", new LoginCommand());
-        commands.put("goToCoursesCommand", new GoToCoursesCommand());
+        commands.put("getCommand", new GetCommand());
+        commands.put("registerCommand", new RegisterCommand());
       //TODO
     }
 

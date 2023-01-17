@@ -14,14 +14,14 @@
 <div id="flags">
     <form action="controller" method="post">
         <input type="hidden" name="command" value="languageCommand">
-        <input type="hidden" name="redirect" value="?command=goToLoginCommand">
+        <input type="hidden" name="redirect" value="?command=getLoginCommand">
         <input type="hidden" name="language" value="en">
         <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
         <input type="image" src="../../img/us.png" alt="en">
     </form>
     <form action="controller" method="post">
         <input type="hidden" name="command" value="languageCommand">
-        <input type="hidden" name="redirect" value="?command=goToLoginCommand">
+        <input type="hidden" name="redirect" value="?command=getLoginCommand">
         <input type="hidden" name="language" value="uk">
         <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
         <input type="image" src="../../img/ua.png" alt="ua">
@@ -30,9 +30,16 @@
 <c:if test="${not empty sessionScope.wrongData}">
     <div class="alertError">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        <strong>Помилка: </strong> <text>${sessionScope.wrongData} </text>
+        <strong></strong> <text>${sessionScope.wrongData} </text>
     </div>
     <c:remove var="wrongData" scope="session" />
+</c:if>
+<c:if test="${not empty sessionScope.registerSuccess}">
+    <div class="alertError">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong></strong> <text>${sessionScope.registerSuccess} </text>
+    </div>
+    <c:remove var="registerSuccess" scope="session" />
 </c:if>
 <div id="container">
 <%--    <img src="../../img/man.png">--%>
@@ -50,8 +57,8 @@
         </div>
         <button type="submit" id="login"><my:Locale value="page.login.login"/></button>
     </form>
-    <form action="controller" method="post">
-        <input type="hidden" name="command" value="goToRegistration">      <!--TODO-->
+    <form action="controller" method="get">
+        <input type="hidden" name="command" value="getRegisterCommand">      <!--TODO-->
         <button type="submit" id="forget"><my:Locale value="page.login.registration"/></button>
     </form>
     <form action="controller" method="post">

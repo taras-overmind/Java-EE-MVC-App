@@ -17,7 +17,7 @@ public class Query {
     public static final String SELECT_LAST_USER_ID =                                    "SELECT MAX(ID_USER) FROM USERS";
 
     //Create queries
-    public static final String CREATE_USER =                "INSERT INTO USERS          VALUES (DEFAULT, ?, ?, null, 2, 1)";
+    public static final String CREATE_USER =                "INSERT INTO USERS          VALUES (DEFAULT, ?, ?, null, ?, ?)";
     public static final String REGISTER_USER_ON_COURSE=     "INSERT INTO STUDENT_COURSE VALUES (DEFAULT, ?, ?)";
 
     //Update queries

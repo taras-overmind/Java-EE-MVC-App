@@ -25,7 +25,7 @@ public class LanguageCommand extends Command {
     private static final long serialVersionUID = 5063715519941606153L;
 
     @Override
-    public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing LanguageCommand");
         HttpSession session = request.getSession();
         List<String> languages = Arrays.asList("en", "uk");

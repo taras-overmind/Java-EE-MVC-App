@@ -13,9 +13,9 @@ public class GoToCoursesCommand extends Command {
     public static final Logger LOG = Logger.getLogger(GoToLoginCommand.class);
 
     @Override
-    public CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing GoToCoursesCommand");
-        return new ForwardResult("/WEB-INF/jsp/index.jsp");
+        return new ForwardResult("/WEB-INF/jsp/courses.jsp");
 
     }
 }

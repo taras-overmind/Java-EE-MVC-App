@@ -16,7 +16,7 @@ public abstract class Command implements Serializable {
     private static final long serialVersionUID = 2130509003029456001L;
 
 
-    public abstract CommandResult execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException;
+    public abstract CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException;
 
 
     @Override
