@@ -5,7 +5,7 @@
     <tag>
         <name>Locale</name>
         <tag-class>com.taras_overmind.epam_final_project.i18n.LocaleTag</tag-class>
-        <body-content>empty</body-content>
+        <body-content>scriptless</body-content>
         <attribute>
             <name>value</name>
         </attribute>

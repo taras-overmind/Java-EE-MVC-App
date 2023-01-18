@@ -30,19 +30,21 @@
 <c:if test="${not empty sessionScope.wrongData}">
     <div class="alertError">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        <strong></strong> <text>${sessionScope.wrongData} </text>
+        <strong></strong>
+        <text>${sessionScope.wrongData} </text>
     </div>
-    <c:remove var="wrongData" scope="session" />
+    <c:remove var="wrongData" scope="session"/>
 </c:if>
 <c:if test="${not empty sessionScope.registerSuccess}">
     <div class="alertError">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        <strong></strong> <text>${sessionScope.registerSuccess} </text>
+        <strong></strong>
+        <text>${sessionScope.registerSuccess} </text>
     </div>
-    <c:remove var="registerSuccess" scope="session" />
+    <c:remove var="registerSuccess" scope="session"/>
 </c:if>
 <div id="container">
-<%--    <img src="../../img/man.png">--%>
+    <%--    <img src="../../img/man.png">--%>
     <form action="controller" method="post">
         <input type="hidden" name="command" value="loginCommand">
         <div id="form-input">
@@ -60,10 +62,6 @@
     <form action="controller" method="get">
         <input type="hidden" name="command" value="getRegisterCommand">      <!--TODO-->
         <button type="submit" id="forget"><my:Locale value="page.login.registration"/></button>
-    </form>
-    <form action="controller" method="post">
-        <input type="hidden" name="command" value="forgetCommand">
-        <button type="submit" id="forget"><my:Locale value="page.login.forget"/></button>
     </form>
 </div>
 </body>

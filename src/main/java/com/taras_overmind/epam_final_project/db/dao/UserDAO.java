@@ -12,12 +12,6 @@ public interface UserDAO {
     public void lockUserById(int id, int state);
 
 
-    public UserDTO findUserByLogin(String login);
-
-
-    public UserDTO createUser(String login, String password);
-
-
     public List<UserDTO> getAllUsers();
 
 

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class GetCommand extends Command {
-    public static final Logger LOG = Logger.getLogger(GoToLoginCommand.class);
+    public static final Logger LOG = Logger.getLogger(GetCommand.class);
 
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {

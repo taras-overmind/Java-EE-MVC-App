@@ -40,7 +40,7 @@ public class LoginCommand extends Command {
         } else
             redirect = new RedirectResult("?command=getCoursesCommand");
         var user = userService.getUserRepo().getUserByName(username);
-        session.setAttribute("id", user.getIdUser());
+        session.setAttribute("id", user.getId());
         session.setAttribute("login", user.getLogin());
         session.setAttribute("password", user.getPassword());
         session.setAttribute("email", user.getEmail());

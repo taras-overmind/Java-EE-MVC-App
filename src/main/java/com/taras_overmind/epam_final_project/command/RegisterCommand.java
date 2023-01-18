@@ -3,7 +3,8 @@ package com.taras_overmind.epam_final_project.command;
 
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
-import com.taras_overmind.epam_final_project.db.dto.UserDTO;
+import com.taras_overmind.epam_final_project.db.service.LecturerService;
+import com.taras_overmind.epam_final_project.db.service.StudentService;
 import com.taras_overmind.epam_final_project.db.service.UserService;
 
 import org.apache.log4j.Logger;
@@ -23,6 +24,8 @@ public class RegisterCommand extends Command {
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
     private final UserService userService = new UserService();
+    private final StudentService studentService = new StudentService();
+    private final LecturerService lecturerService = new LecturerService();
     @Serial
     private static final long serialVersionUID = -7190245479634943129L;
 
@@ -40,25 +43,25 @@ public class RegisterCommand extends Command {
                 request.getParameter("middleName") != null && request.getParameter("role") != null) {
             username = new String(request.getParameter("username").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
             password = new String(request.getParameter("password").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-            firstName = new String(request.getParameter("firstName").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-            lastName = new String(request.getParameter("lastName").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-            middleName = new String(request.getParameter("middleName").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
+            firstName = request.getParameter("firstName");
+            lastName = request.getParameter("lastName");
+            middleName = request.getParameter("middleName");
             role = request.getParameter("role").equals("1") ? 1 : 2;
-            System.out.println(role);
-            System.out.println(
-            );
-            System.out.println();
         }
 
         if (userService.registerCheck(username, password) != null) {
             session.setAttribute("wrongData", userService.registerCheck(username, password));
             redirect = new RedirectResult("?command=getRegisterCommand");
         } else {
-            userService.getUserRepo().createUser(username, password, role);
-            if(role==1)
+            var user = userService.getUserRepo().createUser(username, password, role);
+            if(role==1){
                 session.setAttribute("registerSuccess", "You registered successfully");
-            else
+                studentService.getStudentRepo().createStudent(lastName, firstName, middleName, user.getId());
+            }
+            else{
                 session.setAttribute("registerSuccess", "You registered successfully. Wait for admin to confirm your role");
+                lecturerService.getLecturerRepo().createLecturer(lastName, firstName, middleName, user.getId());
+            }
             redirect = new RedirectResult("?command=getLoginCommand");
         }
 

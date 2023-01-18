@@ -8,7 +8,7 @@ public class UserDTO implements Serializable {
 
     private static final long serialVersionUID = 8218802710491337849L;
 
-    private int idUser;
+    private int id;
     private String login;
     private String password;
     private String email;
@@ -29,8 +29,8 @@ public class UserDTO implements Serializable {
         this.roleId = roleId;
         this.stateId = stateId;
     }
-    public UserDTO(int idUser, String login, String password, int roleId, int stateId) {
-        this.idUser = idUser;
+    public UserDTO(int id, String login, String password, int roleId, int stateId) {
+        this.id = id;
         this.login = login;
         this.password = password;
         this.roleId = roleId;
@@ -38,8 +38,8 @@ public class UserDTO implements Serializable {
     }
 
 
-    public UserDTO(int idUser, String login, String password, String email, int roleId, int stateId) {
-        this.idUser = idUser;
+    public UserDTO(int id, String login, String password, String email, int roleId, int stateId) {
+        this.id = id;
         this.login = login;
         this.password = password;
         this.email = email;
@@ -47,12 +47,12 @@ public class UserDTO implements Serializable {
         this.stateId = stateId;
     }
 
-    public int getIdUser() {
-        return idUser;
+    public int getId() {
+        return id;
     }
 
-void setIdUser(int idUser) {
-        this.idUser = idUser;
+void setId(int id) {
+        this.id = id;
     }
 
 
@@ -106,7 +106,7 @@ void setIdUser(int idUser) {
     @Override
     public String toString() {
         return "UserDTO{" +
-                "idUser=" + idUser +
+                "idUser=" + id +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
