@@ -8,7 +8,7 @@ public class UserDTO implements Serializable {
 
     private static final long serialVersionUID = 8218802710491337849L;
 
-    private int id;
+    private int idUser;
     private String login;
     private String password;
     private String email;
@@ -30,7 +30,7 @@ public class UserDTO implements Serializable {
         this.stateId = stateId;
     }
     public UserDTO(int id, String login, String password, int roleId, int stateId) {
-        this.id = id;
+        this.idUser = id;
         this.login = login;
         this.password = password;
         this.roleId = roleId;
@@ -39,7 +39,7 @@ public class UserDTO implements Serializable {
 
 
     public UserDTO(int id, String login, String password, String email, int roleId, int stateId) {
-        this.id = id;
+        this.idUser = id;
         this.login = login;
         this.password = password;
         this.email = email;
@@ -47,12 +47,12 @@ public class UserDTO implements Serializable {
         this.stateId = stateId;
     }
 
-    public int getId() {
-        return id;
+    public int getIdUser() {
+        return idUser;
     }
 
-void setId(int id) {
-        this.id = id;
+void setIdUser(int idUser) {
+        this.idUser = idUser;
     }
 
 
@@ -106,7 +106,7 @@ void setId(int id) {
     @Override
     public String toString() {
         return "UserDTO{" +
-                "idUser=" + id +
+                "idUser=" + idUser +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +

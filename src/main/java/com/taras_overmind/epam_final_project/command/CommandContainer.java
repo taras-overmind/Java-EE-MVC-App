@@ -18,6 +18,7 @@ public class CommandContainer {
         commands.put("loginCommand", new LoginCommand());
         commands.put("getCommand", new GetCommand());
         commands.put("registerCommand", new RegisterCommand());
+        commands.put("courseCommand", new CourseCommand());
       //TODO
     }
 

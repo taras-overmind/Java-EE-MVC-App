@@ -70,6 +70,7 @@ public class Controller extends HttpServlet {
             commandResult = command.execute(request, response, forward);
         } catch (Exception ex) {
             request.setAttribute("errorMessage", ex.getMessage());
+            LOG.trace("Error occurred during executing command: "+ex.getMessage());
         }
 
         views.get(commandResult.getClass()).render(commandResult, request, response);

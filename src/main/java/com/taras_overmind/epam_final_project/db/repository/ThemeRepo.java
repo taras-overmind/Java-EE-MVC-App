@@ -16,7 +16,7 @@ public class ThemeRepo {
     private static Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
 
     public List<ThemeDTO> getAllThemes() {
-        LOG.trace("Starting tracing MySQLThemeDAO");
+        LOG.trace("Starting tracing ThemeRepo");
         List<ThemeDTO> themes = new ArrayList<>();
         ThemeDTO theme;
 

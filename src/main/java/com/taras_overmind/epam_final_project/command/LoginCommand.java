@@ -2,6 +2,10 @@ package com.taras_overmind.epam_final_project.command;
 
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
+import com.taras_overmind.epam_final_project.db.dto.LecturerDTO;
+import com.taras_overmind.epam_final_project.db.dto.ThemeDTO;
+import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
+import com.taras_overmind.epam_final_project.db.repository.ThemeRepo;
 import com.taras_overmind.epam_final_project.db.service.UserService;
 
 import org.apache.log4j.Logger;
@@ -12,6 +16,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.Serial;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 
 public class LoginCommand extends Command {
@@ -40,12 +45,21 @@ public class LoginCommand extends Command {
         } else
             redirect = new RedirectResult("?command=getCoursesCommand");
         var user = userService.getUserRepo().getUserByName(username);
-        session.setAttribute("id", user.getId());
+        session.setAttribute("id", user.getIdUser());
         session.setAttribute("login", user.getLogin());
         session.setAttribute("password", user.getPassword());
         session.setAttribute("email", user.getEmail());
         session.setAttribute("id_state", user.getStateId());
         session.setAttribute("id_role", user.getRoleId());
+
+//        List<CourseDTO> courses = new MySQLCourseDAO().getAllCourses();
+        List<ThemeDTO> themes = new ThemeRepo().getAllThemes();
+        List<LecturerDTO> lecturers = new LecturerRepo().getAllLecturers();
+
+        session.setAttribute("themes", themes);
+        session.setAttribute("lecturers", lecturers);
+        session.setAttribute("user", user);
+//        session.setAttribute("courses", courses);
 
         return redirect;
     }

@@ -37,15 +37,10 @@ public class LanguageCommand extends Command {
                 break;
             }
         }
-        if (!existLanguage) {
-            request.setAttribute("errorMessage", "Invalid value for language");
-            throw new ServletException();
-        } else {
-            LOG.trace("Language is switched to "+language);
-            session.setAttribute("language", language);
-        }
+        LOG.trace("Language is switched to " + language);
+        session.setAttribute("language", language);
         session.setAttribute("redirect", request.getParameter("redirect"));
         return new RedirectResult(request.getParameter("redirect"));
-    //    return new RedirectResult(request.getContextPath());
+        //    return new RedirectResult(request.getContextPath());
     }
 }

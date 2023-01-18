@@ -1,6 +1,5 @@
 body{
     margin: 0 auto;
-    background: url("../img/background.png") no-repeat center center fixed;
     background-size: cover;
     display: block;
 }
@@ -43,7 +42,7 @@ input[type="text"], input[type="password"]{
 }
 
 input[type="text"]{
-    background: white url("../img/user.png") no-repeat 10px 10px;
+    /*background: white url("../img/user.png") no-repeat 10px 10px;*/
     background-size: 9%;
 }
 

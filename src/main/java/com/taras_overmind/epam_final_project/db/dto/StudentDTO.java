@@ -11,22 +11,22 @@ public class StudentDTO implements Serializable {
     private static final long serialVersionUID = -5205879381501085376L;
 
     private int id;
-    private String lastName;
-    private String firstName;
-    private String middleName;
-    private int userId;
+    private String surname;
+    private String name;
+    private String patronymic;
+    private int idUser;
 
 
     public StudentDTO() {
     }
 
 
-    public StudentDTO(int id, String lastName, String firstName, String middleName, int userId) {
+    public StudentDTO(int id, String surname, String name, String middleName, int idUser) {
         this.id = id;
-        this.lastName = lastName;
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.userId = userId;
+        this.surname = surname;
+        this.name = name;
+        this.patronymic = middleName;
+        this.idUser = idUser;
     }
 
 
@@ -40,43 +40,43 @@ public class StudentDTO implements Serializable {
     }
 
 
-    public String getLastName() {
-        return lastName;
+    public String getSurname() {
+        return surname;
     }
 
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
 
-    public String getMiddleName() {
-        return middleName;
+    public String getPatronymic() {
+        return patronymic;
     }
 
 
-    public void setMiddleName(String middleName) {
-        this.middleName = middleName;
+    public void setPatronymic(String patronymic) {
+        this.patronymic = patronymic;
     }
 
 
-    public int getUserId() {
-        return userId;
+    public int getIdUser() {
+        return idUser;
     }
 
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
     }
 
 
@@ -84,10 +84,10 @@ public class StudentDTO implements Serializable {
     public String toString() {
         return "StudentDTO{" +
                 "id=" + id +
-                ", surname='" + lastName + '\'' +
-                ", name='" + firstName + '\'' +
-                ", patronymic='" + middleName + '\'' +
-                ", idUser=" + userId +
+                ", surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", idUser=" + idUser +
                 '}';
     }
 }

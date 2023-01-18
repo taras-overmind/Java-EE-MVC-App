@@ -9,39 +9,39 @@ public class ThemeDTO implements Serializable {
 
     private static final long serialVersionUID = 6674765258602087731L;
 
-    private int themeId;
-    private String themeName;
+    private int idTheme;
+    private String nameTheme;
 
     public ThemeDTO(){
 
     }
 
-    public ThemeDTO(int themeId, String themeName) {
-        this.themeId = themeId;
-        this.themeName = themeName;
+    public ThemeDTO(int idTheme, String nameTheme) {
+        this.idTheme = idTheme;
+        this.nameTheme = nameTheme;
     }
 
-    public int getThemeId() {
-        return themeId;
+    public int getIdTheme() {
+        return idTheme;
     }
 
-    public void setThemeId(int themeId) {
-        this.themeId = themeId;
+    public void setIdTheme(int idTheme) {
+        this.idTheme = idTheme;
     }
 
-    public String getThemeName() {
-        return themeName;
+    public String getNameTheme() {
+        return nameTheme;
     }
 
-    public void setThemeName(String themeName) {
-        this.themeName = themeName;
+    public void setNameTheme(String nameTheme) {
+        this.nameTheme = nameTheme;
     }
 
     @Override
     public String toString() {
         return "ThemeDTO{" +
-                "themeId=" + themeId +
-                ", themeName='" + themeName + '\'' +
+                "themeId=" + idTheme +
+                ", themeName='" + nameTheme + '\'' +
                 '}';
     }
 }

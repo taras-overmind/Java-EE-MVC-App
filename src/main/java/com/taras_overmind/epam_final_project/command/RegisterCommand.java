@@ -56,11 +56,11 @@ public class RegisterCommand extends Command {
             var user = userService.getUserRepo().createUser(username, password, role);
             if(role==1){
                 session.setAttribute("registerSuccess", "You registered successfully");
-                studentService.getStudentRepo().createStudent(lastName, firstName, middleName, user.getId());
+                studentService.getStudentRepo().createStudent(lastName, firstName, middleName, user.getIdUser());
             }
             else{
                 session.setAttribute("registerSuccess", "You registered successfully. Wait for admin to confirm your role");
-                lecturerService.getLecturerRepo().createLecturer(lastName, firstName, middleName, user.getId());
+                lecturerService.getLecturerRepo().createLecturer(lastName, firstName, middleName, user.getIdUser());
             }
             redirect = new RedirectResult("?command=getLoginCommand");
         }
