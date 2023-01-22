@@ -1,0 +1,11 @@
+<header class="mb-15">
+    <div>
+        <nav class="nav nav-masthead justify-content-left float-md-end row">
+
+            <div class="left-block col-6">
+                <a class="nav-link" href="/trip">Courses</a>
+                <a class="nav-link" href="/route">My Page</a>
+            </div>
+        </nav>
+    </div>
+</header>

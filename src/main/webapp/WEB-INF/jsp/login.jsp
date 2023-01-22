@@ -5,6 +5,7 @@
 
 <html>
 <head>
+    <c:import url="../jspf/head.jsp"/>
     <title><my:Locale value="page.login.title"/></title>
     <link rel="stylesheet" type="text/css" href="../../styles/login.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -61,7 +62,7 @@
     </form>
     <form action="controller" method="get">
         <input type="hidden" name="command" value="getRegisterCommand">      <!--TODO-->
-        <button type="submit" id="forget"><my:Locale value="page.login.registration"/></button>
+        <button type="submit" id="noAcc"><my:Locale value="page.login.registration"/></button>
     </form>
 </div>
 </body>

@@ -58,6 +58,7 @@
 <html>
 
 <head>
+    <c:import url="../jspf/head.jsp"/>
     <title><my:Locale value="page.courses.title"/></title>
     <link rel="stylesheet" type="text/css" href="../../styles/courses.css">
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/favicon.ico" type="image/x-icon">
@@ -66,26 +67,37 @@
 </head>
 
 <body>
-<div id="flags">
-    <form action="controller" method="post">
-        <input type="hidden" name="command" value="languageCommand">
-        <input type="hidden" name="redirect" value="?command=getCoursesCommand">
-        <input type="hidden" name="language" value="en">
-        <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
-        <input type="image" src="../../img/us.png" alt="en">
-    </form>
-    <form action="controller" method="post">
-        <input type="hidden" name="command" value="languageCommand">
-        <input type="hidden" name="redirect" value="?command=getCoursesCommand">
-        <input type="hidden" name="language" value="uk">
-        <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
-        <input type="image" src="../../img/ua.png" alt="ua">
-    </form>
+<div class="cover-container d-flex w-100 h-10 p-3 mx-auto flex-column">
+<%--<%@ include file="/WEB-INF/jspf/header.jspf" %>--%>
+<header class="mb-15">
+    <div>
+        <nav class="nav nav-masthead justify-content-right float-md-end row">
+            <div class="left-block col-6">
+                <a class="nav-link" href="/trip">Courses</a>
+                <a class="nav-link" href="/controller?command=getStudentCommand">My Page</a>
+            </div>
+            <div class="right-block col-6">
+                <form action="controller" method="post">
+                    <input type="hidden" name="command" value="languageCommand">
+                    <input type="hidden" name="redirect" value="?command=getCoursesCommand">
+                    <input type="hidden" name="language" value="en">
+                    <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
+                    <input type="image" src="../../img/us.png" alt="en">
+                </form>
+                <form action="controller" method="post">
+                    <input type="hidden" name="command" value="languageCommand">
+                    <input type="hidden" name="redirect" value="?command=getCoursesCommand">
+                    <input type="hidden" name="language" value="uk">
+                    <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
+                    <input type="image" src="../../img/ua.png" alt="ua">
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
 </div>
-
 <div class="col-lg-9">
     <div class="panel panel-primary table-responsive">
-        <div class="panel-heading"><my:Locale value="page.student.table.title.progress"/></div>
         <div id="sortContainer">
             <form action="controller" method="post">
                 <input type="hidden" name="command" value="courseCommand">
@@ -133,7 +145,7 @@
                                     <button name="sort" class="sortRow" value="name_theme"><my:Locale
                                             value="page.student.theme"/></button>
                                 </th>
-                                <th colspan="3" class="info">
+                                <th  class="info">
                                     <button name="sort" class="sortRow" value="surname"><my:Locale
                                             value="page.student.lecturer"/></button>
                                 </th>
@@ -151,9 +163,9 @@
                                     <td>${row.name_course}</td>
                                     <td>${row.duration}</td>
                                     <td>${row.name_theme}</td>
-                                    <td>${row.surname}</td>
-                                    <td>${row.name}</td>
-                                    <td>${row.patronymic}</td>
+                                    <td>${row.surname} ${row.name} ${row.patronymic}</td>
+<%--                                    <td>${row.name}</td>--%>
+<%--                                    <td>${row.patronymic}</td>--%>
                                     <td>${row.name_status}</td>
                                     <td>${row.count}</td>
                                 </tr>

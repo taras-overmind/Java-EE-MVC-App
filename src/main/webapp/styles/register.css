@@ -42,7 +42,7 @@ input[type="text"], input[type="password"]{
 }
 
 input[type="text"]{
-    /*background: white url("../img/user.png") no-repeat 10px 10px;*/
+    background: white no-repeat 10px 10px;
     background-size: 9%;
 }
 
@@ -58,21 +58,8 @@ input[type="password"]{
     border-radius: 6px;
     border: none;
     background-color: #27AE60;
+    border-bottom: 4px solid #27AE60;
     margin-bottom: 35px;
-}
-#noAcc{
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-color: #151515;
-
-}
-#noAcc:hover{
-    border: none;
-    background: #1e1e1e;
-    color: white;
-    cursor: pointer;
-
 }
 
 b{

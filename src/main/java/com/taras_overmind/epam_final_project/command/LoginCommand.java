@@ -51,15 +51,12 @@ public class LoginCommand extends Command {
         session.setAttribute("email", user.getEmail());
         session.setAttribute("id_state", user.getStateId());
         session.setAttribute("id_role", user.getRoleId());
-
-//        List<CourseDTO> courses = new MySQLCourseDAO().getAllCourses();
         List<ThemeDTO> themes = new ThemeRepo().getAllThemes();
         List<LecturerDTO> lecturers = new LecturerRepo().getAllLecturers();
 
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);
         session.setAttribute("user", user);
-//        session.setAttribute("courses", courses);
 
         return redirect;
     }
