@@ -39,8 +39,6 @@ public class LanguageCommand extends Command {
         }
         LOG.trace("Language is switched to " + language);
         session.setAttribute("language", language);
-        session.setAttribute("redirect", request.getParameter("redirect"));
-        return new RedirectResult(request.getParameter("redirect"));
-        //    return new RedirectResult(request.getContextPath());
+        return new RedirectResult(request.getContextPath()+"?"+request.getParameter("url"));
     }
 }

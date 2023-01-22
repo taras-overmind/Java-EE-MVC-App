@@ -58,44 +58,13 @@
 <html>
 
 <head>
-    <c:import url="../jspf/head.jsp"/>
     <title><my:Locale value="page.courses.title"/></title>
     <link rel="stylesheet" type="text/css" href="../../styles/courses.css">
-    <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/favicon.ico" type="image/x-icon">
-    <script src="../../bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-<div class="cover-container d-flex w-100 h-10 p-3 mx-auto flex-column">
-<%--<%@ include file="/WEB-INF/jspf/header.jspf" %>--%>
-<header class="mb-15">
-    <div>
-        <nav class="nav nav-masthead justify-content-right float-md-end row">
-            <div class="left-block col-6">
-                <a class="nav-link" href="/trip">Courses</a>
-                <a class="nav-link" href="/controller?command=getStudentCommand">My Page</a>
-            </div>
-            <div class="right-block col-6">
-                <form action="controller" method="post">
-                    <input type="hidden" name="command" value="languageCommand">
-                    <input type="hidden" name="redirect" value="?command=getCoursesCommand">
-                    <input type="hidden" name="language" value="en">
-                    <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
-                    <input type="image" src="../../img/us.png" alt="en">
-                </form>
-                <form action="controller" method="post">
-                    <input type="hidden" name="command" value="languageCommand">
-                    <input type="hidden" name="redirect" value="?command=getCoursesCommand">
-                    <input type="hidden" name="language" value="uk">
-                    <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
-                    <input type="image" src="../../img/ua.png" alt="ua">
-                </form>
-            </div>
-        </nav>
-    </div>
-</header>
-</div>
+<%@ include file="/WEB-INF/jspf/header.jspf"%>
 <div class="col-lg-9">
     <div class="panel panel-primary table-responsive">
         <div id="sortContainer">
@@ -129,8 +98,6 @@
                     </select>
                 </label>
                 <button type="submit" class="btn btn-success"><my:Locale value="page.courses.choose"/></button>
-                <c:choose>
-                    <c:when test="${not empty result.rows}">
                         <table class="table table-bordered table-striped">
                             <tr>
                                 <th class="info">
@@ -164,18 +131,11 @@
                                     <td>${row.duration}</td>
                                     <td>${row.name_theme}</td>
                                     <td>${row.surname} ${row.name} ${row.patronymic}</td>
-<%--                                    <td>${row.name}</td>--%>
-<%--                                    <td>${row.patronymic}</td>--%>
                                     <td>${row.name_status}</td>
                                     <td>${row.count}</td>
                                 </tr>
                             </c:forEach>
                         </table>
-                    </c:when>
-                    <c:otherwise>
-                        <h3><my:Locale value="page.courses.error"/></h3>
-                    </c:otherwise>
-                </c:choose>
             </form>
         </div>
     </div>

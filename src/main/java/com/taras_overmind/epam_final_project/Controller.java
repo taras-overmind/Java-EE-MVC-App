@@ -74,6 +74,5 @@ public class Controller extends HttpServlet {
         }
 
         views.get(commandResult.getClass()).render(commandResult, request, response);
-//        request.getRequestDispatcher(commandResult.getResource()).forward(request, response);
     }
 }

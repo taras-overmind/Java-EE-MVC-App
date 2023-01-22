@@ -44,8 +44,6 @@ public class LocaleTag extends TagSupport {
                 LOG.error("Not find this key!");
             }
         }
-
-      //  LOG.info("Language is switched to " + language.toUpperCase());
         return SKIP_BODY;
     }
 }

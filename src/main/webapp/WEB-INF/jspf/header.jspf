@@ -1,11 +1,37 @@
-<header class="mb-15">
-    <div>
-        <nav class="nav nav-masthead justify-content-left float-md-end row">
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
 
-            <div class="left-block col-6">
-                <a class="nav-link" href="/trip">Courses</a>
-                <a class="nav-link" href="/route">My Page</a>
-            </div>
-        </nav>
-    </div>
-</header>
+<head>
+    <c:import url="../jspf/head.jsp"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/courses.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<%--<div class="cover-container d-flex w-100 h-10 p-3 mx-auto flex-column">--%>
+    <header class="mb-15">
+        <div>
+            <nav class="nav nav-masthead justify-content-left float-md-end row">
+
+                <div class="left-block col-6">
+                    <a class="nav-link" href="/controller?command=getCoursesCommand">Courses</a>
+                    <a class="nav-link" href="/controller?command=getStudentCommand">My Page</a>
+                </div>
+                <div class="right-block col-6">
+                    <a class="nav-link" href="/controller?command=getLoginCommand">Login</a>
+                    <form action="controller" method="post">
+                        <input type="hidden" name="command" value="languageCommand">
+                        <input type="hidden" name="language" value="en">
+                        <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
+                        <input type="image" src="../../img/us.png" alt="en">
+                    </form>
+                    <form action="controller" method="post">
+                        <input type="hidden" name="command" value="languageCommand">
+                        <input type="hidden" name="language" value="uk">
+                        <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
+                        <input type="image" src="../../img/ua.png" alt="ua">
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+<%--</div>--%>

@@ -1,4 +1,4 @@
-<%--suppress XmlDuplicatedId --%>
+
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -6,27 +6,12 @@
 <html>
 <head>
     <title><my:Locale value="page.login.title"/></title>
-    <link rel="stylesheet" type="text/css" href="../../styles/register.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/login.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-<div id="flags">
-    <form action="controller" method="post">
-        <input type="hidden" name="command" value="languageCommand">
-        <input type="hidden" name="redirect" value="?command=getRegisterCommand">
-        <input type="hidden" name="language" value="en">
-        <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
-        <input type="image" src="../../img/us.png" alt="en">
-    </form>
-    <form action="controller" method="post">
-        <input type="hidden" name="command" value="languageCommand">
-        <input type="hidden" name="redirect" value="?command=getRegisterCommand">
-        <input type="hidden" name="language" value="uk">
-        <input type="hidden" name=url value="${requestScope['javax.servlet.forward.query_string']}">
-        <input type="image" src="../../img/ua.png" alt="ua">
-    </form>
-</div>
+<%@ include file="/WEB-INF/jspf/header.jspf"%>
 <c:if test="${not empty sessionScope.wrongData}">
     <div class="alertError">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
@@ -36,7 +21,6 @@
     <c:remove var="wrongData" scope="session"/>
 </c:if>
 <div id="container">
-    <%--    <img src="../../img/man.png">--%>
     <form action="controller" method="post">
         <input type="hidden" name="command" value="registerCommand">
         <div id="form-input">
@@ -78,7 +62,7 @@
     </form>
     <form action="controller" method="get">
         <input type="hidden" name="command" value="getLoginCommand">
-        <button type="submit" id="forget">I have an account</button>
+        <button type="submit" id="noAcc">I have an account</button>
     </form>
 </div>
 </body>
