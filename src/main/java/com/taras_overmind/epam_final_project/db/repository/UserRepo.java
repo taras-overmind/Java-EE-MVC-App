@@ -10,7 +10,7 @@ import java.sql.*;
 
 public class UserRepo {
 
-    private static Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
+    private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
     public UserDTO getUserByName(String username) {
         LOG.trace("Start tracing UserRepo#getUserByName");
 
@@ -72,6 +72,46 @@ public class UserRepo {
         }
         user = new UserDTO(id, login, password, role, role==1?1:0);
         return user;
+    }
+
+    public void lockUserById(int id, int state) {
+        LOG.trace("Start tracing MySQLUserDAO#lockUserById");
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if ((connection != null) && (state != -1)) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, state);
+                    statement.setInt(2, id);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException e) {
+                    LOG.error(e.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException e) {
+            LOG.error(e.getLocalizedMessage());
+        }
+    }
+
+    public void registerUserOnCourse(int id, int idCourse) {
+        LOG.trace("Start tracing UserRepo#registerUserOnCourse");
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.REGISTER_USER_ON_COURSE)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, id);
+                    statement.setInt(2, idCourse);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException e) {
+            LOG.error(e.getLocalizedMessage());
+        }
     }
 
 }

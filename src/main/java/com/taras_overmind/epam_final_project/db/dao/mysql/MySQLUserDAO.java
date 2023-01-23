@@ -16,27 +16,6 @@ public class MySQLUserDAO extends UserDTO implements UserDAO {
     public static final Logger LOG = Logger.getLogger(MySQLUserDAO.class);
     private static final long serialVersionUID = 5566685127381260993L;
 
-    @Override
-    public void lockUserById(int id, int state) {
-        LOG.trace("Start tracing MySQLUserDAO#lockUserById");
-        try (Connection connection = ConnectionPool.getConnection()) {
-            if ((connection != null) && (state != -1)) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER, Statement.RETURN_GENERATED_KEYS)) {
-                    connection.setAutoCommit(false);
-                    statement.setInt(1, state);
-                    statement.setInt(2, id);
-                    statement.executeUpdate();
-
-                    connection.commit();
-                } catch (SQLException e) {
-                    LOG.error(e.getLocalizedMessage());
-                    connection.rollback();
-                }
-            }
-        } catch (SQLException e) {
-            LOG.error(e.getLocalizedMessage());
-        }
-    }
 
 
     @Override
@@ -71,27 +50,7 @@ public class MySQLUserDAO extends UserDTO implements UserDAO {
         return users;
     }
 
-    @Override
-    public void registerUserOnCourse(int id, int idCourse) {
-        LOG.trace("Start tracing MySQLUserDAO#registerUserOnCourse");
-        UserDTO user = null;
-        try (Connection connection = ConnectionPool.getConnection()) {
-            if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.REGISTER_USER_ON_COURSE)) {
-                    connection.setAutoCommit(false);
-                    statement.setInt(1, id);
-                    statement.setInt(2, idCourse);
-                    statement.executeUpdate();
-                    connection.commit();
-                } catch (SQLException ex) {
-                    LOG.error(ex.getLocalizedMessage());
-                    connection.rollback();
-                }
-            }
-        } catch (SQLException e) {
-            LOG.error(e.getLocalizedMessage());
-        }
-    }
+
 
     @Override
     public void setNewPassword(int id, String password) {

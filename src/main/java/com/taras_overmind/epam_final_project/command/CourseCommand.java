@@ -2,6 +2,7 @@ package com.taras_overmind.epam_final_project.command;
 
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
+import org.apache.juli.logging.Log;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -23,7 +24,7 @@ public class CourseCommand extends Command {
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String redirect)
             throws IOException, ServletException {
-        LOG.trace("Starting trace CoursesCommand");
+        LOG.trace("Starting trace CourseCommand");
         HttpSession session = request.getSession();
         String forward = "?command=getCoursesCommand";
         if (session.getAttribute("user") != null) {
@@ -60,13 +61,16 @@ public class CourseCommand extends Command {
             if ((session.getAttribute("sort") != null) && (request.getParameter("sort") != null)) {
                 sort = String.valueOf(session.getAttribute("sort"));
                 LOG.trace("Sorting by: "+sort);
+
             }
+
             if (request.getParameter("sort") != null) {
                 if (request.getParameter("sort").equals(sort)) {
                     if (session.getAttribute("sorting") != null) {
                         if (session.getAttribute("sorting").equals("ASC")) {
                             session.setAttribute("sorting", "DESC");
-                        } else {
+                        }
+                        else {
                             session.setAttribute("sorting", "ASC");
                         }
                         forward = "?command=getCoursesCommand";
@@ -82,6 +86,7 @@ public class CourseCommand extends Command {
                     }
                 }
             }
+
         }
         else {
             LOG.trace("User not logged");

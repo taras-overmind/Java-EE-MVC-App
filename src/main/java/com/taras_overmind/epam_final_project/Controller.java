@@ -65,7 +65,7 @@ public class Controller extends HttpServlet {
 
         LOG.trace("Obtained command --> " + command);
 
-        CommandResult commandResult = new ForwardResult("?command=goToErrorPage");
+        CommandResult commandResult = new ForwardResult("?command=getLoginCommand");
         try {
             commandResult = command.execute(request, response, forward);
         } catch (Exception ex) {

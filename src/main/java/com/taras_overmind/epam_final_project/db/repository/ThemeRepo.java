@@ -44,5 +44,31 @@ public class ThemeRepo {
         return themes;
     }
 
+    public ThemeDTO getThemeById(int id){
+        LOG.trace("Start tracing ThemeRepo#getThemeById");
+        ThemeDTO theme=null;
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_THEME_BY_ID)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, String.valueOf(id));
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    if (resultSet.next()) {
+                        theme = new ThemeDTO(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException e) {
+                    LOG.error(e.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex.getLocalizedMessage());
+        }
+        return theme;
+    }
+
 
 }

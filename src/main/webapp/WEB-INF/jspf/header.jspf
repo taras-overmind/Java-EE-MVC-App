@@ -8,16 +8,17 @@
 </head>
 
 <%--<div class="cover-container d-flex w-100 h-10 p-3 mx-auto flex-column">--%>
-    <header class="mb-15">
-        <div>
-            <nav class="nav nav-masthead justify-content-left float-md-end row">
+<header class="mb-15">
+    <div>
+        <nav class="nav nav-masthead justify-content-left float-md-end row">
 
-                <div class="left-block col-6">
-                    <a class="nav-link" href="/controller?command=getCoursesCommand">Courses</a>
-                    <a class="nav-link" href="/controller?command=getStudentCommand">My Page</a>
-                </div>
-                <div class="right-block col-6">
-                    <a class="nav-link" href="/controller?command=getLoginCommand">Login</a>
+            <div class="left-block col-6">
+                <a class="nav-link" href="/controller?command=getCoursesCommand">Courses</a>
+                <a class="nav-link" href="/controller?command=getStudentCommand">My Page</a>
+            </div>
+            <div class="right-block col-6">
+                <a class="nav-link" href="/controller?command=getLoginCommand">Login</a>
+                <div class="right-block col-2">
                     <form action="controller" method="post">
                         <input type="hidden" name="command" value="languageCommand">
                         <input type="hidden" name="language" value="en">
@@ -31,7 +32,8 @@
                         <input type="image" src="../../img/ua.png" alt="ua">
                     </form>
                 </div>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </nav>
+    </div>
+</header>
 <%--</div>--%>

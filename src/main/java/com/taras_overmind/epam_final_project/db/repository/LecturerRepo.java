@@ -3,6 +3,7 @@ package com.taras_overmind.epam_final_project.db.repository;
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.LecturerDTO;
+import com.taras_overmind.epam_final_project.db.dto.UserDTO;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -72,5 +73,34 @@ public class LecturerRepo {
             LOG.info(ex.getLocalizedMessage());
         }
         return lecturers;
+    }
+
+    public LecturerDTO getLecturerById(int id){
+        LOG.trace("Start tracing LecturerRepo#getLecturerById");
+        LecturerDTO lecturer=null;
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_LECTURER_BY_ID)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, String.valueOf(id));
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    if (resultSet.next()) {
+                        lecturer = new LecturerDTO(resultSet.getInt("id"), resultSet.getString("surname"),
+                                resultSet.getString("name"),
+                                resultSet.getString("patromynic"),
+                                resultSet.getInt("id_user"));
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException e) {
+                    LOG.error(e.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex.getLocalizedMessage());
+        }
+        return lecturer;
     }
 }

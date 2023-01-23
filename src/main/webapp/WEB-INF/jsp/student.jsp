@@ -16,60 +16,74 @@
 
 <div class="container-fluid bs-const">
     <div class="col-lg-2 info">
-                <a href="?command=getStudentCommand&table=1"><my:Locale value="page.student.leftbar.notstartedcourse"/></a><br>
-                <a href="?command=getStudentCommand&table=2"><my:Locale value="page.student.leftbar.begancourses"/></a><br>
-                <a href="?command=getStudentCommand&table=4"><my:Locale value="page.student.table.title.progress"/></a>
+        <a href="?command=getStudentCommand&table=1"><my:Locale value="page.student.leftbar.notstartedcourse"/></a><br>
+        <a href="?command=getStudentCommand&table=2"><my:Locale value="page.student.leftbar.begancourses"/></a><br>
+        <a href="?command=getStudentCommand&table=4"><my:Locale value="page.student.table.title.progress"/></a>
     </div>
     <div class="col-lg-9">
         <div class="row">
+            <c:choose>
+                <c:when test="${param.table=='2'}">
+                    <div class="panel-heading"><my:Locale value="page.student.table.title.inprogress"/></div>
+                </c:when>
+                <c:when test="${param.table=='4'}">
+                    <div class="panel-heading"><my:Locale value="page.student.table.title.progress"/></div>
+                </c:when>
+                <c:otherwise>
+                    <div class="panel-heading"><my:Locale value="page.student.table.title.opened"/></div>
+                </c:otherwise>
+            </c:choose>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <th class="info">
+                            <button name="sort" class="sortRow" value="name_course"><my:Locale
+                                    value="page.people.course.name"/></button>
+                        </th>
+                        <th class="info">
+                            <button name="sort" class="sortRow" value="duration"><my:Locale
+                                    value="page.people.course.duration"/></button>
+                        </th>
+                        <th class="info">
+                            <button name="sort" class="sortRow" value="name_theme"><my:Locale
+                                    value="page.student.theme"/></button>
+                        </th>
+                        <th class="info">
+                            <button name="sort" class="sortRow" value="surname"><my:Locale
+                                    value="page.student.lecturer"/></button>
+                        </th>
+                        <c:if test="${param.table=='4'}">
+                            <th class="info">
+                                <button name="sort" class="sortRow" value="mark"><my:Locale
+                                        value="page.student.mark"/></button>
+                            </th>
+                        </c:if>
+
+                    </tr>
+
+
                     <c:choose>
-                        <c:when test="${param.table=='2'}">
-                            <div class="panel-heading"><my:Locale value="page.student.table.title.inprogress"/></div>
-                        </c:when>
-                        <c:when test="${param.table=='4'}">
-                            <div class="panel-heading"><my:Locale value="page.student.table.title.progress"/></div>
+                        <c:when test="${not empty param.table}">
+                            <t:table status="${param.table}"/>
                         </c:when>
                         <c:otherwise>
-                            <div class="panel-heading"><my:Locale value="page.student.table.title.opened"/></div>
+                            <t:table status="1"/>
                         </c:otherwise>
                     </c:choose>
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped">
+                    <c:forEach items="${sessionScope.result}" var="row">
                         <tr>
-                            <th class="info">
-                                <button name="sort" class="sortRow" value="name_course"><my:Locale
-                                        value="page.people.course.name"/></button>
-                            </th>
-                            <th class="info">
-                                <button name="sort" class="sortRow" value="duration"><my:Locale
-                                        value="page.people.course.duration"/></button>
-                            </th>
-                            <th class="info">
-                                <button name="sort" class="sortRow" value="name_theme"><my:Locale
-                                        value="page.student.theme"/></button>
-                            </th>
-                            <th class="info">
-                                <button name="sort" class="sortRow" value="surname"><my:Locale
-                                        value="page.student.lecturer"/></button>
-                            </th>
+                            <td>${row.courseName}</td>
+                            <td>${row.duration}</td>
+                            <td>${row.themeName}</td>
+                            <td>${row.lecturerName} </td>
                             <c:if test="${param.table=='4'}">
-                                <th class="info">
-                                    <button name="sort" class="sortRow" value="mark"><my:Locale
-                                            value="page.student.mark"/></button>
-                                </th>
+                                <td>${row.count}</td>
                             </c:if>
-
                         </tr>
-                        <c:choose>
-                            <c:when test="${not empty param.table}">
-                                <t:table status="${param.table}"/>
-                            </c:when>
-                            <c:otherwise>
-                                <t:table status="1"/>
-                            </c:otherwise>
-                        </c:choose>
-                    </table>
-                </div>
+                    </c:forEach>
+
+                </table>
+            </div>
         </div>
 
     </div>
