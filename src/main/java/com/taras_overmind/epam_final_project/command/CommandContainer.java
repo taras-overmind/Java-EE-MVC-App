@@ -16,10 +16,21 @@ public class CommandContainer {
     static {
         commands.put("languageCommand", new LanguageCommand());
         commands.put("loginCommand", new LoginCommand());
-        commands.put("getCommand", new GetCommand());
+//        commands.put("getCommand", new GetCommand());
+
+        commands.put("getCoursesCommand", new GetCoursesCommand());
+        commands.put("getCoursesToRegisterCommand", new GetCoursesToRegisterCommand());
+        commands.put("getLecturerCommand", new GetLecturerPageCommand());
+        commands.put("getLoginCommand", new GetLoginCommand());
+        commands.put("getRegisterCommand", new GetRegisterCommand());
+        commands.put("getStudentCommand", new GetStudentPageCommand());
+
         commands.put("registerCommand", new RegisterCommand());
         commands.put("courseCommand", new CourseCommand());
         commands.put("markStudentCommand", new MarkStudentCommand());
+        commands.put("registerOnCourseCommand", new RegisterOnCourseCommand());
+
+
       //TODO
     }
 

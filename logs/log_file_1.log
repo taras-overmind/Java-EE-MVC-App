@@ -51686,3 +51686,2123 @@
 2023-01-24 17:10:26 TRACE GetCommand:27 - Start tracing GetCommand
 2023-01-24 17:10:26 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursestoregister.jsp
 2023-01-24 17:10:26 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursestoregister.jsp
+2023-01-24 17:26:44 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:26:44 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:26:44 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:26:44 DEBUG Controller:53 - Controller starts
+2023-01-24 17:26:44 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:26:44 TRACE Controller:66 - Obtained command --> GetCommand
+2023-01-24 17:26:44 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:26:44 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:26:44 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:26:44 TRACE CoursesTag:29 - Tracing CoursesTag
+2023-01-24 17:26:44 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:26:51 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:26:51 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:26:51 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:26:51 DEBUG Controller:53 - Controller starts
+2023-01-24 17:26:51 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:26:51 TRACE Controller:66 - Obtained command --> GetCommand
+2023-01-24 17:26:51 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:26:51 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:26:51 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:26:51 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:26:51 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:26:52 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:26:52 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:26:52 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:26:52 DEBUG Controller:53 - Controller starts
+2023-01-24 17:26:52 TRACE Controller:56 - Request parameter: command --> getLecturerCommand
+2023-01-24 17:26:52 TRACE Controller:66 - Obtained command --> GetCommand
+2023-01-24 17:26:52 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:26:52 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:26:52 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:26:52 TRACE CoursesTag:31 - Tracing CoursesTag
+2023-01-24 17:26:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:28:39 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:28:39 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:28:39 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:28:39 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:28:48 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:28:48 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:28:48 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:28:48 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:28:48 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:28:48 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:28:48 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:28:48 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:28:48 DEBUG Controller:53 - Controller starts
+2023-01-24 17:28:48 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:28:48 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:28:48 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:28:48 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:28:48 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:28:49 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:28:49 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:28:49 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:28:49 DEBUG Controller:53 - Controller starts
+2023-01-24 17:28:49 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:28:49 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:28:49 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:28:49 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:28:49 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:28:52 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:28:52 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:28:52 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:28:52 DEBUG Controller:53 - Controller starts
+2023-01-24 17:28:52 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:28:52 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:28:52 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:28:52 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:28:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:28:52 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:28:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:28:52 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:28:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:28:52 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:28:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:28:52 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:28:52 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:28:52 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:28:52 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:28:52 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:28:52 DEBUG Controller:53 - Controller starts
+2023-01-24 17:28:52 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:28:52 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:28:52 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:28:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:28:52 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:28:52 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:28 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:29:28 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:29:28 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:29:28 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:29:34 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:29:34 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:29:34 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:29:34 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:29:34 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:29:34 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:34 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:34 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:34 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:34 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:29:34 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:29:34 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:34 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:29:34 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:29:35 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:35 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:35 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:35 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:35 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:29:35 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:29:35 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:35 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:29:35 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:29:36 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:36 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:36 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:29:36 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:36 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:29:36 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:29:36 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:29:36 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:29:36 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:36 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:29:36 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:36 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:29:36 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:36 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:29:36 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:36 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:29:36 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:29:36 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:36 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:36 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:36 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:36 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:29:36 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:29:36 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:29:36 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:36 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:36 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:43 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:43 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:43 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:29:43 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:43 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 17:29:43 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 17:29:43 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 17:29:43 TRACE CourseCommand:43 - Theme id: 3
+2023-01-24 17:29:43 TRACE CourseCommand:52 - Lecturer id: All lecturers
+2023-01-24 17:29:43 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:29:43 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:29:43 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:43 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:43 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:43 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:43 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:29:43 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:29:43 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:29:43 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:43 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:43 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:45 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:45 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:45 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:29:45 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:45 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 17:29:45 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 17:29:45 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 17:29:45 TRACE CourseCommand:43 - Theme id: 3
+2023-01-24 17:29:45 TRACE CourseCommand:52 - Lecturer id: 2
+2023-01-24 17:29:45 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:29:45 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:29:45 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:45 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:45 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:45 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:45 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:29:45 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:29:45 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:29:45 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:45 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:45 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:47 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:47 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:47 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:29:47 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:47 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 17:29:47 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 17:29:47 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 17:29:47 TRACE CourseCommand:43 - Theme id: 3
+2023-01-24 17:29:47 TRACE CourseCommand:52 - Lecturer id: 2
+2023-01-24 17:29:47 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:29:47 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:29:47 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:47 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:47 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:47 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:47 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:29:47 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:29:47 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:29:47 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:47 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:47 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:48 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:48 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:48 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:29:48 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:48 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 17:29:48 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 17:29:48 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 17:29:48 TRACE CourseCommand:43 - Theme id: 3
+2023-01-24 17:29:48 TRACE CourseCommand:52 - Lecturer id: 2
+2023-01-24 17:29:48 TRACE CourseCommand:61 - Sorting by: name_course
+2023-01-24 17:29:48 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:29:48 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:29:48 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:48 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:48 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:48 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:48 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:29:48 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:29:48 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:29:48 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:48 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:48 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:48 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:48 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:48 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:29:48 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:48 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 17:29:48 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 17:29:48 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 17:29:48 TRACE CourseCommand:43 - Theme id: 3
+2023-01-24 17:29:48 TRACE CourseCommand:52 - Lecturer id: 2
+2023-01-24 17:29:48 TRACE CourseCommand:61 - Sorting by: name_course
+2023-01-24 17:29:48 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:29:48 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:29:48 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:48 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:48 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:48 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:48 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:29:48 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:29:48 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:29:48 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:48 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:48 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:49 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:49 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:49 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:29:49 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:49 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 17:29:49 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 17:29:49 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 17:29:49 TRACE CourseCommand:43 - Theme id: 3
+2023-01-24 17:29:49 TRACE CourseCommand:52 - Lecturer id: 2
+2023-01-24 17:29:49 TRACE CourseCommand:61 - Sorting by: duration
+2023-01-24 17:29:49 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:29:49 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:29:49 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:49 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:49 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:49 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:49 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:29:49 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:29:49 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:29:49 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:49 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:49 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:29:51 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:51 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:51 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:51 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:51 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:29:51 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:29:51 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:51 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:51 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:51 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:29:51 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:53 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:53 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:53 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:53 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:53 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:29:53 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:29:53 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:53 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:53 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:53 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:29:53 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:54 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:54 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:54 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:54 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:54 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:29:54 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:29:54 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:54 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:54 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:54 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:29:54 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:55 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:55 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:55 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:55 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:55 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:29:55 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:29:55 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:55 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:55 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:55 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:29:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:56 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:56 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:56 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:29:56 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:29:56 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:56 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:56 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:56 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:29:56 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:57 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:57 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:57 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:57 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:57 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:29:57 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:29:57 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:57 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:57 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:57 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:29:57 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:58 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:58 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:58 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:58 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:58 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:29:58 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:29:58 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:58 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:58 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:58 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:29:58 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:29:59 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:29:59 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:29:59 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:29:59 DEBUG Controller:53 - Controller starts
+2023-01-24 17:29:59 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:29:59 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:29:59 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:29:59 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:59 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:29:59 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:29:59 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:30:00 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:30:00 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:30:00 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:30:00 DEBUG Controller:53 - Controller starts
+2023-01-24 17:30:00 TRACE Controller:56 - Request parameter: command --> getLecturerCommand
+2023-01-24 17:30:00 TRACE Controller:66 - Obtained command --> GetLecturerPageCommand
+2023-01-24 17:30:00 TRACE GetCommand:28 - Start tracing GetLoginCommand
+2023-01-24 17:30:00 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:30:00 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:30:00 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:30:02 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:30:02 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:30:02 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:30:02 DEBUG Controller:53 - Controller starts
+2023-01-24 17:30:02 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:30:02 TRACE CommandContainer:39 - Command not found, name --> getCoursesToRegisterCommand
+2023-01-24 17:30:02 TRACE Controller:66 - Obtained command --> null
+2023-01-24 17:30:02 TRACE Controller:73 - Error occurred during executing command: Cannot invoke "com.taras_overmind.epam_final_project.command.Command.execute(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, String)" because "command" is null
+2023-01-24 17:30:02 TRACE Controller:25 - Forward address --> ?command=getLoginCommand
+2023-01-24 17:30:02 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=getLoginCommand
+2023-01-24 17:30:33 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:30:33 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:30:33 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:30:33 DEBUG Controller:53 - Controller starts
+2023-01-24 17:30:33 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:30:33 TRACE CommandContainer:39 - Command not found, name --> getCoursesToRegisterCommand
+2023-01-24 17:30:33 TRACE Controller:66 - Obtained command --> null
+2023-01-24 17:30:33 TRACE Controller:73 - Error occurred during executing command: Cannot invoke "com.taras_overmind.epam_final_project.command.Command.execute(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, String)" because "command" is null
+2023-01-24 17:30:33 TRACE Controller:25 - Forward address --> ?command=getLoginCommand
+2023-01-24 17:30:33 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=getLoginCommand
+2023-01-24 17:32:45 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:32:45 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:32:45 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:32:45 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:32:52 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:32:52 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:32:52 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:32:52 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:32:52 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:32:52 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:32:52 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:32:52 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:32:52 DEBUG Controller:53 - Controller starts
+2023-01-24 17:32:52 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:32:52 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:32:52 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:32:52 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:32:52 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:32:53 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:32:53 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:32:53 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:32:53 DEBUG Controller:53 - Controller starts
+2023-01-24 17:32:53 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:32:53 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:32:53 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:32:53 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:32:53 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:32:55 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:32:55 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:32:55 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:32:55 DEBUG Controller:53 - Controller starts
+2023-01-24 17:32:55 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:32:55 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:32:55 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:32:55 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:32:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:32:55 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:32:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:32:55 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:32:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:32:55 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:32:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:32:55 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:32:55 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:32:55 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:32:55 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:32:55 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:32:55 DEBUG Controller:53 - Controller starts
+2023-01-24 17:32:55 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:32:55 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:32:55 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:32:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:32:55 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:32:55 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:32:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:32:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:32:56 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:32:56 DEBUG Controller:53 - Controller starts
+2023-01-24 17:32:56 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:32:56 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:32:56 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:32:56 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:32:56 INFO  GetCommand:54 - Column 'name_course' not found.
+2023-01-24 17:32:56 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:32:56 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:35:14 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:35:14 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:35:14 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:35:14 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:35:21 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:35:21 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:35:21 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:35:21 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:35:21 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:35:22 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:22 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:22 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:22 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:22 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:35:22 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:35:22 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:35:22 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:35:22 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:35:23 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:23 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:23 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:23 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:23 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:35:23 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:35:23 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:35:23 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:35:23 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:35:24 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:24 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:24 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:35:24 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:24 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:35:24 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:35:24 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:35:24 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:35:24 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:24 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:35:24 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:24 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:35:24 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:24 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:35:24 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:24 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:35:24 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:35:24 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:24 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:24 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:24 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:24 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:35:24 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:35:24 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:35:24 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:24 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:35:24 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:35:25 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:25 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:25 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:25 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:25 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:35:25 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:35:25 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:35:25 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:25 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:35:25 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:35:40 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:40 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:40 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:40 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:40 TRACE Controller:56 - Request parameter: command --> getLecturerCommand
+2023-01-24 17:35:40 TRACE Controller:66 - Obtained command --> GetLecturerPageCommand
+2023-01-24 17:35:40 TRACE GetCommand:28 - Start tracing GetLoginCommand
+2023-01-24 17:35:40 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:40 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:35:40 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:35:41 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:41 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:41 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:41 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:41 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:35:41 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:35:41 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:35:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:41 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:35:41 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:35:42 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:42 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:42 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:42 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:42 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:35:42 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:35:42 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:35:42 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:35:42 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:35:42 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:35:42 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:43 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:43 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:43 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:43 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:43 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:35:43 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:35:43 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:35:43 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:43 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:35:43 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:35:44 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:44 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:44 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:44 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:44 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:35:44 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:35:44 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:35:44 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:35:44 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:35:45 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:45 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:45 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:35:45 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:45 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:35:45 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:35:45 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:35:45 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:35:45 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:45 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:35:45 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:45 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:35:45 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:45 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:35:45 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:45 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:35:45 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:35:45 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:45 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:45 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:45 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:45 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:35:45 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:35:45 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:35:45 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:45 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:35:45 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:35:46 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:35:46 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:35:46 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:35:46 DEBUG Controller:53 - Controller starts
+2023-01-24 17:35:46 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:35:46 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:35:46 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:35:46 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:35:46 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:35:46 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:36:00 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:36:00 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:36:00 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:36:00 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:36:07 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:36:07 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:36:07 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:36:07 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:36:07 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:36:07 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:36:07 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:36:07 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:36:07 DEBUG Controller:53 - Controller starts
+2023-01-24 17:36:07 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:36:07 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:36:07 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:36:07 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:36:07 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:36:08 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:36:08 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:36:08 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:36:08 DEBUG Controller:53 - Controller starts
+2023-01-24 17:36:08 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:36:08 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:36:08 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:36:08 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:36:08 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:36:09 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:36:09 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:36:09 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:36:09 DEBUG Controller:53 - Controller starts
+2023-01-24 17:36:09 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:36:09 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:36:09 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:36:09 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:36:09 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:36:09 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:36:09 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:36:09 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:36:09 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:36:09 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:36:09 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:36:09 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:36:09 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:36:09 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:36:09 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:36:09 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:36:09 DEBUG Controller:53 - Controller starts
+2023-01-24 17:36:09 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:36:09 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:36:09 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:36:09 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:36:09 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:36:09 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:36:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:36:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:36:11 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:36:11 DEBUG Controller:53 - Controller starts
+2023-01-24 17:36:11 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:36:11 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:36:11 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:36:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:36:11 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:36:11 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:37:17 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:37:17 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:37:17 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:37:17 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:37:23 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:37:23 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:37:23 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:37:23 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:37:23 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:37:23 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:37:23 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:37:23 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:37:23 DEBUG Controller:53 - Controller starts
+2023-01-24 17:37:23 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:37:23 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:37:23 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:37:23 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:37:23 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:37:24 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:37:24 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:37:24 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:37:24 DEBUG Controller:53 - Controller starts
+2023-01-24 17:37:24 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:37:24 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:37:24 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:37:24 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:37:24 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:37:26 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:37:26 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:37:26 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:37:26 DEBUG Controller:53 - Controller starts
+2023-01-24 17:37:26 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:37:26 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:37:26 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:37:26 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:37:26 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:37:26 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:37:26 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:37:26 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:37:26 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:37:26 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:37:26 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:37:26 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:37:26 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:37:26 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:37:26 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:37:26 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:37:26 DEBUG Controller:53 - Controller starts
+2023-01-24 17:37:26 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:37:26 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:37:26 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:37:26 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:37:26 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:37:26 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:37:27 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:37:27 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:37:27 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:37:27 DEBUG Controller:53 - Controller starts
+2023-01-24 17:37:27 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:37:27 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:37:27 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:37:27 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:37:27 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:37:27 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:38:46 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:38:46 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:38:46 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:38:46 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:38:53 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:38:53 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:38:53 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:38:53 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:38:53 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:38:53 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:38:53 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:38:53 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:38:53 DEBUG Controller:53 - Controller starts
+2023-01-24 17:38:53 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:38:53 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:38:53 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:38:53 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:38:53 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:38:54 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:38:54 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:38:54 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:38:54 DEBUG Controller:53 - Controller starts
+2023-01-24 17:38:54 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:38:54 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:38:54 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:38:54 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:38:54 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:38:55 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:38:55 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:38:55 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:38:55 DEBUG Controller:53 - Controller starts
+2023-01-24 17:38:55 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:38:55 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:38:55 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:38:55 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:38:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:38:55 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:38:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:38:55 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:38:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:38:55 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:38:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:38:55 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:38:55 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:38:55 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:38:55 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:38:55 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:38:55 DEBUG Controller:53 - Controller starts
+2023-01-24 17:38:55 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:38:55 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:38:55 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:38:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:38:55 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:38:55 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:38:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:38:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:38:56 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:38:56 DEBUG Controller:53 - Controller starts
+2023-01-24 17:38:56 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:38:56 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:38:56 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:38:56 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:38:56 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:38:56 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:39:21 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:39:21 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:39:21 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:39:21 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:39:27 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:39:27 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:39:27 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:39:27 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:39:27 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:39:28 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:39:28 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:39:28 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:39:28 DEBUG Controller:53 - Controller starts
+2023-01-24 17:39:28 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:39:28 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:39:28 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:39:28 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:39:28 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:39:29 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:39:29 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:39:29 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:39:29 DEBUG Controller:53 - Controller starts
+2023-01-24 17:39:29 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:39:29 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:39:29 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:39:29 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:39:29 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:39:30 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:39:30 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:39:30 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:39:30 DEBUG Controller:53 - Controller starts
+2023-01-24 17:39:30 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:39:30 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:39:30 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:39:30 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:39:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:39:30 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:39:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:39:30 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:39:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:39:30 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:39:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:39:30 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:39:30 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:39:30 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:39:30 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:39:30 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:39:30 DEBUG Controller:53 - Controller starts
+2023-01-24 17:39:30 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:39:30 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:39:30 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:39:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:39:30 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:39:30 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:39:31 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:39:31 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:39:31 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:39:31 DEBUG Controller:53 - Controller starts
+2023-01-24 17:39:31 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:39:31 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:39:31 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:39:31 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:39:31 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:39:31 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:41:02 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:41:02 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:41:02 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:41:02 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:41:08 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:41:08 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:41:08 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:41:08 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:41:08 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:41:08 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:08 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:08 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:08 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:08 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:41:08 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:41:08 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:41:08 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:41:08 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:41:09 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:09 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:09 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:09 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:09 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:41:09 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:41:09 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:41:09 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:41:09 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:41:10 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:10 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:10 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:41:10 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:10 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:41:10 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:41:10 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:41:10 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:41:10 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:11 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:41:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:11 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:41:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:11 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:41:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:11 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:41:11 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:41:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:11 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:11 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:11 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:41:11 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:41:11 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:41:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:11 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:41:11 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:41:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:11 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:11 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:11 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:41:11 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:41:11 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:41:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:11 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:41:11 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:41:13 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:13 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:13 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:13 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:13 TRACE Controller:56 - Request parameter: command --> getLecturerCommand
+2023-01-24 17:41:13 TRACE Controller:66 - Obtained command --> GetLecturerPageCommand
+2023-01-24 17:41:13 TRACE GetCommand:28 - Start tracing GetLoginCommand
+2023-01-24 17:41:13 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:13 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:41:13 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:41:14 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:14 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:14 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:14 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:14 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:41:14 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:41:14 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:41:14 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:41:14 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:41:14 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:41:14 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:15 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:15 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:15 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:15 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:15 TRACE Controller:56 - Request parameter: command --> getLecturerCommand
+2023-01-24 17:41:15 TRACE Controller:66 - Obtained command --> GetLecturerPageCommand
+2023-01-24 17:41:15 TRACE GetCommand:28 - Start tracing GetLoginCommand
+2023-01-24 17:41:15 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:15 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:41:15 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:41:16 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:16 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:16 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:16 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:16 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:41:16 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:41:16 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:41:16 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:16 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:41:16 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:41:16 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:16 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:16 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:16 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:16 TRACE Controller:56 - Request parameter: command --> getLecturerCommand
+2023-01-24 17:41:16 TRACE Controller:66 - Obtained command --> GetLecturerPageCommand
+2023-01-24 17:41:16 TRACE GetCommand:28 - Start tracing GetLoginCommand
+2023-01-24 17:41:16 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:16 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:41:16 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 17:41:17 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:41:17 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:41:17 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:41:17 DEBUG Controller:53 - Controller starts
+2023-01-24 17:41:17 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:41:17 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:41:17 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:41:17 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:41:17 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:41:17 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:42:32 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:42:32 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:42:32 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:42:32 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:42:39 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:42:39 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:42:39 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:42:39 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:42:39 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:42:39 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:42:39 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:42:39 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:42:39 DEBUG Controller:53 - Controller starts
+2023-01-24 17:42:39 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:42:39 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:42:39 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:42:39 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:42:39 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:42:40 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:42:40 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:42:40 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:42:40 DEBUG Controller:53 - Controller starts
+2023-01-24 17:42:40 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:42:40 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:42:40 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:42:40 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:42:40 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:42:41 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:42:41 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:42:41 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:42:41 DEBUG Controller:53 - Controller starts
+2023-01-24 17:42:41 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:42:41 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:42:41 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:42:41 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:42:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:42:41 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:42:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:42:41 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:42:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:42:41 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:42:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:42:41 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:42:41 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:42:41 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:42:41 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:42:41 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:42:41 DEBUG Controller:53 - Controller starts
+2023-01-24 17:42:41 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:42:41 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:42:41 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:42:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:42:41 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:42:41 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:42:42 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:42:42 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:42:42 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:42:42 DEBUG Controller:53 - Controller starts
+2023-01-24 17:42:42 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:42:42 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:42:42 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:42:42 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:42:42 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:42:42 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:42:55 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:42:55 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:42:55 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:42:55 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:43:01 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:43:01 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:43:01 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:43:01 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:43:01 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:43:02 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:43:02 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:43:02 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:43:02 DEBUG Controller:53 - Controller starts
+2023-01-24 17:43:02 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:43:02 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:43:02 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:43:02 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:43:02 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:43:03 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:43:03 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:43:03 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:43:03 DEBUG Controller:53 - Controller starts
+2023-01-24 17:43:03 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:43:03 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:43:03 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:43:03 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:43:03 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:43:04 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:43:04 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:43:04 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:43:04 DEBUG Controller:53 - Controller starts
+2023-01-24 17:43:04 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:43:04 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:43:04 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:43:04 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:43:04 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:43:04 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:43:04 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:43:04 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:43:04 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:43:04 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:43:04 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:43:04 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:43:04 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:43:04 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:43:04 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:43:04 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:43:04 DEBUG Controller:53 - Controller starts
+2023-01-24 17:43:04 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:43:04 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:43:04 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:43:04 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:43:04 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:43:04 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:43:05 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:43:05 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:43:05 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:43:05 DEBUG Controller:53 - Controller starts
+2023-01-24 17:43:05 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:43:05 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:43:05 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:43:05 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:43:05 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:43:05 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:45:21 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:45:21 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:45:21 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:45:21 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:45:28 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:45:28 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:45:28 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:45:28 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:45:28 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:45:28 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:45:28 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:45:28 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:45:28 DEBUG Controller:53 - Controller starts
+2023-01-24 17:45:28 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:45:28 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:45:28 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:45:28 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:45:28 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:45:29 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:45:29 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:45:29 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:45:29 DEBUG Controller:53 - Controller starts
+2023-01-24 17:45:29 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:45:29 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:45:29 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:45:29 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:45:29 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:45:30 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:45:30 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:45:30 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:45:30 DEBUG Controller:53 - Controller starts
+2023-01-24 17:45:30 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:45:30 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:45:30 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:45:30 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:45:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:45:30 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:45:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:45:30 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:45:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:45:30 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:45:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:45:30 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:45:30 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:45:30 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:45:30 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:45:30 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:45:30 DEBUG Controller:53 - Controller starts
+2023-01-24 17:45:30 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:45:30 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:45:30 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:45:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:45:30 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:45:30 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:45:31 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:45:31 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:45:31 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:45:31 DEBUG Controller:53 - Controller starts
+2023-01-24 17:45:31 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:45:31 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:45:31 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:45:31 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:45:31 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:45:31 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:46:13 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:46:13 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:46:13 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:46:13 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:46:20 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:46:20 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:46:20 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:46:20 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:46:20 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:46:20 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:20 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:20 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:46:20 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:20 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:46:20 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:46:20 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:46:20 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:46:20 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:46:21 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:21 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:21 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:46:21 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:21 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:46:21 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:46:21 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:46:21 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:46:21 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:46:22 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:22 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:22 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:46:22 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:22 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:46:22 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:46:22 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:46:22 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:46:22 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:22 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:46:22 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:22 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:46:22 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:22 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:46:22 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:22 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:46:22 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:46:22 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:22 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:22 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:46:22 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:22 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:46:22 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:46:22 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:46:22 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:22 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:46:22 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:46:23 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:23 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:23 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:46:23 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:23 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:46:23 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:46:23 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:46:23 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:23 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:46:23 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:46:32 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:46:32 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:46:32 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:46:32 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:46:39 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:46:39 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:46:39 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:46:39 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:46:39 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:46:39 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:39 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:39 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:46:39 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:39 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:46:39 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:46:39 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:46:39 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:46:39 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:46:40 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:40 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:40 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:46:40 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:40 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:46:40 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:46:40 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:46:40 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:46:40 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:46:41 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:41 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:41 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:46:41 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:41 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:46:41 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:46:41 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:46:41 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:46:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:41 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:46:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:41 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:46:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:41 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:46:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:41 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:46:41 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:46:41 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:41 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:41 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:46:41 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:41 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:46:41 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:46:41 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:46:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:41 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:46:41 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:46:42 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:46:42 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:46:42 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:46:42 DEBUG Controller:53 - Controller starts
+2023-01-24 17:46:42 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:46:42 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:46:42 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:46:42 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:46:42 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:46:42 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:47:00 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:47:00 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:47:00 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:47:00 DEBUG Controller:53 - Controller starts
+2023-01-24 17:47:00 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:47:00 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:47:00 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:47:00 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:47:00 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:47:00 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:47:05 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:47:05 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:47:05 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:47:05 DEBUG Controller:53 - Controller starts
+2023-01-24 17:47:05 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 17:47:05 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 17:47:05 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 17:47:05 TRACE CourseCommand:43 - Theme id: All themes
+2023-01-24 17:47:05 TRACE CourseCommand:52 - Lecturer id: All lecturers
+2023-01-24 17:47:05 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:47:05 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:47:05 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:47:05 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:47:05 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:47:05 DEBUG Controller:53 - Controller starts
+2023-01-24 17:47:05 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:47:05 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:47:05 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:47:05 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:47:05 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:47:05 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:47:13 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:47:13 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:47:13 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:47:13 DEBUG Controller:53 - Controller starts
+2023-01-24 17:47:13 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:47:13 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:47:13 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:47:13 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:47:13 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:47:13 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:49:20 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:49:20 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:49:20 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:49:20 DEBUG Controller:53 - Controller starts
+2023-01-24 17:49:20 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:49:20 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:49:20 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:49:20 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:49:20 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:49:20 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:49:20 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:49:24 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:49:24 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:49:24 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:49:24 DEBUG Controller:53 - Controller starts
+2023-01-24 17:49:24 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:49:24 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:49:24 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:49:24 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:49:24 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:49:24 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:49:30 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:49:30 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:49:30 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:49:30 DEBUG Controller:53 - Controller starts
+2023-01-24 17:49:30 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:49:30 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:49:30 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:49:30 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:49:30 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:49:30 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:49:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:49:34 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:49:34 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:49:34 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:49:34 DEBUG Controller:53 - Controller starts
+2023-01-24 17:49:34 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:49:34 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:49:34 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:49:34 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:49:34 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:49:34 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:56:42 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 17:56:42 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 17:56:42 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 17:56:42 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 17:56:50 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 17:56:50 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 17:56:50 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 17:56:50 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 17:56:50 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 17:56:50 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:56:50 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:56:50 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:56:50 DEBUG Controller:53 - Controller starts
+2023-01-24 17:56:50 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:56:50 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:56:50 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:56:50 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:56:50 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:56:51 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:56:51 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:56:51 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:56:51 DEBUG Controller:53 - Controller starts
+2023-01-24 17:56:51 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 17:56:51 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 17:56:51 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:56:51 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:56:51 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 17:56:52 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:56:52 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:56:52 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:56:52 DEBUG Controller:53 - Controller starts
+2023-01-24 17:56:52 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 17:56:52 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 17:56:52 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 17:56:52 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:56:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:56:52 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 17:56:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:56:52 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 17:56:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:56:52 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 17:56:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:56:52 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 17:56:52 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 17:56:52 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:56:52 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:56:52 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:56:52 DEBUG Controller:53 - Controller starts
+2023-01-24 17:56:52 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 17:56:52 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 17:56:52 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 17:56:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:56:52 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:56:52 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 17:56:54 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:56:54 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:56:54 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:56:54 DEBUG Controller:53 - Controller starts
+2023-01-24 17:56:54 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:56:54 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:56:54 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:56:54 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:56:54 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:56:54 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:56:54 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:56:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:56:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:56:56 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:56:56 DEBUG Controller:53 - Controller starts
+2023-01-24 17:56:56 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:56:56 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:56:56 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:56:56 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:56:56 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:56:56 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:56:56 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:56:57 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:56:57 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:56:57 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:56:57 DEBUG Controller:53 - Controller starts
+2023-01-24 17:56:57 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 17:56:57 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 17:56:57 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 17:56:57 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:56:57 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 17:56:57 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 17:56:57 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:56:58 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:56:58 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:56:58 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:56:58 DEBUG Controller:53 - Controller starts
+2023-01-24 17:56:58 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:56:58 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:56:58 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:56:58 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:56:58 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:56:58 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:23 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:23 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:23 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:57:23 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:23 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-24 17:57:23 TRACE Controller:66 - Obtained command --> LanguageCommand
+2023-01-24 17:57:23 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-24 17:57:23 TRACE LanguageCommand:40 - Language is switched to uk
+2023-01-24 17:57:23 TRACE Controller:32 - Redirect address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:23 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:23 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:23 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:23 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:57:23 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:23 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:57:23 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:57:23 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:57:23 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:57:23 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:23 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:24 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:24 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:24 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:57:24 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:24 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-24 17:57:24 TRACE Controller:66 - Obtained command --> LanguageCommand
+2023-01-24 17:57:24 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-24 17:57:24 TRACE LanguageCommand:40 - Language is switched to en
+2023-01-24 17:57:24 TRACE Controller:32 - Redirect address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:24 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:24 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:24 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:24 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:57:24 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:24 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:57:24 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:57:24 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:57:24 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:57:24 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:24 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:25 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:25 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:25 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:57:25 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:25 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-24 17:57:25 TRACE Controller:66 - Obtained command --> LanguageCommand
+2023-01-24 17:57:25 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-24 17:57:25 TRACE LanguageCommand:40 - Language is switched to uk
+2023-01-24 17:57:25 TRACE Controller:32 - Redirect address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:25 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:25 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:25 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:25 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:57:25 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:25 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:57:25 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:57:25 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:57:25 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:57:25 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:25 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:27 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:27 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:27 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:57:27 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:27 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-24 17:57:27 TRACE Controller:66 - Obtained command --> LanguageCommand
+2023-01-24 17:57:27 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-24 17:57:27 TRACE LanguageCommand:40 - Language is switched to en
+2023-01-24 17:57:27 TRACE Controller:32 - Redirect address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:27 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:27 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:27 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:27 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:57:27 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:27 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:57:27 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:57:27 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:57:27 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:57:27 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:27 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:28 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:28 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:28 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:57:28 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:28 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-24 17:57:28 TRACE Controller:66 - Obtained command --> LanguageCommand
+2023-01-24 17:57:28 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-24 17:57:28 TRACE LanguageCommand:40 - Language is switched to uk
+2023-01-24 17:57:28 TRACE Controller:32 - Redirect address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:28 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:28 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:28 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:28 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:57:28 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:28 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:57:28 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:57:28 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:57:28 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:57:28 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:28 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:30 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:30 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:30 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:57:30 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:30 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-24 17:57:30 TRACE Controller:66 - Obtained command --> LanguageCommand
+2023-01-24 17:57:30 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-24 17:57:30 TRACE LanguageCommand:40 - Language is switched to en
+2023-01-24 17:57:30 TRACE Controller:32 - Redirect address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:30 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesToRegisterCommand
+2023-01-24 17:57:30 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:57:30 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:57:30 TRACE Controller:42 - *****************GET*****************
+2023-01-24 17:57:30 DEBUG Controller:53 - Controller starts
+2023-01-24 17:57:30 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 17:57:30 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 17:57:30 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 17:57:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 17:57:30 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:57:30 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 17:58:41 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 17:58:41 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 17:58:41 TRACE Controller:46 - *****************POST*****************
+2023-01-24 17:58:41 DEBUG Controller:53 - Controller starts
+2023-01-24 17:58:41 TRACE Controller:56 - Request parameter: command --> registerOnCourseCommand
+2023-01-24 17:58:41 TRACE CommandContainer:39 - Command not found, name --> registerOnCourseCommand
+2023-01-24 17:58:41 TRACE Controller:66 - Obtained command --> null
+2023-01-24 17:58:41 TRACE Controller:73 - Error occurred during executing command: Cannot invoke "com.taras_overmind.epam_final_project.command.Command.execute(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, String)" because "command" is null
+2023-01-24 17:58:41 TRACE Controller:25 - Forward address --> ?command=getLoginCommand
+2023-01-24 17:58:41 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=getLoginCommand
+2023-01-24 18:18:13 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 18:18:13 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 18:18:13 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 18:18:13 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 18:18:24 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 18:18:24 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 18:18:24 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 18:18:24 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 18:18:24 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 18:18:24 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:24 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:24 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:18:24 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:24 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 18:18:24 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 18:18:24 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:18:24 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 18:18:24 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 18:18:26 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:26 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:26 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:18:26 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:26 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 18:18:26 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 18:18:26 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:18:26 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 18:18:26 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 18:18:27 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:27 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:27 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:18:27 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:27 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 18:18:27 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 18:18:27 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 18:18:27 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 18:18:27 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:28 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 18:18:28 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:28 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 18:18:28 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:28 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 18:18:28 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:28 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 18:18:28 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 18:18:28 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:28 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:28 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:18:28 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:28 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 18:18:28 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 18:18:28 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 18:18:28 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:28 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:18:28 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:18:29 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:29 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:29 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:18:29 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:29 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:18:29 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:18:29 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:18:29 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:18:29 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:18:30 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:18:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:34 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:34 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:34 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:18:34 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:34 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:18:34 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:18:34 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:18:34 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:18:34 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:18:34 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:18:34 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:44 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:44 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:44 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:18:44 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:44 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 18:18:44 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 18:18:44 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 18:18:44 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:44 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 18:18:44 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 18:18:50 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:50 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:50 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:18:50 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:50 TRACE Controller:56 - Request parameter: command --> registerOnCourseCommand
+2023-01-24 18:18:50 TRACE CommandContainer:39 - Command not found, name --> registerOnCourseCommand
+2023-01-24 18:18:50 TRACE Controller:66 - Obtained command --> null
+2023-01-24 18:18:50 TRACE Controller:73 - Error occurred during executing command: Cannot invoke "com.taras_overmind.epam_final_project.command.Command.execute(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, String)" because "command" is null
+2023-01-24 18:18:50 TRACE Controller:25 - Forward address --> ?command=getLoginCommand
+2023-01-24 18:18:50 DEBUG Controller:26 - Controller finished, now go to forward address --> ?command=getLoginCommand
+2023-01-24 18:18:54 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:54 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:54 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:18:54 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:54 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:18:54 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:18:54 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:18:54 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:18:54 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:18:54 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:18:54 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:56 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:18:56 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:18:56 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:18:56 DEBUG Controller:53 - Controller starts
+2023-01-24 18:18:56 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 18:18:56 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 18:18:56 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 18:18:56 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:18:56 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 18:18:56 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 18:19:02 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:19:02 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:19:02 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:19:02 DEBUG Controller:53 - Controller starts
+2023-01-24 18:19:02 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:19:02 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:19:02 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:19:02 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:19:02 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:19:02 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:19:02 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:19:56 TRACE EncodingFilter:17 - =========================================================================
+2023-01-24 18:19:56 INFO  EncodingFilter:18 - Filter destruction starts
+2023-01-24 18:19:56 INFO  EncodingFilter:19 - Filter destruction finished
+2023-01-24 18:19:56 TRACE ContextListener:31 - Servlet context destroyed
+2023-01-24 18:20:07 DEBUG ContextListener:47 - Log4j has been initialized
+2023-01-24 18:20:07 TRACE ContextListener:52 - Log4J initialization finished
+2023-01-24 18:20:07 TRACE ContextListener:27 - Servlet context initialization finished
+2023-01-24 18:20:07 INFO  EncodingFilter:34 - Filter initialization starts
+2023-01-24 18:20:07 INFO  EncodingFilter:40 - Filter initialization finished
+2023-01-24 18:20:08 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:08 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:08 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:08 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:08 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 18:20:08 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 18:20:08 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:08 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 18:20:08 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 18:20:09 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:09 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:09 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:09 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:09 TRACE Controller:56 - Request parameter: command --> getLoginCommand
+2023-01-24 18:20:09 TRACE Controller:66 - Obtained command --> GetLoginCommand
+2023-01-24 18:20:09 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:09 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 18:20:09 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/login.jsp
+2023-01-24 18:20:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:11 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:20:11 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:11 TRACE Controller:56 - Request parameter: command --> loginCommand
+2023-01-24 18:20:11 TRACE Controller:66 - Obtained command --> LoginCommand
+2023-01-24 18:20:11 TRACE LoginCommand:33 - Start tracing LoginCommand
+2023-01-24 18:20:11 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 18:20:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:11 TRACE ConnectionPool:15 - Start tracing UserRepo#getUserByName
+2023-01-24 18:20:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:11 TRACE ConnectionPool:19 - Starting tracing ThemeRepo
+2023-01-24 18:20:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:11 TRACE ConnectionPool:51 - Starting tracing MySQLLecturerDAO#getAllLecturers
+2023-01-24 18:20:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:11 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 18:20:11 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 18:20:11 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:11 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:11 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:11 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:11 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 18:20:11 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 18:20:11 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 18:20:11 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:11 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:11 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:14 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:14 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:14 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:20:14 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:14 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 18:20:14 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 18:20:14 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 18:20:14 TRACE CourseCommand:43 - Theme id: 1
+2023-01-24 18:20:14 TRACE CourseCommand:52 - Lecturer id: All lecturers
+2023-01-24 18:20:14 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 18:20:14 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 18:20:14 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:14 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:14 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:14 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:14 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 18:20:14 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 18:20:14 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 18:20:14 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:14 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:14 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:17 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:17 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:17 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:20:17 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:17 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 18:20:17 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 18:20:17 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 18:20:17 TRACE CourseCommand:43 - Theme id: All themes
+2023-01-24 18:20:17 TRACE CourseCommand:52 - Lecturer id: All lecturers
+2023-01-24 18:20:17 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 18:20:17 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 18:20:17 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:17 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:17 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:17 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:17 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 18:20:17 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 18:20:17 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 18:20:17 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:17 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:17 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:18 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:18 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:18 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:20:18 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:18 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 18:20:18 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 18:20:18 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 18:20:18 TRACE CourseCommand:43 - Theme id: All themes
+2023-01-24 18:20:18 TRACE CourseCommand:52 - Lecturer id: All lecturers
+2023-01-24 18:20:18 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 18:20:18 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 18:20:18 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:18 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:18 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:18 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:18 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 18:20:18 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 18:20:18 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 18:20:18 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:18 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:18 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:19 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:19 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:19 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:20:19 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:19 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 18:20:19 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 18:20:19 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 18:20:19 TRACE CourseCommand:43 - Theme id: All themes
+2023-01-24 18:20:19 TRACE CourseCommand:52 - Lecturer id: All lecturers
+2023-01-24 18:20:19 TRACE CourseCommand:61 - Sorting by: name_course
+2023-01-24 18:20:19 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 18:20:19 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 18:20:19 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:19 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:19 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:19 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:19 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 18:20:19 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 18:20:19 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 18:20:19 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:19 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:19 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:20 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:20 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:20 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:20:20 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:20 TRACE Controller:56 - Request parameter: command --> courseCommand
+2023-01-24 18:20:20 TRACE Controller:66 - Obtained command --> CourseCommand
+2023-01-24 18:20:20 TRACE CourseCommand:27 - Starting trace CourseCommand
+2023-01-24 18:20:20 TRACE CourseCommand:43 - Theme id: All themes
+2023-01-24 18:20:20 TRACE CourseCommand:52 - Lecturer id: All lecturers
+2023-01-24 18:20:20 TRACE CourseCommand:61 - Sorting by: duration
+2023-01-24 18:20:20 TRACE Controller:32 - Redirect address --> ?command=getCoursesCommand
+2023-01-24 18:20:20 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getCoursesCommand
+2023-01-24 18:20:20 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:20 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:20 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:20 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:20 TRACE Controller:56 - Request parameter: command --> getCoursesCommand
+2023-01-24 18:20:20 TRACE Controller:66 - Obtained command --> GetCoursesCommand
+2023-01-24 18:20:20 TRACE GetCommand:27 - Start tracing GetCommand
+2023-01-24 18:20:20 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:20 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:20 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/courses.jsp
+2023-01-24 18:20:21 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:21 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:21 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:21 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:21 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:21 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:21 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:21 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:21 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:21 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:21 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:22 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:22 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:22 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:22 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:22 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:22 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:22 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:22 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:22 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:22 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:22 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:23 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:23 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:23 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:23 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:23 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:23 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:23 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:23 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:23 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:23 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:23 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:27 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:27 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:27 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:27 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:27 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:27 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:27 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:27 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:27 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:27 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:27 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:29 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:29 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:29 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:29 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:29 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:29 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:29 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:29 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:29 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:29 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:29 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:30 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:30 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:30 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:30 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:30 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:30 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:30 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:30 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:30 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:30 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:30 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:31 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:31 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:31 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:31 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:31 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:31 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:31 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:31 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:31 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:31 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:31 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:36 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:36 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:36 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:36 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:36 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 18:20:36 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 18:20:36 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 18:20:36 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:36 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 18:20:36 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 18:20:38 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:38 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:38 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:20:38 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:38 TRACE Controller:56 - Request parameter: command --> registerOnCourseCommand
+2023-01-24 18:20:38 TRACE Controller:66 - Obtained command --> RegisterOnCourseCommand
+2023-01-24 18:20:38 TRACE MarkStudentCommand:28 - Start tracing RegisterOnCourseCommand
+2023-01-24 18:20:38 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:38 TRACE ConnectionPool:49 - Start tracing MySQLStudentDAO#findStudentByIdUser
+2023-01-24 18:20:38 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:38 TRACE Controller:32 - Redirect address --> ?command=getStudentCommand
+2023-01-24 18:20:38 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getStudentCommand
+2023-01-24 18:20:38 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:38 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:38 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:38 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:38 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:38 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:38 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:38 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:38 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:38 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:38 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:41 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:41 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:41 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:41 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:41 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:41 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:41 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:41 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:41 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:41 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:41 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:42 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:42 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:42 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:42 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:42 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 18:20:42 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 18:20:42 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 18:20:42 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:42 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 18:20:42 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 18:20:43 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:43 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:43 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:43 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:43 TRACE Controller:56 - Request parameter: command --> getLecturerCommand
+2023-01-24 18:20:43 TRACE Controller:66 - Obtained command --> GetLecturerPageCommand
+2023-01-24 18:20:43 TRACE GetCommand:28 - Start tracing GetLoginCommand
+2023-01-24 18:20:43 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:43 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 18:20:43 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/lecturer.jsp
+2023-01-24 18:20:44 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:44 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:44 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:44 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:44 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:44 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:44 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:44 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:44 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:44 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:44 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:49 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:49 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:49 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:49 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:49 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:49 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:49 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:49 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:49 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:49 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:49 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:50 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:50 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:50 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:50 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:50 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:50 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:50 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:50 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:50 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:50 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:50 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:52 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:52 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:52 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:52 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:52 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:52 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:52 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:52 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:52 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:52 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:52 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:54 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:54 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:54 TRACE Controller:46 - *****************POST*****************
+2023-01-24 18:20:54 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:54 TRACE Controller:56 - Request parameter: command --> languageCommand
+2023-01-24 18:20:54 TRACE Controller:66 - Obtained command --> LanguageCommand
+2023-01-24 18:20:54 TRACE LanguageCommand:29 - Start tracing LanguageCommand
+2023-01-24 18:20:54 TRACE LanguageCommand:40 - Language is switched to uk
+2023-01-24 18:20:54 TRACE Controller:32 - Redirect address --> ?command=getStudentCommand&table=1
+2023-01-24 18:20:54 DEBUG Controller:33 - Controller finished, now redirect to address --> ?command=getStudentCommand&table=1
+2023-01-24 18:20:54 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:54 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:54 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:54 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:54 TRACE Controller:56 - Request parameter: command --> getStudentCommand
+2023-01-24 18:20:54 TRACE Controller:66 - Obtained command --> GetStudentPageCommand
+2023-01-24 18:20:54 TRACE GetCommand:27 - Start tracing GetLoginCommand
+2023-01-24 18:20:54 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:54 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/student.jsp
+2023-01-24 18:20:54 TRACE StudentCoursesTag:28 - Tracing UserCoursesTag
+2023-01-24 18:20:54 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:55 INFO  EncodingFilter:23 - Filter starts
+2023-01-24 18:20:55 INFO  EncodingFilter:29 - Filter finished
+2023-01-24 18:20:55 TRACE Controller:42 - *****************GET*****************
+2023-01-24 18:20:55 DEBUG Controller:53 - Controller starts
+2023-01-24 18:20:55 TRACE Controller:56 - Request parameter: command --> getCoursesToRegisterCommand
+2023-01-24 18:20:55 TRACE Controller:66 - Obtained command --> GetCoursesToRegisterCommand
+2023-01-24 18:20:55 TRACE GetCommand:27 - Start tracing GetCoursesToRegisterCommand
+2023-01-24 18:20:55 TRACE ConnectionPool:25 - Connection is successful
+2023-01-24 18:20:55 TRACE Controller:25 - Forward address --> /WEB-INF/jsp/coursesToRegister.jsp
+2023-01-24 18:20:55 DEBUG Controller:26 - Controller finished, now go to forward address --> /WEB-INF/jsp/coursesToRegister.jsp

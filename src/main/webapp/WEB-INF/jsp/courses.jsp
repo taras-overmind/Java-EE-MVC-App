@@ -74,7 +74,7 @@
                                     value="page.courses.table.count"/></button>
                         </th>
                     </tr>
-                    <t:courses/>
+<%--                    <t:courses/>--%>
 
                     <c:forEach items="${sessionScope.result}" var="row">
                         <tr>

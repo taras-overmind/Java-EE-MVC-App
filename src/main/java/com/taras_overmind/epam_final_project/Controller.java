@@ -56,12 +56,12 @@ public class Controller extends HttpServlet {
         LOG.trace("Request parameter: command --> " + commandName);
         Command command;
         String forward = null;
-        if(commandName.startsWith("get")){
-            forward=commandName.substring(3, commandName.length()-7).toLowerCase();
-            command=CommandContainer.get("getCommand");
-        }
-        else
-            command = CommandContainer.get(commandName);
+//        if(commandName.startsWith("get")){
+//            forward=commandName.substring(3, commandName.length()-7).toLowerCase();
+//            command=CommandContainer.get("getCommand");
+//        }
+//        else
+        command = CommandContainer.get(commandName);
 
         LOG.trace("Obtained command --> " + command);
 

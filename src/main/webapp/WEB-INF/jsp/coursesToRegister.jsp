@@ -15,11 +15,6 @@
 <%@ include file="/WEB-INF/jspf/header.jspf"%>
 
 <div class="container-fluid bs-const">
-<%--    <div class="col-lg-2 info">--%>
-<%--        <a href="?command=getStudentCommand&table=1"><my:Locale value="page.student.leftbar.notstartedcourse"/></a><br>--%>
-<%--        <a href="?command=getStudentCommand&table=2"><my:Locale value="page.student.leftbar.begancourses"/></a><br>--%>
-<%--        <a href="?command=getStudentCommand&table=4"><my:Locale value="page.student.table.title.progress"/></a>--%>
-<%--    </div>--%>
     <div class="col-lg-9">
         <div class="row">
             <div class="table-responsive">
@@ -42,13 +37,11 @@
                                     value="page.student.lecturer"/></button>
                         </th>
                     </tr>
-                    <t:coursesToRegister/>
                     <c:forEach items="${sessionScope.result}" var="row">
                         <tr>
                             <form action="controller" method="post">
                                 <input type="hidden" name="command" value="registerOnCourseCommand">
-                                <input type="hidden" name="id_course" value="${row.id}">
-                                <input type="hidden" name="id_student" value=${sessionScope.id}>
+                                <input type="hidden" name="id_course" value="${row.courseId}">
                                 <td>${row.courseName}</td>
                                 <td>${row.duration}</td>
                                 <td>${row.themeName}</td>

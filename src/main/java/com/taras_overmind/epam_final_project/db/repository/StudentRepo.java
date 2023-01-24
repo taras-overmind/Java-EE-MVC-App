@@ -44,4 +44,31 @@ public class StudentRepo {
         student = new StudentDTO(id, lastName, firstName, middleName, user_id);
         return student;
     }
+
+    public StudentDTO findStudentByIdUser(int id) {
+        LOG.trace("Start tracing MySQLStudentDAO#findStudentByIdUser");
+        StudentDTO student = null;
+        try (Connection connection = ConnectionPool.getConnection()){
+            if (connection!=null){
+                try(PreparedStatement statement = connection.prepareStatement(Query.SELECT_STUDENT_BY_ID_USER)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, id);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    if (resultSet.next()) {
+                        student = new StudentDTO(resultSet.getInt("id"), resultSet.getString("surname"),
+                                resultSet.getString("name"), resultSet.getString("patronymic"),
+                                resultSet.getInt("id_user"));
+                    }
+                    connection.commit();
+                }catch (SQLException ex){
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException e) {
+            LOG.error(e.getLocalizedMessage());
+        }
+        return student;
+    }
 }

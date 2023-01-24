@@ -35,7 +35,7 @@
                         </th>
 
                     </tr>
-                    <t:lecturerJournal/>
+<%--                    <t:lecturerJournal/>--%>
                     <c:forEach items="${sessionScope.result}" var="row">
                         <tr>
                             <form action="controller" method="post">
