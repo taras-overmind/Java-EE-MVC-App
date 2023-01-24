@@ -57,8 +57,7 @@ public class LoginCommand extends Command {
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);
         session.setAttribute("user", user);
-        session.setAttribute("repo", userService.getUserRepo());
-        session.setAttribute("list", List.of(List.of("1", "2", "asd", "4"), List.of("1", "2", "asd", "4")));
+
 
         return redirect;
     }

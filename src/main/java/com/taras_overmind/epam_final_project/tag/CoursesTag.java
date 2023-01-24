@@ -4,15 +4,10 @@ import com.taras_overmind.epam_final_project.db.dto.CourseInfoDTO;
 import org.apache.log4j.Logger;
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
-import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
-import com.taras_overmind.epam_final_project.db.dto.LecturerDTO;
-import com.taras_overmind.epam_final_project.db.dto.ThemeDTO;
 
 import javax.servlet.http.HttpSession;
 import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.TagSupport;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -49,12 +44,14 @@ public class CoursesTag extends TagSupport {
 
                         statement.setString(1, String.valueOf(session.getAttribute("idLecturer")));
                         statement.setString(2, String.valueOf(session.getAttribute("idTheme")));
+
                     } else if (session.getAttribute("idTheme") != null) {
                         query = new StringBuilder(Query.SELECT_SORTED_COURSES_BY_THEME);
                         query.append(" ").append(session.getAttribute("sort")).append(" ").append(session.getAttribute("sorting"));
                         statement = connection.prepareStatement(query.toString());
 
                         statement.setString(1, String.valueOf(session.getAttribute("idTheme")));
+
                     } else if (session.getAttribute("idLecturer") != null) {
                         query = new StringBuilder(Query.SELECT_SORTED_COURSES_BY_LECTURER);
 
@@ -62,11 +59,13 @@ public class CoursesTag extends TagSupport {
                         statement = connection.prepareStatement(query.toString());
 
                         statement.setString(1, String.valueOf(session.getAttribute("idLecturer")));
+
                     } else {
                         query = new StringBuilder(Query.SELECT_SORTED_COURSES);
 
                         query.append(" ").append(session.getAttribute("sort")).append(" ").append(session.getAttribute("sorting"));
                         statement = connection.prepareStatement(query.toString());
+
                     }
 
                 } else {

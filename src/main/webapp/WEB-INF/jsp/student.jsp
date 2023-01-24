@@ -64,10 +64,10 @@
 
                     <c:choose>
                         <c:when test="${not empty param.table}">
-                            <t:table status="${param.table}"/>
+                            <t:studentCourses status="${param.table}"/>
                         </c:when>
                         <c:otherwise>
-                            <t:table status="1"/>
+                            <t:studentCourses status="1"/>
                         </c:otherwise>
                     </c:choose>
                     <c:forEach items="${sessionScope.result}" var="row">

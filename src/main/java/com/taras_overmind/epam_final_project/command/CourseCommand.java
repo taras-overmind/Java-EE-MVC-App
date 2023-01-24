@@ -28,7 +28,7 @@ public class CourseCommand extends Command {
         HttpSession session = request.getSession();
         String forward = "?command=getCoursesCommand";
         if (session.getAttribute("user") != null) {
-            List<String> fields = Arrays.asList("name_course", "duration", "name_theme",
+            List<String> fields = Arrays.asList("id_course", "name_course", "duration", "name_theme",
                     "surname", "name", "patronymic", "count", "name_status");
 //            String state = String.valueOf(session.getAttribute("state"));
             String sort = null;
@@ -39,8 +39,7 @@ public class CourseCommand extends Command {
 //                forward = Path.PAGE_ERROR_PAGE;
 //            }
             if (request.getParameter("idTheme") != null) {
-                idTheme = new String(request.getParameter("idTheme").getBytes(StandardCharsets.ISO_8859_1),
-                        StandardCharsets.UTF_8);
+                idTheme = new String(request.getParameter("idTheme"));
                 LOG.trace("Theme id: "+idTheme);
                 if (idTheme.equals("All themes") || idTheme.equals("Всі теми")) {
                     idTheme = null;
@@ -49,8 +48,7 @@ public class CourseCommand extends Command {
             }
 
             if (request.getParameter("idLecturer") != null) {
-                idLecturer = new String(request.getParameter("idLecturer").getBytes(StandardCharsets.ISO_8859_1),
-                        StandardCharsets.UTF_8);
+                idLecturer = new String(request.getParameter("idLecturer"));
                 LOG.trace("Lecturer id: "+idLecturer);
                 if (idLecturer.equals("All lecturers") || idLecturer.equals("Всі викладачі")) {
                     idLecturer = null;
