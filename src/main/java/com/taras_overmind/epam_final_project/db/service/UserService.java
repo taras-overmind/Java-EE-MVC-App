@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 
 
 public class UserService {
-    private static Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
+    private static Logger LOG = Logger.getLogger(UserService.class.getName());
 
     private UserRepo userRepo = new UserRepo();
 

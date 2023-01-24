@@ -11,31 +11,4 @@
             <name>status</name>
         </attribute>
     </tag>
-    <tag>
-        <name>lecturerJournal</name>
-        <tag-class>com.taras_overmind.epam_final_project.tag.LecturerTag</tag-class>
-        <body-content>empty</body-content>
-        <attribute>
-            <rtexprvalue>true</rtexprvalue>
-            <name>status</name>
-        </attribute>
-    </tag>
-    <tag>
-        <name>courses</name>
-        <tag-class>com.taras_overmind.epam_final_project.tag.CoursesTag</tag-class>
-        <body-content>empty</body-content>
-        <attribute>
-            <rtexprvalue>true</rtexprvalue>
-            <name>status</name>
-        </attribute>
-    </tag>
-    <tag>
-        <name>coursesToRegister</name>
-        <tag-class>com.taras_overmind.epam_final_project.tag.CoursesToRegisterTag</tag-class>
-        <body-content>empty</body-content>
-        <attribute>
-            <rtexprvalue>true</rtexprvalue>
-            <name>status</name>
-        </attribute>
-    </tag>
 </taglib>

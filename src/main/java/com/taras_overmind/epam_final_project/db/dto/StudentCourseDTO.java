@@ -4,6 +4,15 @@ public class StudentCourseDTO {
     private int id;
     private String studentName;
     private String courseName;
+    private int mark;
+
+    public int getMark() {
+        return mark;
+    }
+
+    public void setMark(int mark) {
+        this.mark = mark;
+    }
 
     public int getId() {
         return id;
@@ -29,10 +38,11 @@ public class StudentCourseDTO {
         this.courseName = courseName;
     }
 
-    public StudentCourseDTO(int id, String studentName, String courseName) {
+    public StudentCourseDTO(int id, String studentName, String courseName, int mark) {
         this.id = id;
         this.studentName = studentName;
         this.courseName = courseName;
+        this.mark=mark;
     }
     public StudentCourseDTO(){}
 }

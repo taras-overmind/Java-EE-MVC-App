@@ -27,7 +27,6 @@ public class CourseCommand extends Command {
         LOG.trace("Starting trace CourseCommand");
         HttpSession session = request.getSession();
         String forward = "?command=getCoursesCommand";
-        if (session.getAttribute("user") != null) {
             List<String> fields = Arrays.asList("id_course", "name_course", "duration", "name_theme",
                     "surname", "name", "patronymic", "count", "name_status");
 //            String state = String.valueOf(session.getAttribute("state"));
@@ -85,11 +84,7 @@ public class CourseCommand extends Command {
                 }
             }
 
-        }
-        else {
-            LOG.trace("User not logged");
-            forward = "?command=getLoginCommand";
-        }
+
         return new RedirectResult(forward);
     }
 }

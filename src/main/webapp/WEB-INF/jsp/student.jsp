@@ -16,21 +16,21 @@
 
 <div class="container-fluid bs-const">
     <div class="col-lg-2 info">
-        <a href="?command=getStudentCommand&table=1"><my:Locale value="page.student.leftbar.notstartedcourse"/></a><br>
-        <a href="?command=getStudentCommand&table=2"><my:Locale value="page.student.leftbar.begancourses"/></a><br>
-        <a href="?command=getStudentCommand&table=4"><my:Locale value="page.student.table.title.progress"/></a>
+        <a href="?command=getStudentCommand&table=1"><br><my:Locale value="page.student.leftbar.notstartedcourse"/></a><br>
+        <a href="?command=getStudentCommand&table=2"><br><my:Locale value="page.student.leftbar.begancourses"/></a><br>
+        <a href="?command=getStudentCommand&table=4"><br><my:Locale value="page.student.table.title.progress"/></a>
     </div>
     <div class="col-lg-9">
         <div class="row">
             <c:choose>
                 <c:when test="${param.table=='2'}">
-                    <div class="panel-heading"><my:Locale value="page.student.table.title.inprogress"/></div>
+                    <div class="panel-heading"><br><br><br><my:Locale value="page.student.table.title.inprogress"/></div>
                 </c:when>
                 <c:when test="${param.table=='4'}">
-                    <div class="panel-heading"><my:Locale value="page.student.table.title.progress"/></div>
+                    <div class="panel-heading"><br><br><br><my:Locale value="page.student.table.title.progress"/></div>
                 </c:when>
                 <c:otherwise>
-                    <div class="panel-heading"><my:Locale value="page.student.table.title.opened"/></div>
+                    <div class="panel-heading"><br><br><br><my:Locale value="page.student.table.title.opened"/></div>
                 </c:otherwise>
             </c:choose>
             <div class="table-responsive">
@@ -81,7 +81,7 @@
                             </c:if>
                         </tr>
                     </c:forEach>
-
+                    <br>
                 </table>
             </div>
         </div>

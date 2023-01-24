@@ -28,22 +28,22 @@
                    placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.username"/>"
                    required>
         </div>
-        <div id="form-input">
+        <div class="form-input">
             <input type="password" name="password"
                    placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.password"/>"
                    required>
         </div>
-        <div id="form-input">
+        <div class="form-input">
             <input type="text" name="lastName"
                    placeholder="<my:Locale value="page.login.enter"/> last name"
                    required>
         </div>
-        <div id="form-input">
+        <div class="form-input">
             <input type="text" name="firstName"
                    placeholder="<my:Locale value="page.login.enter"/> first name"
                    required>
         </div>
-        <div id="form-input">
+        <div class="form-input">
             <input type="text" name="middleName"
                    placeholder="<my:Locale value="page.login.enter"/> middle name"
                    required>

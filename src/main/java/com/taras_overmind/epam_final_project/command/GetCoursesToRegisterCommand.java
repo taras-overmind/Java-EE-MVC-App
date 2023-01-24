@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GetCoursesToRegisterCommand extends Command {
-    public static final Logger LOG = Logger.getLogger(GetCommand.class);
+    public static final Logger LOG = Logger.getLogger(GetCoursesToRegisterCommand.class);
 
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {

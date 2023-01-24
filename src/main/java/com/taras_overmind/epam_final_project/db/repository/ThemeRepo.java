@@ -5,10 +5,7 @@ import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.ThemeDTO;
 import org.apache.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +64,61 @@ public class ThemeRepo {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
+        return theme;
+    }
+    public ThemeDTO getThemeByName(String name_theme){
+        LOG.trace("Start tracing ThemeRepo#getThemeByName");
+        ThemeDTO theme=null;
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_THEME_BY_NAME)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, name_theme);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    if (resultSet.next()) {
+                        theme = new ThemeDTO(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException e) {
+                    LOG.error(e.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex.getLocalizedMessage());
+        }
+        return theme;
+    }
+
+    public ThemeDTO createTheme(String name_theme){
+        LOG.trace("Start tracing ThemeRepo#createTheme");
+        ThemeDTO theme = null;
+        int id = -1;
+
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_THEME, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, name_theme);
+                    statement.executeUpdate();
+                    PreparedStatement stmt = connection.prepareStatement(Query.SELECT_LAST_THEME_ID);
+                    stmt.execute();
+                    ResultSet resultSet = stmt.getResultSet();
+                    if (resultSet.next()) {
+                        id = resultSet.getInt("max(id_theme)");
+                    }
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex.getLocalizedMessage());
+        }
+        theme = new ThemeDTO(id, name_theme);
         return theme;
     }
 

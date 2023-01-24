@@ -44,6 +44,10 @@
     a.nav-link{
         color: #27ae60;
     }
+    #submitButton{
+        color: #27ae60;
+        border: none;
+    }
     ::-webkit-file-upload-button{
         display: none;
     }

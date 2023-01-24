@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GetLecturerPageCommand extends Command {
-    public static final Logger LOG = Logger.getLogger(GetCommand.class);
+    public static final Logger LOG = Logger.getLogger(GetLecturerPageCommand.class);
 
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
@@ -29,29 +29,45 @@ public class GetLecturerPageCommand extends Command {
 
         HttpSession session = request.getSession();
         StudentCourseDTO studentCourseDTO;
-        List<StudentCourseDTO> list = new ArrayList<>();
+        List<StudentCourseDTO> list1 = new ArrayList<>();
+        List<StudentCourseDTO> list2 = new ArrayList<>();
 
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(Query.SELECT_STUDENTS_WITHOUT_MARK);
-                statement.setString(1, String.valueOf(session.getAttribute("id")));
+                PreparedStatement statement1 = connection.prepareStatement(Query.SELECT_STUDENTS_WITHOUT_MARK);
+                PreparedStatement statement2 = connection.prepareStatement(Query.SELECT_STUDENTS_WITH_MARK);
+                statement1.setString(1, String.valueOf(session.getAttribute("id")));
+                statement2.setString(1, String.valueOf(session.getAttribute("id")));
                 connection.setAutoCommit(false);
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
+                statement1.execute();
+                statement2.execute();
+                ResultSet resultSet = statement1.getResultSet();
                 while (resultSet.next()) {
                     studentCourseDTO = new StudentCourseDTO();
                     studentCourseDTO.setStudentName(resultSet.getString("surname")+" "+resultSet.getString("name")
                             + " "+resultSet.getString("patronymic"));
                     studentCourseDTO.setCourseName(resultSet.getString("name_course"));
                     studentCourseDTO.setId(resultSet.getInt("id_student_course"));
-                    list.add(studentCourseDTO);
+                    list1.add(studentCourseDTO);
+                }
+                resultSet=statement2.getResultSet();
+                while (resultSet.next()) {
+                    studentCourseDTO = new StudentCourseDTO();
+                    studentCourseDTO.setStudentName(resultSet.getString("surname")+" "+resultSet.getString("name")
+                            + " "+resultSet.getString("patronymic"));
+                    studentCourseDTO.setCourseName(resultSet.getString("name_course"));
+                    studentCourseDTO.setId(resultSet.getInt("id_student_course"));
+                    studentCourseDTO.setMark(resultSet.getInt("mark"));
+                    list2.add(studentCourseDTO);
                 }
                 resultSet.close();
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
         }
-        session.setAttribute("result", list);
+        session.setAttribute("result1", list1);
+        session.setAttribute("result2", list2);
+
 
         return new ForwardResult("/WEB-INF/jsp/lecturer.jsp");
 

@@ -5,10 +5,7 @@ import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
 import org.apache.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,6 +41,29 @@ public class CourseRepo {
             LOG.info(ex.getLocalizedMessage());
         }
         return courses;
+    }
+
+    public void createCourse(String name, int duration, int theme, int lecturer, int status) {
+        LOG.trace("Starting tracing MySQLCourseDAO#createCourse");
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_COURSE, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, name);
+                    statement.setInt(2, duration);
+                    statement.setInt(3, theme);
+                    statement.setInt(4, lecturer);
+                    statement.setInt(5, status);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException e) {
+            LOG.error(e.getLocalizedMessage());
+        }
     }
 
 }

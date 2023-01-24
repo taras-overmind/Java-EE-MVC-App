@@ -32,12 +32,12 @@
     <%--    <img src="../../img/man.png">--%>
     <form action="controller" method="post">
         <input type="hidden" name="command" value="loginCommand">
-        <div id="form-input">
+        <div class="form-input">
             <input type="text" name="username"
                    placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.username"/>"
                    required>
         </div>
-        <div id="form-input">
+        <div class="form-input">
             <input type="password" name="password"
                    placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.password"/>"
                    required>

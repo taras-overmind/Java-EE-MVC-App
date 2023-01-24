@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <head>
     <c:import url="../jspf/head.jsp"/>
@@ -13,12 +14,32 @@
 
             <div class="left-block col-6">
                 <a class="nav-link" href="/controller?command=getCoursesCommand">Courses</a>
-                <a class="nav-link" href="/controller?command=getStudentCommand">Student</a>
-                <a class="nav-link" href="/controller?command=getLecturerCommand">Lecturer</a>
-                <a class="nav-link" href="/controller?command=getCoursesToRegisterCommand">Courses to register</a>
+                <c:choose>
+                    <c:when test="${sessionScope.id_role=='1'}">
+                        <a class="nav-link" href="/controller?command=getStudentCommand">Student</a>
+                        <a class="nav-link" href="/controller?command=getCoursesToRegisterCommand">Courses to
+                            register</a>
+                    </c:when>
+                    <c:when test="${sessionScope.id_role=='2'}">
+                        <a class="nav-link" href="/controller?command=getLecturerCommand">Lecturer</a>
+                    </c:when>
+                </c:choose>
+
             </div>
             <div class="right-block col-6">
-                <a class="nav-link" href="/controller?command=getLoginCommand">Login</a>
+                <div class="right-block col-1">
+                <c:choose>
+                    <c:when test="${not empty sessionScope.user}">
+                        <form action="controller" method="post">
+                            <input type="hidden" name="command" value="logOutCommand">
+                            <input type="submit" id="submitButton" value="LogOut"/>
+                        </form>
+                    </c:when>
+                    <c:otherwise>
+                        <a class="nav-link" href="/controller?command=getLoginCommand">LogIn</a>
+                    </c:otherwise>
+                </c:choose>
+                </div>
                 <div class="right-block col-2">
                     <form action="controller" method="post">
                         <input type="hidden" name="command" value="languageCommand">
@@ -37,4 +58,3 @@
         </nav>
     </div>
 </header>
-<%--</div>--%>
