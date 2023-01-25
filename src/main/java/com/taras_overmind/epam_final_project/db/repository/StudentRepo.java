@@ -2,7 +2,7 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 
 import com.taras_overmind.epam_final_project.db.Query;
-import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
+import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.StudentDTO;
 import org.apache.log4j.Logger;
 

@@ -103,8 +103,9 @@ public class Query {
     public static final String SELECT_ALL_STUDENT_ON_COURSE="SELECT * FROM STUDENT_COURSE";
     public static final String SELECT_ALL_DEFINITE_COURSE = "SELECT * FROM COURSES WHERE ID_COURSE=?";
 
-    //Update queries
-    public static final String UPDATE_PASSWORD = "UPDATE USERS       SET PASSWORD = ? WHERE ID_USER = ?";
+    public static final String DELETE_COURSE =      "DELETE FROM COURSES WHERE ID_COURSE=?";
+    public static final String DELETE_STUDENT_COURSE =      "DELETE FROM STUDENT_COURSE WHERE ID_COURSE=?";
+
     public static final String CHANGE_STATE_USER = "UPDATE USERS       SET ID_STATE = ? WHERE ID_USER = ?";
 
 

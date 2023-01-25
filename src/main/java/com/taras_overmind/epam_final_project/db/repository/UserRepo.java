@@ -1,12 +1,14 @@
 package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.Query;
-import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
+import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.UserDTO;
 
 import org.apache.log4j.Logger;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserRepo {
 
@@ -73,7 +75,6 @@ public class UserRepo {
         user = new UserDTO(id, login, password, role, role==1?1:0);
         return user;
     }
-
     public void lockUserById(int id, int state) {
         LOG.trace("Start tracing MySQLUserDAO#lockUserById");
         try (Connection connection = ConnectionPool.getConnection()) {
@@ -93,14 +94,13 @@ public class UserRepo {
             LOG.error(e.getLocalizedMessage());
         }
     }
-
     public void registerUserOnCourse(int id, int idCourse) {
         LOG.trace("Start tracing UserRepo#registerUserOnCourse");
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.REGISTER_USER_ON_COURSE)) {
                     connection.setAutoCommit(false);
-                    statement.setInt(1, id);
+                    statement.setInt(1, new StudentRepo().findStudentByIdUser(id).getId());
                     statement.setInt(2, idCourse);
                     statement.executeUpdate();
                     connection.commit();
@@ -113,5 +113,34 @@ public class UserRepo {
             LOG.error(e.getLocalizedMessage());
         }
     }
+    public List<UserDTO> getAllUsers() {
+        LOG.trace("Start tracing UserRepo#getAllUsers");
+        List<UserDTO> users = new ArrayList<>();
+        UserDTO user;
 
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_USERS)) {
+                    connection.setAutoCommit(false);
+                    statement.execute();
+                    ResultSet resultSet = statement.getResultSet();
+                    while (resultSet.next()) {
+                        user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
+                                resultSet.getString("password"), resultSet.getString("email"),
+                                resultSet.getInt("id_role"), resultSet.getInt("id_state"));
+                        users.add(user);
+                    }
+                    resultSet.close();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException ex) {
+            LOG.error(ex.getLocalizedMessage());
+        }
+
+        return users;
+    }
 }

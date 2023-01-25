@@ -1,6 +1,6 @@
 package com.taras_overmind.epam_final_project.db.service;
 
-import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
+import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
 import org.apache.log4j.Logger;
 

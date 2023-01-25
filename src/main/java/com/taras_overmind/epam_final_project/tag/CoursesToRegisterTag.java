@@ -3,7 +3,7 @@
 //import com.taras_overmind.epam_final_project.db.dto.CourseInfoDTO;
 //import org.apache.log4j.Logger;
 //import com.taras_overmind.epam_final_project.db.Query;
-//import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
+//import com.taras_overmind.epam_final_project.db.ConnectionPool;
 //import javax.servlet.http.HttpSession;
 //import javax.servlet.jsp.JspException;
 //import javax.servlet.jsp.tagext.TagSupport;

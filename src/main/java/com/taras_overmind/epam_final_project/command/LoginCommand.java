@@ -51,8 +51,8 @@ public class LoginCommand extends Command {
         session.setAttribute("email", user.getEmail());
         session.setAttribute("id_state", user.getStateId());
         session.setAttribute("id_role", user.getRoleId());
-        List<LecturerDTO> lecturers = new LecturerRepo().getAllLecturers();
 
+        List<LecturerDTO> lecturers = new LecturerRepo().getAllLecturers();
         List<ThemeDTO> themes = new ThemeRepo().getAllThemes();
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);

@@ -1,6 +1,4 @@
 package com.taras_overmind.epam_final_project.db.service;
-import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
-import com.taras_overmind.epam_final_project.db.dto.UserDTO;
 import com.taras_overmind.epam_final_project.db.repository.UserRepo;
 import org.apache.log4j.Logger;
 

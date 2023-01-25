@@ -3,7 +3,7 @@ package com.taras_overmind.epam_final_project.command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
 import com.taras_overmind.epam_final_project.db.Query;
-import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
+import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.CourseInfoDTO;
 import org.apache.log4j.Logger;
 
@@ -92,6 +92,7 @@ public class GetCoursesCommand extends Command {
                 ResultSet resultSet = statement.getResultSet();
                 while (resultSet.next()) {
                     courseInfoDTO = new CourseInfoDTO();
+                    courseInfoDTO.setCourseId(resultSet.getInt("id_course"));
                     courseInfoDTO.setCourseName(resultSet.getString("name_course"));
                     courseInfoDTO.setDuration(resultSet.getInt("duration"));
                     courseInfoDTO.setThemeName(resultSet.getString("name_theme"));

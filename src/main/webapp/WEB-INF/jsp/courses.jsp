@@ -12,8 +12,8 @@
 </head>
 
 <body>
-<%@ include file="/WEB-INF/jspf/header.jspf"%>
-<div class="col-lg-9">
+<%@ include file="/WEB-INF/jspf/header.jspf" %>
+<div class="col-lg-10">
     <div class="panel panel-primary table-responsive">
         <div id="sortContainer">
             <form action="controller" method="post">
@@ -47,8 +47,11 @@
                 </label>
 
                 <button type="submit" class="btn btn-success"><my:Locale value="page.courses.choose"/></button>
-                <table class="table table-bordered table-striped">
-                    <tr>
+            </form>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <form action="controller" method="post">
+                        <input type="hidden" name="command" value="courseCommand">
                         <th class="info">
                             <button name="sort" class="sortRow" value="name_course"><my:Locale
                                     value="page.people.course.name"/></button>
@@ -61,7 +64,7 @@
                             <button name="sort" class="sortRow" value="name_theme"><my:Locale
                                     value="page.student.theme"/></button>
                         </th>
-                        <th  class="info">
+                        <th class="info">
                             <button name="sort" class="sortRow" value="surname"><my:Locale
                                     value="page.student.lecturer"/></button>
                         </th>
@@ -73,21 +76,33 @@
                             <button name="sort" class="sortRow" value="count"><my:Locale
                                     value="page.courses.table.count"/></button>
                         </th>
-                    </tr>
-<%--                    <t:courses/>--%>
+                    </form>
 
                     <c:forEach items="${sessionScope.result}" var="row">
-                        <tr>
-                            <td>${row.courseName}</td>
-                            <td>${row.duration}</td>
-                            <td>${row.themeName}</td>
-                            <td>${row.lecturerName}</td>
-                            <td>${row.statusName}</td>
-                            <td>${row.count}</td>
-                        </tr>
-                    </c:forEach>
-                </table>
-            </form>
+                <tr>
+                    <td>${row.courseName}</td>
+                    <td>${row.duration}</td>
+                    <td>${row.themeName}</td>
+                    <td>${row.lecturerName}</td>
+                    <td>${row.statusName}</td>
+                    <td>${row.count}</td>
+                <td>
+                    <form action="controller" method="post">
+                        <input type="hidden" name="command" value="editCourseCommand">
+                        <input type="hidden" name="id_course" value="${row.courseId}">
+                        <button type="submit" class="ed_btn">Edit</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="controller" method="post">
+                        <input type="hidden" name="command" value="deleteCourseCommand">
+                        <input type="hidden" name="id_course" value="${row.courseId}">
+                        <button type="submit" class="ed_btn">Delete</button>
+                    </form>
+                </td>
+                </tr>
+                </c:forEach>
+            </table>
         </div>
     </div>
 </div>

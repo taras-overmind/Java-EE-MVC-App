@@ -31,6 +31,7 @@ public class CommandContainer {
         commands.put("registerOnCourseCommand", new RegisterOnCourseCommand());
         commands.put("logOutCommand", new LogOutCommand());
         commands.put("createCourseCommand", new CreateCourseCommand());
+        commands.put("deleteCourseCommand", new DeleteCourseCommand());
 
 
     }

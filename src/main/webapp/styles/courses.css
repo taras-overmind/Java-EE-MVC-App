@@ -101,3 +101,13 @@ ul form{
     margin-bottom:12px;
     margin-left:55px;
 }
+.ed_btn{
+    /*margin-left:15px;!important;*/
+    cursor: pointer;
+    padding: 10px 20px;
+    color:#fff;
+    border-radius: 6px;
+    border: none;
+    background-color: #27AE60;
+
+}

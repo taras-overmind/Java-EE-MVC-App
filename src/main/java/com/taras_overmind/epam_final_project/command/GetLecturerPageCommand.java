@@ -3,8 +3,7 @@ package com.taras_overmind.epam_final_project.command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
 import com.taras_overmind.epam_final_project.db.Query;
-import com.taras_overmind.epam_final_project.db.dao.ConnectionPool;
-import com.taras_overmind.epam_final_project.db.dto.CourseInfoDTO;
+import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.StudentCourseDTO;
 import org.apache.log4j.Logger;
 
