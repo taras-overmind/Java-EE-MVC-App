@@ -47,7 +47,7 @@ public class LecturerRepo {
     }
 
     public List<LecturerDTO> getAllLecturers() {
-        LOG.trace("Starting tracing MySQLLecturerDAO#getAllLecturers");
+        LOG.trace("Starting tracing LecturerRepo#getAllLecturers");
         List<LecturerDTO> lecturers = new ArrayList<>();
         LecturerDTO lecturer;
         try (Connection connection = ConnectionPool.getConnection()) {

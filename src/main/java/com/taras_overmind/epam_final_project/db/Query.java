@@ -16,6 +16,15 @@ public class Query {
     public static final String SELECT_LECTURER_BY_ID = "SELECT * FROM LECTURERS WHERE id = ?";
     public static final String SELECT_STUDENT_BY_ID_USER =  "SELECT * FROM STUDENTS WHERE ID_USER=?";
 
+    public static final String SELECT_STUDENTS_INFO = "Select USERS.id_user, STUDENTS.surname, STUDENTS.name, STUDENTS.patronymic, STATES.name_state\n" +
+            "From USERS \n" +
+            "JOIN STUDENTS on STUDENTS.id_user=USERS.id_user\n" +
+            "JOIN STATES on USERS.id_state=STATES.id_state ORDER BY STATES.id_state DESC, surname ASC";
+    public static final String SELECT_LECTURERS_INFO = "Select USERS.id_user, LECTURERS.surname, LECTURERS.name, LECTURERS.patronymic, STATES.name_state\n" +
+            "From USERS \n" +
+            "JOIN LECTURERS on LECTURERS.id_user=USERS.id_user\n" +
+            "JOIN STATES on USERS.id_state=STATES.id_state ORDER BY STATES.id_state DESC, surname ASC";
+
 
 
     //Complex select queries
@@ -97,7 +106,10 @@ public class Query {
     public static final String UPDATE_MARK_FOR_STUDENT =     "UPDATE JOURNAL  SET MARK = ? WHERE ID_STUDENT_COURSE = ?";
 
     public static final String SELECT_ALL_THEMES =          "SELECT * FROM THEMES";
-    public static final String SELECT_ALL_LECTURERS =       "SELECT * FROM LECTURERS";
+    public static final String SELECT_ALL_LECTURERS =       "SELECT * FROM LECTURERS \n" +
+            "JOIN USERS on USERS.id_user=LECTURERS.id_user\n" +
+            "JOIN STATES on STATES.id_state=USERS.id_state\n" +
+            "WHERE STATES.id_state=1";
     public static final String SELECT_ALL_STATUSES =        "SELECT * FROM STATUSES";
     public static final String SELECT_ALL_COURSES =         "SELECT * FROM COURSES";
     public static final String SELECT_ALL_STUDENTS =        "SELECT * FROM STUDENTS";

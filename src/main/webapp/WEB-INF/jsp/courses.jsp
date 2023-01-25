@@ -112,14 +112,16 @@
         </div>
     </div>
     <%--For displaying Previous link except for the 1st page --%>
-    <c:if test="${sessionScope.currentPage != 1}">
-        <td><a href="?command=getCoursesCommand&page=${sessionScope.currentPage - 1}">Previous</a></td>
-    </c:if>
+
 
     <%--For displaying Page numbers.
     The when condition does not display a link for the current page--%>
     <table border="1" cellpadding="5" cellspacing="5">
+
         <tr>
+            <c:if test="${sessionScope.currentPage != 1}">
+                <td><a href="?command=getCoursesCommand&page=${sessionScope.currentPage - 1}">Previous</a></td>
+            </c:if>
             <c:forEach begin="1" end="${sessionScope.noOfPages}" var="i">
                 <c:choose>
                     <c:when test="${sessionScope.currentPage eq i}">
@@ -130,13 +132,14 @@
                     </c:otherwise>
                 </c:choose>
             </c:forEach>
+            <c:if test="${sessionScope.currentPage lt sessionScope.noOfPages}">
+                <td><a href="?command=getCoursesCommand&page=${sessionScope.currentPage + 1}">Next</a></td>
+            </c:if>
         </tr>
     </table>
 
     <%--For displaying Next link --%>
-    <c:if test="${sessionScope.currentPage lt sessionScope.noOfPages}">
-        <td><a href="?command=getCoursesCommand&page=${sessionScope.currentPage + 1}">Next</a></td>
-    </c:if>
+
 
 </div>
 </body>

@@ -75,13 +75,16 @@ public class UserRepo {
         user = new UserDTO(id, login, password, role, role==1?1:0);
         return user;
     }
-    public void lockUserById(int id, int state) {
-        LOG.trace("Start tracing MySQLUserDAO#lockUserById");
+    public void changeUserState(int id, String state) {
+        LOG.trace("Start tracing UserRepo#changeUserState");
         try (Connection connection = ConnectionPool.getConnection()) {
-            if ((connection != null) && (state != -1)) {
+            if ((connection != null)) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER, Statement.RETURN_GENERATED_KEYS)) {
                     connection.setAutoCommit(false);
-                    statement.setInt(1, state);
+                    if(state.equals("locked"))
+                        statement.setInt(1, 1);
+                    else
+                        statement.setInt(1, 0);
                     statement.setInt(2, id);
                     statement.executeUpdate();
                     connection.commit();

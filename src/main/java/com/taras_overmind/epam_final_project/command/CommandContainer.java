@@ -25,6 +25,7 @@ public class CommandContainer {
         commands.put("getStudentCommand", new GetStudentPageCommand());
         commands.put("getCreateCourseCommand", new GetCreateCourseCommand());
         commands.put("getEditCourseCommand", new GetEditCourseCommand());
+        commands.put("getUsersPageCommand", new GetUsersPageCommand());
 
         commands.put("registerCommand", new RegisterCommand());
         commands.put("courseCommand", new CourseCommand());
@@ -34,6 +35,7 @@ public class CommandContainer {
         commands.put("createCourseCommand", new CreateCourseCommand());
         commands.put("deleteCourseCommand", new DeleteCourseCommand());
         commands.put("editCourseCommand", new EditCourseCommand());
+        commands.put("changeStateCommand", new ChangeStateCommand());
 
 
     }
