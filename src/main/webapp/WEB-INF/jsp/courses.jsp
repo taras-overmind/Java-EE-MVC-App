@@ -86,25 +86,58 @@
                     <td>${row.lecturerName}</td>
                     <td>${row.statusName}</td>
                     <td>${row.count}</td>
-                <td>
-                    <form action="controller" method="post">
-                        <input type="hidden" name="command" value="editCourseCommand">
-                        <input type="hidden" name="id_course" value="${row.courseId}">
-                        <button type="submit" class="ed_btn">Edit</button>
-                    </form>
-                </td>
-                <td>
-                    <form action="controller" method="post">
-                        <input type="hidden" name="command" value="deleteCourseCommand">
-                        <input type="hidden" name="id_course" value="${row.courseId}">
-                        <button type="submit" class="ed_btn">Delete</button>
-                    </form>
-                </td>
+                    <td>
+                        <form action="controller" method="get">
+                            <input type="hidden" name="command" value="getEditCourseCommand">
+                            <input type="hidden" name="id_course" value="${row.courseId}">
+                            <input type="hidden" name="name_course" value="${row.courseName}">
+                            <input type="hidden" name="duration" value="${row.duration}">
+                            <input type="hidden" name="name_theme" value="${row.themeName}">
+                            <input type="hidden" name="lecturerName" value="${row.lecturerName}">
+                            <input type="hidden" name="name_status" value="${row.statusName}">
+                            <button type="submit" class="ed_btn">Edit</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="controller" method="post">
+                            <input type="hidden" name="command" value="deleteCourseCommand">
+                            <input type="hidden" name="id_course" value="${row.courseId}">
+                            <button type="submit" class="ed_btn">Delete</button>
+                        </form>
+                    </td>
                 </tr>
                 </c:forEach>
             </table>
+
         </div>
     </div>
+    <%--For displaying Previous link except for the 1st page --%>
+    <c:if test="${sessionScope.currentPage != 1}">
+        <td><a href="?command=getCoursesCommand&page=${sessionScope.currentPage - 1}">Previous</a></td>
+    </c:if>
+
+    <%--For displaying Page numbers.
+    The when condition does not display a link for the current page--%>
+    <table border="1" cellpadding="5" cellspacing="5">
+        <tr>
+            <c:forEach begin="1" end="${sessionScope.noOfPages}" var="i">
+                <c:choose>
+                    <c:when test="${sessionScope.currentPage eq i}">
+                        <td>${i}</td>
+                    </c:when>
+                    <c:otherwise>
+                        <td><a href="?command=getCoursesCommand&page=${i}">${i}</a></td>
+                    </c:otherwise>
+                </c:choose>
+            </c:forEach>
+        </tr>
+    </table>
+
+    <%--For displaying Next link --%>
+    <c:if test="${sessionScope.currentPage lt sessionScope.noOfPages}">
+        <td><a href="?command=getCoursesCommand&page=${sessionScope.currentPage + 1}">Next</a></td>
+    </c:if>
+
 </div>
 </body>
 </html>

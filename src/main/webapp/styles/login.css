@@ -40,7 +40,7 @@ input[type="text"], input[type="password"]{
     background-color: #fff;
     padding-left: 46px;
 }
-select{
+.editSelect{
     /*width:25%;*/
     height:45px;
     width:300px ;
@@ -48,12 +48,9 @@ select{
     border:none;
     border-radius: 6px;
     padding-left: 46px;
-    margin-bottom: 400px;
+    margin-bottom: 20px;
     background-size: 9%;
-    /*margin:0 10px;*/
-    /*margin-top:10px !important;*/
-    /*margin-bottom:20px;*/
-    /*margin-left:55px;*/
+
 }
 
 input[type="text"]{
@@ -83,6 +80,9 @@ input[type="password"]{
     border: none;
     background-color: #27AE60;
     margin-bottom: 35px;
+}
+.field_label{
+    width:100px ;
 }
 #noAcc{
     border: none;

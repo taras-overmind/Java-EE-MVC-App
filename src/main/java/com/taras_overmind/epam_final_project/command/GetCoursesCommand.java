@@ -24,67 +24,78 @@ public class GetCoursesCommand extends Command {
 
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
-        LOG.trace("Start tracing GetCommand");
+        LOG.trace("Start tracing GetCoursesCommand");
 
         HttpSession session = request.getSession();
         CourseInfoDTO courseInfoDTO;
         List<CourseInfoDTO> courses = new ArrayList<>();
+        int page=1;
+        int noOfRecords =0;
+        final int recordsPerPage=5;
+        LOG.trace(0);
+        if (request.getParameter("page") != null ) {
+            page = Integer.parseInt(request.getParameter("page"));
+        }
+        String ending = " LIMIT " + recordsPerPage * (page - 1) + ", " + recordsPerPage;
+
 
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 PreparedStatement statement;
-
+                StringBuilder query;
                 if (session.getAttribute("sort") != null) {
-                    StringBuilder query;
                     if (session.getAttribute("idTheme") != null && session.getAttribute("idLecturer") != null) {
                         query = new StringBuilder(Query.SELECT_SORTED_COURSES_BY_LECTURER_AND_THEME);
                         query.append(" ").append(session.getAttribute("sort")).append(" ").append(session.getAttribute("sorting"));
+                        query.append(ending);
                         statement = connection.prepareStatement(query.toString());
-
                         statement.setString(1, String.valueOf(session.getAttribute("idLecturer")));
                         statement.setString(2, String.valueOf(session.getAttribute("idTheme")));
 
                     } else if (session.getAttribute("idTheme") != null) {
                         query = new StringBuilder(Query.SELECT_SORTED_COURSES_BY_THEME);
                         query.append(" ").append(session.getAttribute("sort")).append(" ").append(session.getAttribute("sorting"));
+                        query.append(ending);
                         statement = connection.prepareStatement(query.toString());
-
                         statement.setString(1, String.valueOf(session.getAttribute("idTheme")));
 
                     } else if (session.getAttribute("idLecturer") != null) {
                         query = new StringBuilder(Query.SELECT_SORTED_COURSES_BY_LECTURER);
-
                         query.append(" ").append(session.getAttribute("sort")).append(" ").append(session.getAttribute("sorting"));
+                        query.append(ending);
                         statement = connection.prepareStatement(query.toString());
-
                         statement.setString(1, String.valueOf(session.getAttribute("idLecturer")));
 
                     } else {
                         query = new StringBuilder(Query.SELECT_SORTED_COURSES);
-
                         query.append(" ").append(session.getAttribute("sort")).append(" ").append(session.getAttribute("sorting"));
+                        query.append(ending);
                         statement = connection.prepareStatement(query.toString());
 
                     }
 
                 } else {
                     if (session.getAttribute("idTheme") != null && session.getAttribute("idLecturer") != null) {
-                        statement = connection.prepareStatement(
-                                Query.SELECT_COURSES_BY_LECTURER_AND_THEME);
+                        query= new StringBuilder(Query.SELECT_COURSES_BY_LECTURER_AND_THEME);
+                        query.append(ending);
+                        statement = connection.prepareStatement(query.toString());
                         statement.setString(1, String.valueOf(session.getAttribute("idLecturer")));
                         statement.setString(2, String.valueOf(session.getAttribute("idTheme")));
                     } else if (session.getAttribute("idTheme") != null) {
-                        statement = connection.prepareStatement(
-                                Query.SELECT_COURSES_BY_THEME);
+                        query= new StringBuilder(Query.SELECT_COURSES_BY_THEME);
+                        query.append(ending);
+                        statement = connection.prepareStatement(query.toString());
                         statement.setString(1, String.valueOf(session.getAttribute("idTheme")));
 
                     } else if (session.getAttribute("idLecturer") != null) {
-                        statement = connection.prepareStatement(
-                                Query.SELECT_COURSES_BY_LECTURER);
+                        query= new StringBuilder(Query.SELECT_COURSES_BY_LECTURER);
+                        query.append(ending);
+                        statement = connection.prepareStatement(query.toString());
                         statement.setString(1, String.valueOf(session.getAttribute("idLecturer")));
                     } else {
-                        statement = connection.prepareStatement(
-                                Query.SELECT_COURSES);
+                        query= new StringBuilder(Query.SELECT_COURSES);
+                        query.append(ending);
+                        statement = connection.prepareStatement(query.toString());
                     }
                 }
                 connection.setAutoCommit(false);
@@ -102,12 +113,19 @@ public class GetCoursesCommand extends Command {
                     courseInfoDTO.setCount(resultSet.getInt("COUNT"));
                     courses.add(courseInfoDTO);
                 }
+//                resultSet=connection.createStatement().executeQuery("SELECT COUNT(*) from COURSES");
                 resultSet.close();
+                resultSet=connection.createStatement().executeQuery("SELECT FOUND_ROWS()");
+                if(resultSet.next())
+                    noOfRecords= resultSet.getInt(1);
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
         }
         session.setAttribute("result", courses);
+        int noOfPages=(int) Math.ceil(noOfRecords * 1.0 / recordsPerPage);
+        session.setAttribute("noOfPages", noOfPages);
+        session.setAttribute("currentPage", page);
 
         return new ForwardResult("/WEB-INF/jsp/courses.jsp");
 

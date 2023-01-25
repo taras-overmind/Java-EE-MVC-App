@@ -45,7 +45,7 @@ public class CourseRepo {
     }
 
     public void createCourse(String name, int duration, int theme, int lecturer, int status) {
-        LOG.trace("Starting tracing MySQLCourseDAO#createCourse");
+        LOG.trace("Starting tracing CourseRepo#createCourse");
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.CREATE_COURSE, Statement.RETURN_GENERATED_KEYS)) {
@@ -55,6 +55,29 @@ public class CourseRepo {
                     statement.setInt(3, theme);
                     statement.setInt(4, lecturer);
                     statement.setInt(5, status);
+                    statement.executeUpdate();
+                    connection.commit();
+                } catch (SQLException ex) {
+                    LOG.error(ex.getLocalizedMessage());
+                    connection.rollback();
+                }
+            }
+        } catch (SQLException e) {
+            LOG.error(e.getLocalizedMessage());
+        }
+    }
+    public void updateCourse(int id_course, String name, int duration, int theme, int lecturer, int status) {
+        LOG.trace("Starting tracing CourseRepo#updateCourse");
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_COURSE)) {
+                    connection.setAutoCommit(false);
+                    statement.setString(1, name);
+                    statement.setInt(2, duration);
+                    statement.setInt(3, theme);
+                    statement.setInt(4, lecturer);
+                    statement.setInt(5, status);
+                    statement.setInt(6, id_course);
                     statement.executeUpdate();
                     connection.commit();
                 } catch (SQLException ex) {

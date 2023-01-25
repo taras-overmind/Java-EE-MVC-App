@@ -3,8 +3,10 @@ package com.taras_overmind.epam_final_project.command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
 import com.taras_overmind.epam_final_project.db.dto.LecturerDTO;
+import com.taras_overmind.epam_final_project.db.dto.StatusDTO;
 import com.taras_overmind.epam_final_project.db.dto.ThemeDTO;
 import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
+import com.taras_overmind.epam_final_project.db.repository.StatusRepo;
 import com.taras_overmind.epam_final_project.db.repository.ThemeRepo;
 import com.taras_overmind.epam_final_project.db.service.UserService;
 
@@ -54,8 +56,10 @@ public class LoginCommand extends Command {
 
         List<LecturerDTO> lecturers = new LecturerRepo().getAllLecturers();
         List<ThemeDTO> themes = new ThemeRepo().getAllThemes();
+        List<StatusDTO> statuses = new StatusRepo().getAllStatuses();
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);
+        session.setAttribute("statuses", statuses);
         session.setAttribute("user", user);
 
 

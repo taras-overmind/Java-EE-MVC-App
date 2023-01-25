@@ -38,7 +38,7 @@
                    required>
         </div>
         <div class="form-input">
-            <select class="lecturerSelect" name="idLecturer" required>
+            <select class="editSelect" name="idLecturer" required>
                 <c:forEach items="${sessionScope.lecturers}" var="lecturer">
                     <option
                             value="${lecturer.id}">${lecturer.surname} ${lecturer.name} ${lecturer.patronymic}
