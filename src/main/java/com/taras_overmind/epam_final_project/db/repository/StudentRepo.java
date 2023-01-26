@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 import java.sql.*;
 
 public class StudentRepo {
-    private static Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
+    private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
 
     public StudentDTO createStudent(String lastName, String firstName, String middleName, int user_id) {
 

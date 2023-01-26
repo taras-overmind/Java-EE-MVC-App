@@ -4,9 +4,9 @@ import org.apache.log4j.Logger;
 
 
 public class UserService {
-    private static Logger LOG = Logger.getLogger(UserService.class.getName());
+    private static final Logger LOG = Logger.getLogger(UserService.class.getName());
 
-    private UserRepo userRepo = new UserRepo();
+    private final UserRepo userRepo = new UserRepo();
 
     public String loginCheck(String username, String password) {
         var user = userRepo.getUserByName(username);

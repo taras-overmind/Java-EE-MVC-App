@@ -1,5 +1,6 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.lecturer;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
 import com.taras_overmind.epam_final_project.db.Query;

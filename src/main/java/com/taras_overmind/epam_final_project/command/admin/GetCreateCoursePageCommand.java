@@ -1,5 +1,6 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.admin;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
 import org.apache.log4j.Logger;
@@ -11,14 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-public class GetRegisterCommand extends Command {
-    public static final Logger LOG = Logger.getLogger(GetRegisterCommand.class);
+public class GetCreateCoursePageCommand extends Command {
+    public static final Logger LOG = Logger.getLogger(GetCreateCoursePageCommand.class);
 
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
-        LOG.trace("Start tracing GetLoginCommand");
+        LOG.trace("Start tracing GetCreateCoursePageCommand");
 
-        return new ForwardResult("/WEB-INF/jsp/register.jsp");
+        return new ForwardResult("/WEB-INF/jsp/createCourse.jsp");
 
     }
 }

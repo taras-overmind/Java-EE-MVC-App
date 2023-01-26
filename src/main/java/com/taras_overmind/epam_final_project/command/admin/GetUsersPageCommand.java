@@ -1,10 +1,11 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.admin;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
+import com.taras_overmind.epam_final_project.command.student.GetStudentPageCommand;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.Query;
-import com.taras_overmind.epam_final_project.db.dto.UserInfoDTO;
 import com.taras_overmind.epam_final_project.db.dto.UserInfoDTO;
 import org.apache.log4j.Logger;
 
@@ -20,7 +21,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetUsersPageCommand extends Command{
+public class GetUsersPageCommand extends Command {
     public static final Logger LOG = Logger.getLogger(GetStudentPageCommand.class);
 
     @Override

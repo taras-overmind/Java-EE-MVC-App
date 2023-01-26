@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StatusRepo {
-    private static Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
+    private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
     public List<StatusDTO> getAllStatuses() {
         LOG.trace("Starting tracing StatusRepo#getAllStatuses");
         List<StatusDTO> statuses = new ArrayList<>();

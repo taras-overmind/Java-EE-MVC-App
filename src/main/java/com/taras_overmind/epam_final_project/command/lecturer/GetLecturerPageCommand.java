@@ -1,5 +1,6 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.lecturer;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
 import com.taras_overmind.epam_final_project.db.Query;
@@ -24,7 +25,7 @@ public class GetLecturerPageCommand extends Command {
 
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
-        LOG.trace("Start tracing GetLoginCommand");
+        LOG.trace("Start tracing GetLoginPageCommand");
 
         HttpSession session = request.getSession();
         StudentCourseDTO studentCourseDTO;

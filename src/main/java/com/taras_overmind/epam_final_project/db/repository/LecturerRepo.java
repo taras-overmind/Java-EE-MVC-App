@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LecturerRepo {
-    private static Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
+    private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
 
     public LecturerDTO createLecturer(String lastName, String firstName, String middleName, int user_id) {
 

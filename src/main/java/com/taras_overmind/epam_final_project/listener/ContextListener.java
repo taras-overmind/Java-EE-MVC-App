@@ -14,8 +14,7 @@ public class ContextListener implements ServletContextListener {
 
     private static final Logger LOG = Logger.getLogger(ContextListener.class);
 
-    public ContextListener() {
-    }
+    public ContextListener() {}
 
     public void contextInitialized(ServletContextEvent event) {
         LOG.trace("Servlet context initialization starts");
@@ -33,7 +32,7 @@ public class ContextListener implements ServletContextListener {
 
     private void initCommandContainer() {
         try {
-            Class.forName("com.taras_overmind.epam_final_project.command.CommandContainer");
+            Class.forName("com.taras_overmind.epam_final_project.command.CommandFactory");
         } catch (ClassNotFoundException ex) {
             throw new IllegalStateException("Cannot initialize Command Container");
         }

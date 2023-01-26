@@ -1,11 +1,13 @@
 package com.taras_overmind.epam_final_project.db.dto;
 
 
+import java.io.Serial;
 import java.io.Serializable;
 
 
 public class UserDTO implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 8218802710491337849L;
 
     private int idUser;

@@ -1,7 +1,7 @@
 package com.taras_overmind.epam_final_project;
 
 import com.taras_overmind.epam_final_project.command.Command;
-import com.taras_overmind.epam_final_project.command.CommandContainer;
+import com.taras_overmind.epam_final_project.command.CommandFactory;
 import com.taras_overmind.epam_final_project.command.commandResult.*;
 import org.apache.log4j.Logger;
 
@@ -58,10 +58,10 @@ public class Controller extends HttpServlet {
         String forward = null;
 //        if(commandName.startsWith("get")){
 //            forward=commandName.substring(3, commandName.length()-7).toLowerCase();
-//            command=CommandContainer.get("getCommand");
+//            command=CommandFactory.get("getCommand");
 //        }
 //        else
-        command = CommandContainer.get(commandName);
+        command = CommandFactory.get(commandName);
 
         LOG.trace("Obtained command --> " + command);
 

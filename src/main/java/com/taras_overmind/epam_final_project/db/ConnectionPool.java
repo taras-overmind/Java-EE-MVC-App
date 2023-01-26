@@ -15,8 +15,6 @@ public class ConnectionPool {
 
     private ConnectionPool(){}
 
-
-
     public static synchronized Connection getConnection() {
         try {
             Context initCtx = new InitialContext();

@@ -1,5 +1,6 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.admin;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
 import com.taras_overmind.epam_final_project.db.repository.CourseRepo;
@@ -10,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class DeleteCourseCommand extends Command{
+public class DeleteCourseCommand extends Command {
     public static final Logger LOG = Logger.getLogger(DeleteCourseCommand.class);
 
     @Override

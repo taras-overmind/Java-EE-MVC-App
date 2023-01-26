@@ -1,5 +1,6 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.common;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
 import com.taras_overmind.epam_final_project.db.Query;
@@ -19,12 +20,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetCoursesCommand extends Command {
-    public static final Logger LOG = Logger.getLogger(GetCoursesCommand.class);
+public class GetCoursesPageCommand extends Command {
+    public static final Logger LOG = Logger.getLogger(GetCoursesPageCommand.class);
 
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
-        LOG.trace("Start tracing GetCoursesCommand");
+        LOG.trace("Start tracing GetCoursesPageCommand");
 
         HttpSession session = request.getSession();
         CourseInfoDTO courseInfoDTO;
@@ -113,7 +114,6 @@ public class GetCoursesCommand extends Command {
                     courseInfoDTO.setCount(resultSet.getInt("COUNT"));
                     courses.add(courseInfoDTO);
                 }
-//                resultSet=connection.createStatement().executeQuery("SELECT COUNT(*) from COURSES");
                 resultSet.close();
                 resultSet=connection.createStatement().executeQuery("SELECT FOUND_ROWS()");
                 if(resultSet.next())

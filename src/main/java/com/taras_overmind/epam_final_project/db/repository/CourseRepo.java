@@ -43,7 +43,6 @@ public class CourseRepo {
         }
         return courses;
     }
-
     public void createCourse(String name, int duration, int theme, int lecturer, int status) {
         LOG.trace("Starting tracing CourseRepo#createCourse");
         try (Connection connection = ConnectionPool.getConnection()) {
@@ -89,7 +88,6 @@ public class CourseRepo {
             LOG.error(e.getLocalizedMessage());
         }
     }
-
     public void deleteCourseByIdCourse(int id) {
         LOG.trace("Starting tracing CourseRepo#deleteCourseByIdCourse");
         try (Connection connection = ConnectionPool.getConnection()) {

@@ -1,8 +1,8 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.common;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
-import org.apache.juli.logging.Log;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -10,21 +10,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
+import java.io.Serial;
 import java.util.Arrays;
 import java.util.List;
 
 
-public class CourseCommand extends Command {
+public class SortCoursesCommand extends Command {
 
-    public static final Logger LOG = Logger.getLogger(CourseCommand.class);
+    public static final Logger LOG = Logger.getLogger(SortCoursesCommand.class);
 
+    @Serial
     private static final long serialVersionUID = 5908769609880924971L;
 
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String redirect)
             throws IOException, ServletException {
-        LOG.trace("Starting trace CourseCommand");
+        LOG.trace("Starting trace SortCoursesCommand");
         HttpSession session = request.getSession();
         String forward = "?command=getCoursesCommand";
             List<String> fields = Arrays.asList("id_course", "name_course", "duration", "name_theme",

@@ -1,11 +1,8 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.common;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
-import com.taras_overmind.epam_final_project.db.dto.LecturerDTO;
-import com.taras_overmind.epam_final_project.db.dto.ThemeDTO;
-import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
-import com.taras_overmind.epam_final_project.db.repository.ThemeRepo;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -13,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.List;
 
 public class LogOutCommand extends Command {
 
@@ -21,6 +17,8 @@ public class LogOutCommand extends Command {
 
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String redirect)
             throws IOException, ServletException {
+
+        LOG.trace("Start tracing LogOutCommand");
 
         HttpSession session = request.getSession();
 

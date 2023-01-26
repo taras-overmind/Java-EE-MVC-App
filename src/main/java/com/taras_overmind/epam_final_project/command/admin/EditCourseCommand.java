@@ -1,5 +1,6 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.admin;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
 import com.taras_overmind.epam_final_project.db.repository.CourseRepo;
@@ -17,7 +18,6 @@ public class EditCourseCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(EditCourseCommand.class);
     private static final ThemeService themeService = new ThemeService();
-
     private static final CourseRepo courseRepo = new CourseRepo();
 
     @Override

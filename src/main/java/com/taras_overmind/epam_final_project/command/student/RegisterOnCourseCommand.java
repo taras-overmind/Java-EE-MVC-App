@@ -1,5 +1,6 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.student;
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
 import com.taras_overmind.epam_final_project.db.repository.StudentRepo;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class RegisterOnCourseCommand extends Command {
-    private static final Logger LOG = Logger.getLogger(MarkStudentCommand.class);
+    private static final Logger LOG = Logger.getLogger(RegisterOnCourseCommand.class);
 
     private final StudentRepo studentRepo = new StudentRepo();
 

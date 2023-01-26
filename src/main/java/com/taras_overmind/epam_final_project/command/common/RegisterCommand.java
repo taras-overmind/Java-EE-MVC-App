@@ -1,10 +1,11 @@
-package com.taras_overmind.epam_final_project.command;
+package com.taras_overmind.epam_final_project.command.common;
 
 
+import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
-import com.taras_overmind.epam_final_project.db.service.LecturerService;
-import com.taras_overmind.epam_final_project.db.service.StudentService;
+import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
+import com.taras_overmind.epam_final_project.db.repository.StudentRepo;
 import com.taras_overmind.epam_final_project.db.service.UserService;
 
 import org.apache.log4j.Logger;
@@ -21,16 +22,15 @@ import java.nio.charset.StandardCharsets;
 public class RegisterCommand extends Command {
 
 
-    private static final Logger LOG = Logger.getLogger(LoginCommand.class);
+    private static final Logger LOG = Logger.getLogger(RegisterCommand.class);
 
     private final UserService userService = new UserService();
-    private final StudentService studentService = new StudentService();
-    private final LecturerService lecturerService = new LecturerService();
     @Serial
     private static final long serialVersionUID = -7190245479634943129L;
 
     @Override
-    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward)
+            throws IOException, ServletException {
         LOG.trace("Start tracing RegisterCommand");
 
         HttpSession session = request.getSession();
@@ -56,11 +56,11 @@ public class RegisterCommand extends Command {
             var user = userService.getUserRepo().createUser(username, password, role);
             if(role==1){
                 session.setAttribute("registerSuccess", "You registered successfully");
-                studentService.getStudentRepo().createStudent(lastName, firstName, middleName, user.getIdUser());
+                new StudentRepo().createStudent(lastName, firstName, middleName, user.getIdUser());
             }
             else{
                 session.setAttribute("registerSuccess", "You registered successfully. Wait for admin to confirm your role");
-                lecturerService.getLecturerRepo().createLecturer(lastName, firstName, middleName, user.getIdUser());
+                new LecturerRepo().createLecturer(lastName, firstName, middleName, user.getIdUser());
             }
             redirect = new RedirectResult("?command=getLoginCommand");
         }

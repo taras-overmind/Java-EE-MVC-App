@@ -1,15 +1,22 @@
 package com.taras_overmind.epam_final_project.command;
 
 
+import com.taras_overmind.epam_final_project.command.admin.*;
+import com.taras_overmind.epam_final_project.command.common.*;
+import com.taras_overmind.epam_final_project.command.lecturer.GetLecturerPageCommand;
+import com.taras_overmind.epam_final_project.command.lecturer.MarkStudentCommand;
+import com.taras_overmind.epam_final_project.command.student.GetCoursesToRegisterCommand;
+import com.taras_overmind.epam_final_project.command.student.GetStudentPageCommand;
+import com.taras_overmind.epam_final_project.command.student.RegisterOnCourseCommand;
 import org.apache.log4j.Logger;
 
 import java.util.Map;
 import java.util.TreeMap;
 
-public class CommandContainer {
+public class CommandFactory {
 
 
-    private static final Logger LOG = Logger.getLogger(CommandContainer.class);
+    private static final Logger LOG = Logger.getLogger(CommandFactory.class);
 
     private static final Map<String, Command> commands = new TreeMap<>();
 
@@ -17,18 +24,18 @@ public class CommandContainer {
         commands.put("languageCommand", new LanguageCommand());
         commands.put("loginCommand", new LoginCommand());
 
-        commands.put("getCoursesCommand", new GetCoursesCommand());
+        commands.put("getCoursesCommand", new GetCoursesPageCommand());
         commands.put("getCoursesToRegisterCommand", new GetCoursesToRegisterCommand());
         commands.put("getLecturerCommand", new GetLecturerPageCommand());
-        commands.put("getLoginCommand", new GetLoginCommand());
-        commands.put("getRegisterCommand", new GetRegisterCommand());
+        commands.put("getLoginCommand", new GetLoginPageCommand());
+        commands.put("getRegisterCommand", new GetRegisterPageCommand());
         commands.put("getStudentCommand", new GetStudentPageCommand());
-        commands.put("getCreateCourseCommand", new GetCreateCourseCommand());
-        commands.put("getEditCourseCommand", new GetEditCourseCommand());
+        commands.put("getCreateCourseCommand", new GetCreateCoursePageCommand());
+        commands.put("getEditCourseCommand", new GetEditCoursePageCommand());
         commands.put("getUsersPageCommand", new GetUsersPageCommand());
 
         commands.put("registerCommand", new RegisterCommand());
-        commands.put("courseCommand", new CourseCommand());
+        commands.put("courseCommand", new SortCoursesCommand());
         commands.put("markStudentCommand", new MarkStudentCommand());
         commands.put("registerOnCourseCommand", new RegisterOnCourseCommand());
         commands.put("logOutCommand", new LogOutCommand());
