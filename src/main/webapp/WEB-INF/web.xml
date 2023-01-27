@@ -40,7 +40,6 @@
         <listener-class>com.taras_overmind.epam_final_project.listener.ContextListener</listener-class>
     </listener>
 
-
     <filter>
         <filter-name>EncodingFilter</filter-name>
         <filter-class>com.taras_overmind.epam_final_project.filter.EncodingFilter</filter-class>
@@ -53,6 +52,37 @@
     <filter-mapping>
         <filter-name>EncodingFilter</filter-name>
         <url-pattern>/WEB-INF/jsp/*</url-pattern>
+        <servlet-name>controller</servlet-name>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>CommandAccessFilter</filter-name>
+        <filter-class>com.taras_overmind.epam_final_project.filter.CommandAccessFilter</filter-class>
+        <init-param>
+            <param-name>out-of-control</param-name>
+            <param-value></param-value>
+        </init-param>
+        <init-param>
+            <param-name>common</param-name>
+            <param-value>noCommand getCoursesCommand getLoginCommand getRegisterCommand logOutCommand registerCommand courseCommand languageCommand loginCommand</param-value>
+        </init-param>
+        <init-param>
+            <param-name>student</param-name>
+            <param-value>getCoursesToRegisterCommand getStudentCommand registerOnCourseCommand</param-value>
+        </init-param>
+        <init-param>
+            <param-name>lecturer</param-name>
+            <param-value>getLecturerCommand markStudentCommand</param-value>
+        </init-param>
+        <init-param>
+            <param-name>admin</param-name>
+            <param-value>changeStateCommand createCourseCommand deleteCourseCommand editCourseCommand getCreateCourseCommand getEditCourseCommand getUsersPageCommand</param-value>
+        </init-param>
+
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CommandAccessFilter</filter-name>
         <servlet-name>controller</servlet-name>
     </filter-mapping>
 

@@ -7,6 +7,7 @@ import com.taras_overmind.epam_final_project.command.student.GetStudentPageComma
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.dto.UserInfoDTO;
+import com.taras_overmind.epam_final_project.db.repository.UserRepo;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -30,40 +31,9 @@ public class GetUsersPageCommand extends Command {
         LOG.trace("Start tracing GetUsersPageCommand");
 
         HttpSession session = request.getSession();
-        UserInfoDTO userInfoDTO;
-        List<UserInfoDTO> list1 = new ArrayList<>();
-        List<UserInfoDTO> list2 = new ArrayList<>();
+        List<UserInfoDTO> list1 = new UserRepo().findUsers(true);
+        List<UserInfoDTO> list2 = new UserRepo().findUsers(false);
 
-        try (Connection connection = ConnectionPool.getConnection()) {
-            if (connection != null) {
-                PreparedStatement statement1 = connection.prepareStatement(Query.SELECT_STUDENTS_INFO);
-                PreparedStatement statement2 = connection.prepareStatement(Query.SELECT_LECTURERS_INFO);
-                connection.setAutoCommit(false);
-                statement1.execute();
-                statement2.execute();
-                ResultSet resultSet = statement1.getResultSet();
-                while (resultSet.next()) {
-                    userInfoDTO = new UserInfoDTO();
-                    userInfoDTO.setId_user(resultSet.getInt("id_user"));
-                    userInfoDTO.setName(resultSet.getString("surname")+" "+resultSet.getString("name")
-                            + " "+resultSet.getString("patronymic"));
-                    userInfoDTO.setName_state(resultSet.getString("name_state"));
-                    list1.add(userInfoDTO);
-                }
-                resultSet=statement2.getResultSet();
-                while (resultSet.next()) {
-                    userInfoDTO = new UserInfoDTO();
-                    userInfoDTO.setId_user(resultSet.getInt("id_user"));
-                    userInfoDTO.setName(resultSet.getString("surname")+" "+resultSet.getString("name")
-                            + " "+resultSet.getString("patronymic"));
-                    userInfoDTO.setName_state(resultSet.getString("name_state"));
-                    list2.add(userInfoDTO);
-                }
-                resultSet.close();
-            }
-        } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
-        }
         session.setAttribute("result1", list1);
         session.setAttribute("result2", list2);
 

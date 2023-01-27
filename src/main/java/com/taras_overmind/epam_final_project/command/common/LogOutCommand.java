@@ -22,8 +22,6 @@ public class LogOutCommand extends Command {
 
         HttpSession session = request.getSession();
 
-
-
         session.setAttribute("id", null);
         session.setAttribute("login", null);
         session.setAttribute("password", null);
@@ -36,7 +34,7 @@ public class LogOutCommand extends Command {
         session.setAttribute("sort", null);
         session.setAttribute("sorting", null);
         session.setAttribute("user", null);
-        session.invalidate();
+//        session.invalidate();
         return new RedirectResult("?command=getLoginCommand");
     }
 }

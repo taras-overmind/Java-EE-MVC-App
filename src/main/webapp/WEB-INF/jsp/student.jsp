@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
-<%@ taglib prefix="t" uri="/WEB-INF/tld/tables.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
@@ -62,14 +61,6 @@
                     </tr>
 
 
-                    <c:choose>
-                        <c:when test="${not empty param.table}">
-                            <t:studentCourses status="${param.table}"/>
-                        </c:when>
-                        <c:otherwise>
-                            <t:studentCourses status="1"/>
-                        </c:otherwise>
-                    </c:choose>
                     <c:forEach items="${sessionScope.result}" var="row">
                         <tr>
                             <td>${row.courseName}</td>

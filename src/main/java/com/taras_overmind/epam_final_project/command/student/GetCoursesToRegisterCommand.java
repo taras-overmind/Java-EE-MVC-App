@@ -6,6 +6,7 @@ import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.CourseInfoDTO;
+import com.taras_overmind.epam_final_project.db.repository.CourseRepo;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -27,33 +28,8 @@ public class GetCoursesToRegisterCommand extends Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing GetCoursesToRegisterCommand");
         HttpSession session = request.getSession();
-        CourseInfoDTO courseInfoDTO;
-        List<CourseInfoDTO> courses = new ArrayList<>();
-
-        try (Connection connection = ConnectionPool.getConnection()) {
-            if (connection != null) {
-                PreparedStatement statement = connection.prepareStatement(
-                        Query.SELECT_COURSES_TO_REGISTER);
-
-                connection.setAutoCommit(false);
-                statement.setString(1, String.valueOf(session.getAttribute("id")));
-                statement.execute();
-                ResultSet resultSet = statement.getResultSet();
-                while (resultSet.next()) {
-                    courseInfoDTO = new CourseInfoDTO();
-                    courseInfoDTO.setCourseId(resultSet.getInt("id_course"));
-                    courseInfoDTO.setLecturerName(resultSet.getString("surname")+" "+
-                            resultSet.getString("name")+" "+resultSet.getString("patronymic"));
-                    courseInfoDTO.setDuration(resultSet.getInt("duration"));
-                    courseInfoDTO.setCourseName(resultSet.getString("name_course"));
-                    courseInfoDTO.setThemeName(resultSet.getString("name_theme"));
-                    courses.add(courseInfoDTO);
-                }
-                resultSet.close();
-            }
-        } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
-        }
+        List<CourseInfoDTO> courses = new CourseRepo()
+                .findCoursesToRegisterByUserId(Integer.parseInt(String.valueOf(session.getAttribute("id"))));
         session.setAttribute("result", courses);
 
         return new ForwardResult("/WEB-INF/jsp/coursesToRegister.jsp");

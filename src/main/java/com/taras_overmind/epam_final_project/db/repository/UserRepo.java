@@ -4,6 +4,7 @@ import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.UserDTO;
 
+import com.taras_overmind.epam_final_project.db.dto.UserInfoDTO;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -13,6 +14,7 @@ import java.util.List;
 public class UserRepo {
 
     private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
+
     public UserDTO getUserByName(String username) {
         LOG.trace("Start tracing UserRepo#getUserByName");
 
@@ -43,6 +45,7 @@ public class UserRepo {
         }
         return userDTO;
     }
+
     public UserDTO createUser(String login, String password, int role) {
         LOG.trace("Start tracing UserRepo#createUser");
         UserDTO user = null;
@@ -55,7 +58,7 @@ public class UserRepo {
                     statement.setString(1, login);
                     statement.setString(2, password);
                     statement.setInt(3, role);
-                    statement.setInt(4, role==1?1:0);
+                    statement.setInt(4, role == 1 ? 1 : 0);
                     statement.executeUpdate();
                     PreparedStatement stmt = connection.prepareStatement(Query.SELECT_LAST_USER_ID);
                     stmt.execute();
@@ -72,16 +75,17 @@ public class UserRepo {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
-        user = new UserDTO(id, login, password, role, role==1?1:0);
+        user = new UserDTO(id, login, password, role, role == 1 ? 1 : 0);
         return user;
     }
+
     public void changeUserState(int id, String state) {
         LOG.trace("Start tracing UserRepo#changeUserState");
         try (Connection connection = ConnectionPool.getConnection()) {
             if ((connection != null)) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER, Statement.RETURN_GENERATED_KEYS)) {
                     connection.setAutoCommit(false);
-                    if(state.equals("locked"))
+                    if (state.equals("locked"))
                         statement.setInt(1, 1);
                     else
                         statement.setInt(1, 0);
@@ -97,6 +101,7 @@ public class UserRepo {
             LOG.error(e.getLocalizedMessage());
         }
     }
+
     public void registerUserOnCourse(int id, int idCourse) {
         LOG.trace("Start tracing UserRepo#registerUserOnCourse");
         try (Connection connection = ConnectionPool.getConnection()) {
@@ -116,6 +121,7 @@ public class UserRepo {
             LOG.error(e.getLocalizedMessage());
         }
     }
+
     public List<UserDTO> getAllUsers() {
         LOG.trace("Start tracing UserRepo#getAllUsers");
         List<UserDTO> users = new ArrayList<>();
@@ -145,5 +151,35 @@ public class UserRepo {
         }
 
         return users;
+    }
+
+    public List<UserInfoDTO> findUsers(boolean isStudent) {
+        UserInfoDTO userInfoDTO;
+        List<UserInfoDTO> list = new ArrayList<>();
+
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                PreparedStatement statement;
+                if (isStudent)
+                    statement = connection.prepareStatement(Query.SELECT_STUDENTS_INFO);
+                else
+                    statement = connection.prepareStatement(Query.SELECT_LECTURERS_INFO);
+                connection.setAutoCommit(false);
+                statement.execute();
+                ResultSet resultSet = statement.getResultSet();
+                while (resultSet.next()) {
+                    userInfoDTO = new UserInfoDTO();
+                    userInfoDTO.setId_user(resultSet.getInt("id_user"));
+                    userInfoDTO.setName(resultSet.getString("surname") + " " + resultSet.getString("name")
+                            + " " + resultSet.getString("patronymic"));
+                    userInfoDTO.setName_state(resultSet.getString("name_state"));
+                    list.add(userInfoDTO);
+                }
+                resultSet.close();
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+        return list;
     }
 }

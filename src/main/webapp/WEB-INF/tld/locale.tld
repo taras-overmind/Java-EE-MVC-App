@@ -4,7 +4,7 @@
     <short-name>Example TLD with Body</short-name>
     <tag>
         <name>Locale</name>
-        <tag-class>com.taras_overmind.epam_final_project.i18n.LocaleTag</tag-class>
+        <tag-class>com.taras_overmind.epam_final_project.tag.LocaleTag</tag-class>
         <body-content>scriptless</body-content>
         <attribute>
             <name>value</name>

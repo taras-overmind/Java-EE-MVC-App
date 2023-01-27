@@ -21,28 +21,50 @@ public class CommandFactory {
     private static final Map<String, Command> commands = new TreeMap<>();
 
     static {
-        commands.put("languageCommand", new LanguageCommand());
-        commands.put("loginCommand", new LoginCommand());
 
-        commands.put("getCoursesCommand", new GetCoursesPageCommand());
-        commands.put("getCoursesToRegisterCommand", new GetCoursesToRegisterCommand());
-        commands.put("getLecturerCommand", new GetLecturerPageCommand());
-        commands.put("getLoginCommand", new GetLoginPageCommand());
-        commands.put("getRegisterCommand", new GetRegisterPageCommand());
-        commands.put("getStudentCommand", new GetStudentPageCommand());
+
+
+
+        //admin
+        commands.put("changeStateCommand", new ChangeStateCommand());
+        commands.put("createCourseCommand", new CreateCourseCommand());
+        commands.put("deleteCourseCommand", new DeleteCourseCommand());
+        commands.put("editCourseCommand", new EditCourseCommand());
         commands.put("getCreateCourseCommand", new GetCreateCoursePageCommand());
         commands.put("getEditCourseCommand", new GetEditCoursePageCommand());
         commands.put("getUsersPageCommand", new GetUsersPageCommand());
 
+        //common
+        commands.put("noCommand", new GetCoursesPageCommand());
+        commands.put("getCoursesCommand", new GetCoursesPageCommand());
+        commands.put("getLoginCommand", new GetLoginPageCommand());
+        commands.put("getRegisterCommand", new GetRegisterPageCommand());
+        commands.put("logOutCommand", new LogOutCommand());
         commands.put("registerCommand", new RegisterCommand());
         commands.put("courseCommand", new SortCoursesCommand());
-        commands.put("markStudentCommand", new MarkStudentCommand());
+        commands.put("languageCommand", new LanguageCommand());
+        commands.put("loginCommand", new LoginCommand());
+
+        //student
+        commands.put("getCoursesToRegisterCommand", new GetCoursesToRegisterCommand());
+        commands.put("getStudentCommand", new GetStudentPageCommand());
         commands.put("registerOnCourseCommand", new RegisterOnCourseCommand());
-        commands.put("logOutCommand", new LogOutCommand());
-        commands.put("createCourseCommand", new CreateCourseCommand());
-        commands.put("deleteCourseCommand", new DeleteCourseCommand());
-        commands.put("editCourseCommand", new EditCourseCommand());
-        commands.put("changeStateCommand", new ChangeStateCommand());
+
+        //lecturer
+        commands.put("getLecturerCommand", new GetLecturerPageCommand());
+        commands.put("markStudentCommand", new MarkStudentCommand());
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }

@@ -57,10 +57,9 @@ public class LoginCommand extends Command {
 
         List<LecturerDTO> lecturers = new LecturerRepo().getAllLecturers();
         List<ThemeDTO> themes = new ThemeRepo().getAllThemes();
-        List<StatusDTO> statuses = new StatusRepo().getAllStatuses();
+        session.setAttribute("statuses", new StatusRepo().getAllStatuses());
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);
-        session.setAttribute("statuses", statuses);
         session.setAttribute("user", user);
 
 

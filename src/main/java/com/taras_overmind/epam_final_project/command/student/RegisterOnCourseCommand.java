@@ -27,13 +27,9 @@ public class RegisterOnCourseCommand extends Command {
         HttpSession session = request.getSession();
         RedirectResult redirect;
         redirect = new RedirectResult("?command=getStudentCommand");
-        try {
         int id = Integer.parseInt(String.valueOf(session.getAttribute("id")));
         int courseId = Integer.parseInt(request.getParameter("id_course"));
         new UserRepo().registerUserOnCourse(id, courseId);
-        } catch ( NumberFormatException ex) {
-            LOG.error(ex.getMessage());
-        }
 
         return redirect;
     }

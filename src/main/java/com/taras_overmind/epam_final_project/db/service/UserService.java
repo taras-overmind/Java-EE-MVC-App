@@ -12,6 +12,8 @@ public class UserService {
         var user = userRepo.getUserByName(username);
         if (user == null)
             return "no such user";
+        if(username.contains(" "))
+            return "username shouldn't have spaces";
         if (!user.getPassword().equals(password))
             return "wrong password";
         if(user.getStateId()==0)
