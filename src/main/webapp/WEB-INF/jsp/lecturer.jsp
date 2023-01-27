@@ -1,11 +1,11 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
+<%@ taglib prefix="lang" uri="/WEB-INF/tld/locale.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
 <html lang="en">
 <head>
-    <title><my:Locale value="page.lecturer.title"/></title>
+    <title><lang:Locale value="page.lecturer.title"/></title>
     <link rel="stylesheet" type="text/css" href="../../styles/courses.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
@@ -15,8 +15,8 @@
 
 <div class="container-fluid bs-const">
     <div class="col-lg-2 info">
-        <a href="?command=getLecturerCommand&table=1"><br>Students without marks</a><br>
-        <a href="?command=getLecturerCommand&table=2"><br>Students with marks</a><br>
+        <a class="nav-link" href="?command=getLecturerCommand&table=1"><br>Students without marks</a><br>
+        <a class="nav-link" href="?command=getLecturerCommand&table=2"><br>Students with marks</a><br>
     </div>
 
     <div class="col-lg-9">
@@ -37,14 +37,14 @@
                         <table class="table table-bordered table-striped">
                             <tr>
                                 <th class="info">
-                                    <button name="sort" class="sortRow" value="name_course"><my:Locale
+                                    <button name="sort" class="sortRow" value="name_course"><lang:Locale
                                             value="page.people.course.name"/></button>
                                 </th>
                                 <th class="info">
                                     <button name="sort" class="sortRow" value="surname">Student</button>
                                 </th>
                                 <th class="info">
-                                    <button name="sort" class="sortRow" value="mark"><my:Locale
+                                    <button name="sort" class="sortRow" value="mark"><lang:Locale
                                             value="page.student.mark"/></button>
                                 </th>
 
@@ -76,14 +76,14 @@
                         <table class="table table-bordered table-striped">
                             <tr>
                                 <th class="info">
-                                    <button name="sort" class="sortRow" value="name_course"><my:Locale
+                                    <button name="sort" class="sortRow" value="name_course"><lang:Locale
                                             value="page.people.course.name"/></button>
                                 </th>
                                 <th class="info">
                                     <button name="sort" class="sortRow" value="surname">Student</button>
                                 </th>
                                 <th class="info">
-                                    <button name="sort" class="sortRow" value="mark"><my:Locale
+                                    <button name="sort" class="sortRow" value="mark"><lang:Locale
                                             value="page.student.mark"/></button>
                                 </th>
 

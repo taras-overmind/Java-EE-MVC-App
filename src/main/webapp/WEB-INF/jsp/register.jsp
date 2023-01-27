@@ -1,11 +1,11 @@
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
+<%@ taglib prefix="lang" uri="/WEB-INF/tld/locale.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
 <head>
-    <title><my:Locale value="page.login.title"/></title>
+    <title><lang:Locale value="page.login.title"/></title>
     <link rel="stylesheet" type="text/css" href="../../styles/login.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
@@ -25,27 +25,27 @@
         <input type="hidden" name="command" value="registerCommand">
         <div id="form-input">
             <input type="text" name="username"
-                   placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.username"/>"
+                   placeholder="<lang:Locale value="page.login.enter"/> <lang:Locale value="page.login.username"/>"
                    required>
         </div>
         <div class="form-input">
             <input type="password" name="password"
-                   placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.login.password"/>"
+                   placeholder="<lang:Locale value="page.login.enter"/> <lang:Locale value="page.login.password"/>"
                    required>
         </div>
         <div class="form-input">
             <input type="text" name="lastName"
-                   placeholder="<my:Locale value="page.login.enter"/> last name"
+                   placeholder="<lang:Locale value="page.login.enter"/> last name"
                    required>
         </div>
         <div class="form-input">
             <input type="text" name="firstName"
-                   placeholder="<my:Locale value="page.login.enter"/> first name"
+                   placeholder="<lang:Locale value="page.login.enter"/> first name"
                    required>
         </div>
         <div class="form-input">
             <input type="text" name="middleName"
-                   placeholder="<my:Locale value="page.login.enter"/> middle name"
+                   placeholder="<lang:Locale value="page.login.enter"/> middle name"
                    required>
         </div>
         <div>

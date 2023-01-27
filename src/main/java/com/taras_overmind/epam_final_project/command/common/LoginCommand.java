@@ -45,7 +45,7 @@ public class LoginCommand extends Command {
         if (userService.loginCheck(username, password) != null) {
             session.setAttribute("wrongData", userService.loginCheck(username, password));
             redirect = new RedirectResult("?command=getLoginCommand");
-        } else
+        } else{
             redirect = new RedirectResult("?command=getCoursesCommand");
         var user = userService.getUserRepo().getUserByName(username);
         session.setAttribute("id", user.getIdUser());
@@ -60,7 +60,7 @@ public class LoginCommand extends Command {
         session.setAttribute("statuses", new StatusRepo().getAllStatuses());
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);
-        session.setAttribute("user", user);
+        session.setAttribute("user", user);}
 
 
         return redirect;

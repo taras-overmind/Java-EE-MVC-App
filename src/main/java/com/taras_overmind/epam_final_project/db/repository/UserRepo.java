@@ -87,8 +87,10 @@ public class UserRepo {
                     connection.setAutoCommit(false);
                     if (state.equals("locked"))
                         statement.setInt(1, 1);
-                    else
+                    else if(state.equals("unlocked"))
                         statement.setInt(1, 0);
+                    else
+                        throw new SQLException("Invalid state");
                     statement.setInt(2, id);
                     statement.executeUpdate();
                     connection.commit();
@@ -120,37 +122,6 @@ public class UserRepo {
         } catch (SQLException e) {
             LOG.error(e.getLocalizedMessage());
         }
-    }
-
-    public List<UserDTO> getAllUsers() {
-        LOG.trace("Start tracing UserRepo#getAllUsers");
-        List<UserDTO> users = new ArrayList<>();
-        UserDTO user;
-
-        try (Connection connection = ConnectionPool.getConnection()) {
-            if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_USERS)) {
-                    connection.setAutoCommit(false);
-                    statement.execute();
-                    ResultSet resultSet = statement.getResultSet();
-                    while (resultSet.next()) {
-                        user = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
-                                resultSet.getString("password"), resultSet.getString("email"),
-                                resultSet.getInt("id_role"), resultSet.getInt("id_state"));
-                        users.add(user);
-                    }
-                    resultSet.close();
-                    connection.commit();
-                } catch (SQLException ex) {
-                    LOG.error(ex.getLocalizedMessage());
-                    connection.rollback();
-                }
-            }
-        } catch (SQLException ex) {
-            LOG.error(ex.getLocalizedMessage());
-        }
-
-        return users;
     }
 
     public List<UserInfoDTO> findUsers(boolean isStudent) {

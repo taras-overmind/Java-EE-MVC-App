@@ -9,6 +9,8 @@ public class UserService {
     private final UserRepo userRepo = new UserRepo();
 
     public String loginCheck(String username, String password) {
+        LOG.trace("Start tracing UserService#loginCheck");
+
         var user = userRepo.getUserByName(username);
         if (user == null)
             return "no such user";
@@ -21,10 +23,14 @@ public class UserService {
         return null;
     }
     public String registerCheck(String username, String password){
+        LOG.trace("Start tracing UserService#registerCheck");
         if(getUserRepo().getUserByName(username)!=null)
             return "User with this login already exists";
-        if(username.contains(" "))
-            return "Login mustn't have spaces";
+        if (username.length() < 5 )
+            return "username should have at least 5 characters";
+        String pattern = "^[a-zA-Z0-9_]*$";
+        if(!username.matches(pattern)||!password.matches(pattern))
+            return "Use only letters and numbers";
         if(password.length()<6)
             return "Password should have at least 6 characters";
         return null;

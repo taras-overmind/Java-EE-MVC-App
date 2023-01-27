@@ -10,7 +10,7 @@ public class ThemeService {
     private static final Logger LOG = Logger.getLogger(ThemeService.class.getName());
 
     public ThemeDTO themeCheck(String name_theme) {
-        LOG.trace("Start tracing ThemeRepo#themeCheck");
+        LOG.trace("Start tracing ThemeService#themeCheck");
         int id_theme;
         ThemeDTO theme = themeRepo.getThemeByName(name_theme);
         if (theme != null) {

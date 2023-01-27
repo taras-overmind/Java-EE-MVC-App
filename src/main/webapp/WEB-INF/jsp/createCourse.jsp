@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="my" uri="/WEB-INF/tld/locale.tld" %>
+<%@ taglib prefix="lang" uri="/WEB-INF/tld/locale.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
@@ -24,17 +24,17 @@
         <input type="hidden" name="command" value="createCourseCommand">
         <div id="form-input">
             <input type="text" name="name_course"
-                   placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.admin.create.namecourse"/>"
+                   placeholder="<lang:Locale value="page.login.enter"/> <lang:Locale value="page.admin.create.namecourse"/>"
                    required>
         </div>
         <div class="form-input">
             <input type="text" name="duration"
-                   placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.admin.create.duration"/>"
+                   placeholder="<lang:Locale value="page.login.enter"/> <lang:Locale value="page.admin.create.duration"/>"
                    required>
         </div>
         <div class="form-input">
             <input type="text" name="name_theme"
-                   placeholder="<my:Locale value="page.login.enter"/> <my:Locale value="page.admin.create.nametheme"/>"
+                   placeholder="<lang:Locale value="page.login.enter"/> <lang:Locale value="page.admin.create.nametheme"/>"
                    required>
         </div>
         <div class="form-input">
