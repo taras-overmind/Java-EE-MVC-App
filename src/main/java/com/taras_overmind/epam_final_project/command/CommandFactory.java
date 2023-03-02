@@ -21,10 +21,6 @@ public class CommandFactory {
     private static final Map<String, Command> commands = new TreeMap<>();
 
     static {
-
-
-
-
         //admin
         commands.put("changeStateCommand", new ChangeStateCommand());
         commands.put("createCourseCommand", new CreateCourseCommand());

@@ -1,119 +1,38 @@
 package com.taras_overmind.epam_final_project.db.dto;
 
+public class UserDTO {
+    private int id_user;
+    private String name;
+    private String name_state;
+    public UserDTO(){}
 
-import java.io.Serial;
-import java.io.Serializable;
-
-
-public class UserDTO implements Serializable {
-
-    @Serial
-    private static final long serialVersionUID = 8218802710491337849L;
-
-    private int idUser;
-    private String login;
-    private String password;
-    private String email;
-    private int roleId = -1;
-    private int stateId = 1;
-
-    public UserDTO() {}
-
-    public UserDTO(String login, String password, int roleId) {
-        this.login = login;
-        this.password = password;
-        this.roleId = roleId;
+    public int getId_user() {
+        return id_user;
     }
 
-    public UserDTO(String login, String password, int roleId, int stateId) {
-        this.login = login;
-        this.password = password;
-        this.roleId = roleId;
-        this.stateId = stateId;
-    }
-    public UserDTO(int id, String login, String password, int roleId, int stateId) {
-        this.idUser = id;
-        this.login = login;
-        this.password = password;
-        this.roleId = roleId;
-        this.stateId = stateId;
+    public void setId_user(int id_user) {
+        this.id_user = id_user;
     }
 
-
-    public UserDTO(int id, String login, String password, String email, int roleId, int stateId) {
-        this.idUser = id;
-        this.login = login;
-        this.password = password;
-        this.email = email;
-        this.roleId = roleId;
-        this.stateId = stateId;
+    public String getName() {
+        return name;
     }
 
-    public int getIdUser() {
-        return idUser;
+    public void setName(String name) {
+        this.name = name;
     }
 
-void setIdUser(int idUser) {
-        this.idUser = idUser;
+    public String getName_state() {
+        return name_state;
     }
 
-
-    public void setLogin(String login) {
-        this.login = login;
+    public void setName_state(String name_state) {
+        this.name_state = name_state;
     }
 
-
-    public String getPassword() {
-        return password;
-    }
-
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-
-    public int getRoleId() {
-        return roleId;
-    }
-
-
-    public void setRoleId(int roleId) {
-        this.roleId = roleId;
-    }
-
-
-    public String getEmail() {
-        return email;
-    }
-
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-
-    public int getStateId() {
-        return stateId;
-    }
-
-    public String getLogin(){return login;}
-
-
-    public void setStateId(int stateId) {
-        this.stateId = stateId;
-    }
-
-
-    @Override
-    public String toString() {
-        return "UserDTO{" +
-                "idUser=" + idUser +
-                ", login='" + login + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", roleId=" + roleId +
-                ", stateId=" + stateId +
-                '}';
+    public UserDTO(int id_user, String name, String name_state) {
+        this.id_user = id_user;
+        this.name = name;
+        this.name_state = name_state;
     }
 }

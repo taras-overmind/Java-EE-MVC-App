@@ -26,6 +26,7 @@ public class ConnectionPool {
             LOG.error("Cannot find the data source");
             return null;
         } catch (SQLException ex) {
+            LOG.error(ex.getMessage());
             LOG.error("Cannot get connection from data source");
             return null;
         }

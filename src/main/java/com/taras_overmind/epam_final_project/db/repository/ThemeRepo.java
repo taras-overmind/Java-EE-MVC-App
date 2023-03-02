@@ -2,7 +2,7 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
-import com.taras_overmind.epam_final_project.db.dto.ThemeDTO;
+import com.taras_overmind.epam_final_project.db.entity.ThemeEntity;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -12,10 +12,10 @@ import java.util.List;
 public class ThemeRepo {
     private static Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
 
-    public List<ThemeDTO> getAllThemes() {
+    public List<ThemeEntity> getAllThemes() {
         LOG.trace("Starting tracing ThemeRepo");
-        List<ThemeDTO> themes = new ArrayList<>();
-        ThemeDTO theme;
+        List<ThemeEntity> themes = new ArrayList<>();
+        ThemeEntity theme;
 
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
@@ -24,7 +24,7 @@ public class ThemeRepo {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     while (resultSet.next()) {
-                        theme = new ThemeDTO(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
+                        theme = new ThemeEntity(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
                         themes.add(theme);
                     }
                     resultSet.close();
@@ -41,9 +41,9 @@ public class ThemeRepo {
         return themes;
     }
 
-    public ThemeDTO getThemeById(int id){
+    public ThemeEntity getThemeById(int id){
         LOG.trace("Start tracing ThemeRepo#getThemeById");
-        ThemeDTO theme=null;
+        ThemeEntity theme=null;
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_THEME_BY_ID)) {
@@ -52,7 +52,7 @@ public class ThemeRepo {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        theme = new ThemeDTO(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
+                        theme = new ThemeEntity(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
                     }
                     resultSet.close();
                     connection.commit();
@@ -66,9 +66,9 @@ public class ThemeRepo {
         }
         return theme;
     }
-    public ThemeDTO getThemeByName(String name_theme){
+    public ThemeEntity getThemeByName(String name_theme){
         LOG.trace("Start tracing ThemeRepo#getThemeByName");
-        ThemeDTO theme=null;
+        ThemeEntity theme=null;
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_THEME_BY_NAME)) {
@@ -77,7 +77,7 @@ public class ThemeRepo {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        theme = new ThemeDTO(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
+                        theme = new ThemeEntity(resultSet.getInt("id_theme"), resultSet.getString("name_theme"));
                     }
                     resultSet.close();
                     connection.commit();
@@ -92,9 +92,9 @@ public class ThemeRepo {
         return theme;
     }
 
-    public ThemeDTO createTheme(String name_theme){
+    public ThemeEntity createTheme(String name_theme){
         LOG.trace("Start tracing ThemeRepo#createTheme");
-        ThemeDTO theme = null;
+        ThemeEntity theme = null;
         int id = -1;
 
         try (Connection connection = ConnectionPool.getConnection()) {
@@ -118,7 +118,7 @@ public class ThemeRepo {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
-        theme = new ThemeDTO(id, name_theme);
+        theme = new ThemeEntity(id, name_theme);
         return theme;
     }
 

@@ -14,19 +14,24 @@
         <nav class="nav nav-masthead justify-content-left float-md-end row">
 
             <div class="left-block col-6">
-                <a class="nav-link" href="/controller?command=getCoursesCommand">Courses</a>
+                <a class="nav-link" href="/controller?command=getCoursesCommand"><lang:Locale
+                        value="header.courses"/></a>
                 <c:choose>
                     <c:when test="${sessionScope.id_role=='1'}">
-                        <a class="nav-link" href="/controller?command=getStudentCommand">My courses</a>
-                        <a class="nav-link" href="/controller?command=getCoursesToRegisterCommand">Courses to
-                            register</a>
+                        <a class="nav-link" href="/controller?command=getStudentCommand"><lang:Locale
+                                value="header.myCourses"/></a>
+                        <a class="nav-link" href="/controller?command=getCoursesToRegisterCommand"><lang:Locale
+                                value="header.coursesToRegister"/></a>
                     </c:when>
                     <c:when test="${sessionScope.id_role=='2'}">
-                        <a class="nav-link" href="/controller?command=getLecturerCommand">My students</a>
+                        <a class="nav-link" href="/controller?command=getLecturerCommand"><lang:Locale
+                                value="header.myStudents"/></a>
                     </c:when>
                     <c:when test="${sessionScope.id_role=='0'}">
-                        <a class="nav-link" href="/controller?command=getUsersPageCommand">Users</a>
-                        <a class="nav-link" href="/controller?command=getCreateCourseCommand">Create course</a>
+                        <a class="nav-link" href="/controller?command=getUsersPageCommand"><lang:Locale
+                                value="header.users"/></a>
+                        <a class="nav-link" href="/controller?command=getCreateCourseCommand"><lang:Locale
+                                value="header.createCourse"/></a>
                     </c:when>
                 </c:choose>
 
@@ -52,11 +57,13 @@
                         <c:when test="${not empty sessionScope.user}">
                             <form action="controller" method="post">
                                 <input type="hidden" name="command" value="logOutCommand">
-                                <input type="submit" id="submitButton" value="LogOut"/>
+                                <input type="submit" id="submitButton" value="<lang:Locale
+                                value="header.logout"/>"/>
                             </form>
                         </c:when>
                         <c:otherwise>
-                            <a class="nav-link" href="/controller?command=getLoginCommand">LogIn</a>
+                            <a class="nav-link" href="/controller?command=getLoginCommand"><lang:Locale
+                                    value="header.login"/></a>
                         </c:otherwise>
                     </c:choose>
                 </div>

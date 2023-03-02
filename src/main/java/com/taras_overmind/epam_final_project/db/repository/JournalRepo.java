@@ -25,7 +25,6 @@ public class JournalRepo {
                 try (PreparedStatement statement = connection.prepareStatement(query)) {
                     connection.setAutoCommit(false);
                     if (status.equals("new")) {
-
                         statement.setInt(1, id);
                         statement.setInt(2, mark);
                     } else {

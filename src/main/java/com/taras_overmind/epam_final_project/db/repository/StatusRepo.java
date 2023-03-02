@@ -2,7 +2,7 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.Query;
-import com.taras_overmind.epam_final_project.db.dto.StatusDTO;
+import com.taras_overmind.epam_final_project.db.entity.StatusEntity;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;
@@ -14,10 +14,10 @@ import java.util.List;
 
 public class StatusRepo {
     private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
-    public List<StatusDTO> getAllStatuses() {
+    public List<StatusEntity> getAllStatuses() {
         LOG.trace("Starting tracing StatusRepo#getAllStatuses");
-        List<StatusDTO> statuses = new ArrayList<>();
-        StatusDTO status;
+        List<StatusEntity> statuses = new ArrayList<>();
+        StatusEntity status;
 
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
@@ -26,7 +26,7 @@ public class StatusRepo {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     while (resultSet.next()) {
-                        status = new StatusDTO(resultSet.getInt("id_status"), resultSet.getString("name_status"));
+                        status = new StatusEntity(resultSet.getInt("id_status"), resultSet.getString("name_status"));
                         statuses.add(status);
                     }
                     resultSet.close();

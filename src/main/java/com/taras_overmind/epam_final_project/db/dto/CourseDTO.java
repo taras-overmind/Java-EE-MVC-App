@@ -1,119 +1,93 @@
 package com.taras_overmind.epam_final_project.db.dto;
 
-
-import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
-import com.taras_overmind.epam_final_project.db.repository.ThemeRepo;
-
-import java.io.Serializable;
-
-
-public class CourseDTO implements Serializable{
-
-
-    private static final long serialVersionUID = -5527657822689332544L;
-
-    private static final LecturerRepo lecturerRepo = new LecturerRepo();
-
-    private static final ThemeRepo themeRepo = new ThemeRepo();
-
+public class CourseDTO {
     private int courseId;
     private String courseName;
     private int duration;
-    private int themeId;
-    private int lecturerId;
-    private int statusId;
+    private String themeName;
+    private String lecturerName;
+    private String statusName;
+    private int count;
 
-
-    public CourseDTO() {
+    @Override
+    public String toString() {
+        return "CourseDTO{" +
+                "courseId=" + courseId +
+                ", courseName='" + courseName + '\'' +
+                ", duration=" + duration +
+                ", themeName='" + themeName + '\'' +
+                ", lecturerName='" + lecturerName + '\'' +
+                ", statusName='" + statusName + '\'' +
+                ", count=" + count +
+                '}';
     }
 
-    public CourseDTO(int courseId, String courseName, int duration, int themeId, int lecturerId, int statusId) {
+    public CourseDTO(int courseId, String courseName, int duration, String themeName, String lecturerName, String statusName, int count) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.duration = duration;
-        this.themeId = themeId;
-        this.lecturerId = lecturerId;
-        this.statusId = statusId;
+        this.themeName = themeName;
+        this.lecturerName = lecturerName;
+        this.statusName = statusName;
+        this.count = count;
+    }
+    public CourseDTO(){
+
     }
 
     public int getCourseId() {
         return courseId;
     }
 
-
     public void setCourseId(int courseId) {
         this.courseId = courseId;
     }
-
 
     public String getCourseName() {
         return courseName;
     }
 
-
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
-
 
     public int getDuration() {
         return duration;
     }
 
-
     public void setDuration(int duration) {
         this.duration = duration;
     }
 
-
-    public int getThemeId() {
-        return themeId;
+    public String getThemeName() {
+        return themeName;
     }
 
-    public ThemeDTO getTheme(){
-        return themeRepo.getThemeById(themeId);
+    public void setThemeName(String themeName) {
+        this.themeName = themeName;
     }
 
-
-    public void setThemeId(int themeId) {
-        this.themeId = themeId;
+    public String getLecturerName() {
+        return lecturerName;
     }
 
-
-    public int getLecturerId() {
-        return lecturerId;
+    public void setLecturerName(String lecturerName) {
+        this.lecturerName = lecturerName;
     }
 
-    public LecturerDTO getLecturer(){
-        return lecturerRepo.getLecturerById(lecturerId);
+    public String getStatusName() {
+        return statusName;
     }
 
-
-    public void setLecturerId(int lecturerId) {
-        this.lecturerId = lecturerId;
+    public void setStatusName(String statusName) {
+        this.statusName = statusName;
     }
 
-
-    public int getStatusId() {
-        return statusId;
+    public int getCount() {
+        return count;
     }
 
-
-    public void setStatusId(int statusId) {
-        this.statusId = statusId;
+    public void setCount(int count) {
+        this.count = count;
     }
-
-
-    @Override
-    public String toString() {
-        return "CourseDTO{" +
-                "idCourse=" + courseId +
-                ", nameCourse='" + courseName + '\'' +
-                ", duration=" + duration +
-                ", idTheme=" + themeId +
-                ", idLecturer=" + lecturerId +
-                ", idStatus=" + statusId +
-                '}';
-    }
-
 }

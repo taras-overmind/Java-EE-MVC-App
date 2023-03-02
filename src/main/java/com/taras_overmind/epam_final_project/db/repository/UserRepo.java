@@ -2,9 +2,9 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
-import com.taras_overmind.epam_final_project.db.dto.UserDTO;
+import com.taras_overmind.epam_final_project.db.entity.UserEntity;
 
-import com.taras_overmind.epam_final_project.db.dto.UserInfoDTO;
+import com.taras_overmind.epam_final_project.db.dto.UserDTO;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -15,10 +15,10 @@ public class UserRepo {
 
     private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
 
-    public UserDTO getUserByName(String username) {
+    public UserEntity getUserByName(String username) {
         LOG.trace("Start tracing UserRepo#getUserByName");
 
-        UserDTO userDTO = null;
+        UserEntity userEntity = null;
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_USER_BY_LOGIN)) {
@@ -27,7 +27,7 @@ public class UserRepo {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        userDTO = new UserDTO(resultSet.getInt("id_user"), resultSet.getString("login"),
+                        userEntity = new UserEntity(resultSet.getInt("id_user"), resultSet.getString("login"),
                                 resultSet.getString("password"),
                                 resultSet.getString("email"),
                                 resultSet.getInt("id_role"),
@@ -43,12 +43,12 @@ public class UserRepo {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
-        return userDTO;
+        return userEntity;
     }
 
-    public UserDTO createUser(String login, String password, int role) {
+    public UserEntity createUser(String login, String password, int role) {
         LOG.trace("Start tracing UserRepo#createUser");
-        UserDTO user = null;
+        UserEntity user = null;
         int id = -1;
 
         try (Connection connection = ConnectionPool.getConnection()) {
@@ -75,7 +75,7 @@ public class UserRepo {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
-        user = new UserDTO(id, login, password, role, role == 1 ? 1 : 0);
+        user = new UserEntity(id, login, password, role, role == 1 ? 1 : 0);
         return user;
     }
 
@@ -124,9 +124,9 @@ public class UserRepo {
         }
     }
 
-    public List<UserInfoDTO> findUsers(boolean isStudent) {
-        UserInfoDTO userInfoDTO;
-        List<UserInfoDTO> list = new ArrayList<>();
+    public List<UserDTO> findUsers(boolean isStudent) {
+        UserDTO userDTO;
+        List<UserDTO> list = new ArrayList<>();
 
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
@@ -139,12 +139,12 @@ public class UserRepo {
                 statement.execute();
                 ResultSet resultSet = statement.getResultSet();
                 while (resultSet.next()) {
-                    userInfoDTO = new UserInfoDTO();
-                    userInfoDTO.setId_user(resultSet.getInt("id_user"));
-                    userInfoDTO.setName(resultSet.getString("surname") + " " + resultSet.getString("name")
+                    userDTO = new UserDTO();
+                    userDTO.setId_user(resultSet.getInt("id_user"));
+                    userDTO.setName(resultSet.getString("surname") + " " + resultSet.getString("name")
                             + " " + resultSet.getString("patronymic"));
-                    userInfoDTO.setName_state(resultSet.getString("name_state"));
-                    list.add(userInfoDTO);
+                    userDTO.setName_state(resultSet.getString("name_state"));
+                    list.add(userDTO);
                 }
                 resultSet.close();
             }

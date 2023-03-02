@@ -3,7 +3,7 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
-import com.taras_overmind.epam_final_project.db.dto.StudentDTO;
+import com.taras_overmind.epam_final_project.db.entity.StudentEntity;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -11,10 +11,10 @@ import java.sql.*;
 public class StudentRepo {
     private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
 
-    public StudentDTO createStudent(String lastName, String firstName, String middleName, int user_id) {
+    public StudentEntity createStudent(String lastName, String firstName, String middleName, int user_id) {
 
         LOG.trace("Start tracing StudentRepo#createStudent");
-        StudentDTO student = null;
+        StudentEntity student = null;
         int id = -1;
 
         try (Connection connection = ConnectionPool.getConnection()) {
@@ -41,13 +41,13 @@ public class StudentRepo {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
-        student = new StudentDTO(id, lastName, firstName, middleName, user_id);
+        student = new StudentEntity(id, lastName, firstName, middleName, user_id);
         return student;
     }
 
-    public StudentDTO findStudentByIdUser(int id) {
+    public StudentEntity findStudentByIdUser(int id) {
         LOG.trace("Start tracing MySQLStudentDAO#findStudentByIdUser");
-        StudentDTO student = null;
+        StudentEntity student = null;
         try (Connection connection = ConnectionPool.getConnection()){
             if (connection!=null){
                 try(PreparedStatement statement = connection.prepareStatement(Query.SELECT_STUDENT_BY_ID_USER)) {
@@ -56,7 +56,7 @@ public class StudentRepo {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        student = new StudentDTO(resultSet.getInt("id"), resultSet.getString("surname"),
+                        student = new StudentEntity(resultSet.getInt("id"), resultSet.getString("surname"),
                                 resultSet.getString("name"), resultSet.getString("patronymic"),
                                 resultSet.getInt("id_user"));
                     }

@@ -2,6 +2,7 @@ package com.taras_overmind.epam_final_project.command.lecturer;
 
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
+import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
@@ -29,9 +30,17 @@ public class MarkStudentCommand extends Command {
         LOG.trace("Start tracing MarkStudentCommand");
 
         String status = request.getParameter("mark");
-        int mark = Integer.parseInt(request.getParameter("new_mark"));
-        int id = Integer.parseInt(request.getParameter("id"));
+        try {
+            int mark = Integer.parseInt(request.getParameter("new_mark"));
+            int id = Integer.parseInt(request.getParameter("id"));
+            if(mark<0 || mark>100)
+                throw new NumberFormatException();
+            return new JournalRepo().setMarkForStudentByStudentCourseId(mark, id, status);
+        } catch (NumberFormatException ex) {
+            request.getSession().setAttribute("wrongData", "Enter a valid mark");
+            return new ForwardResult("/WEB-INF/jsp/lecturer.jsp");
+        }
 
-        return new JournalRepo().setMarkForStudentByStudentCourseId(mark, id, status);
+
     }
 }

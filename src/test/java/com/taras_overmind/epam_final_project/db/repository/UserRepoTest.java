@@ -4,8 +4,8 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.Query;
+import com.taras_overmind.epam_final_project.db.entity.UserEntity;
 import com.taras_overmind.epam_final_project.db.dto.UserDTO;
-import com.taras_overmind.epam_final_project.db.dto.UserInfoDTO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -45,13 +45,13 @@ public class UserRepoTest {
         when(resultSet.next()).thenReturn(true);
         when(resultSet.getInt("max(id_user)")).thenReturn(1);
 
-        UserDTO userDTO = userRepo.createUser("test", "password", 2);
+        UserEntity userEntity = userRepo.createUser("test", "password", 2);
 
-        assertEquals(1, userDTO.getIdUser());
-        assertEquals("test", userDTO.getLogin());
-        assertEquals("password", userDTO.getPassword());
-        assertEquals(2, userDTO.getRoleId());
-        assertEquals(0, userDTO.getStateId());
+        assertEquals(1, userEntity.getIdUser());
+        assertEquals("test", userEntity.getLogin());
+        assertEquals("password", userEntity.getPassword());
+        assertEquals(2, userEntity.getRoleId());
+        assertEquals(0, userEntity.getStateId());
 
         verify(statement).setString(1, "test");
         verify(statement).setString(2, "password");
@@ -78,14 +78,14 @@ public class UserRepoTest {
         when(resultSet.getInt("id_role")).thenReturn(1);
         when(resultSet.getInt("id_state")).thenReturn(1);
 
-        UserDTO userDTO = userRepo.getUserByName("testuser");
+        UserEntity userEntity = userRepo.getUserByName("testuser");
 
-        assertEquals(1, userDTO.getIdUser());
-        assertEquals("testuser", userDTO.getLogin());
-        assertEquals("testpassword", userDTO.getPassword());
-        assertEquals("testuser@test.com", userDTO.getEmail());
-        assertEquals(1, userDTO.getRoleId());
-        assertEquals(1, userDTO.getStateId());
+        assertEquals(1, userEntity.getIdUser());
+        assertEquals("testuser", userEntity.getLogin());
+        assertEquals("testpassword", userEntity.getPassword());
+        assertEquals("testuser@test.com", userEntity.getEmail());
+        assertEquals(1, userEntity.getRoleId());
+        assertEquals(1, userEntity.getStateId());
     }
 
 
@@ -148,7 +148,7 @@ public class UserRepoTest {
         when(resultSet.getString("name_state")).thenReturn("active", "active");
 
         // Act
-        List<UserInfoDTO> users = userRepo.findUsers(true);
+        List<UserDTO> users = userRepo.findUsers(true);
 
         // Assert
         assertEquals(2, users.size());

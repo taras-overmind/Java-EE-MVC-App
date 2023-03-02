@@ -2,7 +2,7 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
-import com.taras_overmind.epam_final_project.db.dto.LecturerDTO;
+import com.taras_overmind.epam_final_project.db.entity.LecturerEntity;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -12,10 +12,10 @@ import java.util.List;
 public class LecturerRepo {
     private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
 
-    public LecturerDTO createLecturer(String lastName, String firstName, String middleName, int user_id) {
+    public LecturerEntity createLecturer(String lastName, String firstName, String middleName, int user_id) {
 
         LOG.trace("Start tracing LecturerRepo#createLecturer");
-        LecturerDTO lecturer = null;
+        LecturerEntity lecturer = null;
         int id = -1;
 
         try (Connection connection = ConnectionPool.getConnection()) {
@@ -42,14 +42,14 @@ public class LecturerRepo {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
-        lecturer = new LecturerDTO(id, lastName, firstName, middleName, user_id);
+        lecturer = new LecturerEntity(id, lastName, firstName, middleName, user_id);
         return lecturer;
     }
 
-    public List<LecturerDTO> getAllLecturers() {
+    public List<LecturerEntity> getAllLecturers() {
         LOG.trace("Starting tracing LecturerRepo#getAllLecturers");
-        List<LecturerDTO> lecturers = new ArrayList<>();
-        LecturerDTO lecturer;
+        List<LecturerEntity> lecturers = new ArrayList<>();
+        LecturerEntity lecturer;
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_LECTURERS)) {
@@ -57,7 +57,7 @@ public class LecturerRepo {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     while (resultSet.next()) {
-                        lecturer = new LecturerDTO(resultSet.getInt("id"), resultSet.getString("surname"),
+                        lecturer = new LecturerEntity(resultSet.getInt("id"), resultSet.getString("surname"),
                                 resultSet.getString("name"), resultSet.getString("patronymic"), resultSet.getInt("id_user"));
                         lecturers.add(lecturer);
                     }
@@ -74,9 +74,9 @@ public class LecturerRepo {
         return lecturers;
     }
 
-    public LecturerDTO getLecturerById(int id){
+    public LecturerEntity getLecturerById(int id){
         LOG.trace("Start tracing LecturerRepo#getLecturerById");
-        LecturerDTO lecturer=null;
+        LecturerEntity lecturer=null;
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_LECTURER_BY_ID)) {
@@ -85,7 +85,7 @@ public class LecturerRepo {
                     statement.execute();
                     ResultSet resultSet = statement.getResultSet();
                     if (resultSet.next()) {
-                        lecturer = new LecturerDTO(resultSet.getInt("id"), resultSet.getString("surname"),
+                        lecturer = new LecturerEntity(resultSet.getInt("id"), resultSet.getString("surname"),
                                 resultSet.getString("name"),
                                 resultSet.getString("patromynic"),
                                 resultSet.getInt("id_user"));

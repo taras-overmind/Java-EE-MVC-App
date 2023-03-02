@@ -15,7 +15,7 @@
 <c:if test="${not empty sessionScope.wrongData}">
     <div class="alertError">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        <strong>Помилка: </strong>
+        <strong>Error: </strong>
         <text>${sessionScope.wrongData} </text>
     </div>
     <c:remove var="wrongData" scope="session"/>

@@ -85,25 +85,30 @@
                     <td>${row.lecturerName}</td>
                     <td>${row.statusName}</td>
                     <td>${row.count}</td>
-                    <td>
-                        <form action="controller" method="get">
-                            <input type="hidden" name="command" value="getEditCourseCommand">
-                            <input type="hidden" name="id_course" value="${row.courseId}">
-                            <input type="hidden" name="name_course" value="${row.courseName}">
-                            <input type="hidden" name="duration" value="${row.duration}">
-                            <input type="hidden" name="name_theme" value="${row.themeName}">
-                            <input type="hidden" name="lecturerName" value="${row.lecturerName}">
-                            <input type="hidden" name="name_status" value="${row.statusName}">
-                            <button type="submit" class="ed_btn">Edit</button>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="controller" method="post">
-                            <input type="hidden" name="command" value="deleteCourseCommand">
-                            <input type="hidden" name="id_course" value="${row.courseId}">
-                            <button type="submit" class="ed_btn">Delete</button>
-                        </form>
-                    </td>
+                    <c:if test="${sessionScope.id_role=='0'}">
+                        <td>
+                            <form action="controller" method="get">
+                                <input type="hidden" name="command" value="getEditCourseCommand">
+                                <input type="hidden" name="id_course" value="${row.courseId}">
+                                <input type="hidden" name="name_course" value="${row.courseName}">
+                                <input type="hidden" name="duration" value="${row.duration}">
+                                <input type="hidden" name="name_theme" value="${row.themeName}">
+                                <input type="hidden" name="lecturerName" value="${row.lecturerName}">
+                                <input type="hidden" name="name_status" value="${row.statusName}">
+                                <button type="submit" class="ed_btn"><lang:Locale
+                                        value="courses.edit"/></button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action="controller" method="post">
+                                <input type="hidden" name="command" value="deleteCourseCommand">
+                                <input type="hidden" name="id_course" value="${row.courseId}">
+                                <button type="submit" class="ed_btn"><lang:Locale
+                                        value="courses.delete"/></button>
+                            </form>
+                        </td>
+                    </c:if>
+
                 </tr>
                 </c:forEach>
             </table>
@@ -115,7 +120,9 @@
 
         <tr>
             <c:if test="${sessionScope.currentPage != 1}">
-                <td><a class="nav-link" href="?command=getCoursesCommand&page=${sessionScope.currentPage - 1}">Previous</a></td>
+                <td><a class="nav-link"
+                       href="?command=getCoursesCommand&page=${sessionScope.currentPage - 1}"><lang:Locale
+                        value="courses.previous"/></a></td>
             </c:if>
             <c:forEach begin="1" end="${sessionScope.noOfPages}" var="i">
                 <c:choose>
@@ -128,11 +135,12 @@
                 </c:choose>
             </c:forEach>
             <c:if test="${sessionScope.currentPage lt sessionScope.noOfPages}">
-                <td><a class="nav-link" href="?command=getCoursesCommand&page=${sessionScope.currentPage + 1}">Next</a></td>
+                <td><a class="nav-link"
+                       href="?command=getCoursesCommand&page=${sessionScope.currentPage + 1}"><lang:Locale
+                        value="courses.next"/></a></td>
             </c:if>
         </tr>
     </table>
-
 
 
 </div>

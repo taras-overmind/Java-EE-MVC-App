@@ -3,7 +3,7 @@ package com.taras_overmind.epam_final_project.command.common;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
-import com.taras_overmind.epam_final_project.db.dto.CourseInfoDTO;
+import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
 import com.taras_overmind.epam_final_project.db.repository.CourseRepo;
 import org.apache.log4j.Logger;
 import javax.servlet.ServletException;
@@ -29,14 +29,14 @@ public class GetCoursesPageCommand extends Command {
         var sorting = session.getAttribute("sorting");
 
         int page=1;
-        int noOfRecords =0;
+        int noOfRecords;
         final int recordsPerPage=5;
         if (request.getParameter("page") != null ) {
             page = Integer.parseInt(request.getParameter("page"));
         }
         String ending = " LIMIT " + recordsPerPage * (page - 1) + ", " + recordsPerPage;
 
-        List<CourseInfoDTO> courses;
+        List<CourseDTO> courses;
         courses=courseRepo.findSortedCourses(sort, sorting, idLecturer, idTheme, ending);
         noOfRecords= courseRepo.getNoOfRecords();
         session.setAttribute("result", courses);

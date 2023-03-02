@@ -3,9 +3,8 @@ package com.taras_overmind.epam_final_project.command.common;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
-import com.taras_overmind.epam_final_project.db.dto.LecturerDTO;
-import com.taras_overmind.epam_final_project.db.dto.StatusDTO;
-import com.taras_overmind.epam_final_project.db.dto.ThemeDTO;
+import com.taras_overmind.epam_final_project.db.entity.LecturerEntity;
+import com.taras_overmind.epam_final_project.db.entity.ThemeEntity;
 import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
 import com.taras_overmind.epam_final_project.db.repository.StatusRepo;
 import com.taras_overmind.epam_final_project.db.repository.ThemeRepo;
@@ -55,8 +54,8 @@ public class LoginCommand extends Command {
         session.setAttribute("id_state", user.getStateId());
         session.setAttribute("id_role", user.getRoleId());
 
-        List<LecturerDTO> lecturers = new LecturerRepo().getAllLecturers();
-        List<ThemeDTO> themes = new ThemeRepo().getAllThemes();
+        List<LecturerEntity> lecturers = new LecturerRepo().getAllLecturers();
+        List<ThemeEntity> themes = new ThemeRepo().getAllThemes();
         session.setAttribute("statuses", new StatusRepo().getAllStatuses());
         session.setAttribute("themes", themes);
         session.setAttribute("lecturers", lecturers);

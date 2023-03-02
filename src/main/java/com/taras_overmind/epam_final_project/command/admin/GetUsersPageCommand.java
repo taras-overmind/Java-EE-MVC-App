@@ -4,9 +4,7 @@ import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
 import com.taras_overmind.epam_final_project.command.student.GetStudentPageCommand;
-import com.taras_overmind.epam_final_project.db.ConnectionPool;
-import com.taras_overmind.epam_final_project.db.Query;
-import com.taras_overmind.epam_final_project.db.dto.UserInfoDTO;
+import com.taras_overmind.epam_final_project.db.dto.UserDTO;
 import com.taras_overmind.epam_final_project.db.repository.UserRepo;
 import org.apache.log4j.Logger;
 
@@ -15,11 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class GetUsersPageCommand extends Command {
@@ -31,8 +24,8 @@ public class GetUsersPageCommand extends Command {
         LOG.trace("Start tracing GetUsersPageCommand");
 
         HttpSession session = request.getSession();
-        List<UserInfoDTO> list1 = new UserRepo().findUsers(true);
-        List<UserInfoDTO> list2 = new UserRepo().findUsers(false);
+        List<UserDTO> list1 = new UserRepo().findUsers(true);
+        List<UserDTO> list2 = new UserRepo().findUsers(false);
 
         session.setAttribute("result1", list1);
         session.setAttribute("result2", list2);

@@ -41,7 +41,7 @@ public class LocaleTag extends TagSupport {
             try {
                 out.println(rb.getString(value));
             } catch (IOException e) {
-                LOG.error("Not find this key!");
+                LOG.error("Key not found");
             }
         }
         return SKIP_BODY;

@@ -41,11 +41,7 @@ public class CommandAccessFilter implements Filter {
             httpResp.sendRedirect(httpReq.getContextPath() + "?command=getLoginCommand");
         }
 
-//        if (session.getAttribute("user")==null){
-//            session.setAttribute("wrongData", "You are no logged");
-//            request.getRequestDispatcher("/WEB-INF/jsp/login.jsp")
-//                    .forward(request, response);
-//        }
+
     }
 
     private boolean accessAllowed(ServletRequest request) {

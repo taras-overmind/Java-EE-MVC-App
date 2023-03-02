@@ -3,7 +3,6 @@ package com.taras_overmind.epam_final_project.db.repository;
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
 import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
-import com.taras_overmind.epam_final_project.db.dto.CourseInfoDTO;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -14,37 +13,6 @@ public class CourseRepo {
 
     public static final Logger LOG = Logger.getLogger(CourseRepo.class);
     private int noOfRecords=0;
-
-    public List<CourseDTO> getAllCourses() {
-        LOG.trace("Starting tracing CourseRepo#getAllCourses");
-        List<CourseDTO> courses = new ArrayList<>();
-        CourseDTO course;
-
-        try (Connection connection = ConnectionPool.getConnection()) {
-            if (connection != null) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.SELECT_ALL_COURSES)) {
-                    connection.setAutoCommit(false);
-                    statement.execute();
-                    ResultSet resultSet = statement.getResultSet();
-                    while (resultSet.next()) {
-                        course = new CourseDTO(resultSet.getInt("id_course"),
-                                resultSet.getString("name_course"), resultSet.getInt("duration"),
-                                resultSet.getInt("id_theme"), resultSet.getInt("id_lecturer"),
-                                resultSet.getInt("id_status"));
-                        courses.add(course);
-                    }
-                    resultSet.close();
-                    connection.commit();
-                } catch (SQLException ex) {
-                    LOG.error(ex.getLocalizedMessage());
-                    connection.rollback();
-                }
-            }
-        } catch (SQLException ex) {
-            LOG.info(ex.getLocalizedMessage());
-        }
-        return courses;
-    }
 
     public void createCourse(String name, int duration, int theme, int lecturer, int status) {
         LOG.trace("Starting tracing CourseRepo#createCourse");
@@ -118,10 +86,10 @@ public class CourseRepo {
         }
     }
 
-    public List<CourseInfoDTO> findUserCoursesByUserIdAndStatus(String status, int id_user) {
+    public List<CourseDTO> findUserCoursesByUserIdAndStatus(String status, int id_user) {
         LOG.trace("Start tracing CourseRepo#findUserCoursesByUserIdAndStatus");
-        CourseInfoDTO courseInfoDTO;
-        List<CourseInfoDTO> courses = new ArrayList<>();
+        CourseDTO courseDTO;
+        List<CourseDTO> courses = new ArrayList<>();
         try (Connection connection = ConnectionPool.getConnection()) {
             boolean finished = status.equals("4");
             if (connection != null) {
@@ -140,15 +108,15 @@ public class CourseRepo {
                 statement.execute();
                 ResultSet resultSet = statement.getResultSet();
                 while (resultSet.next()) {
-                    courseInfoDTO = new CourseInfoDTO();
-                    courseInfoDTO.setLecturerName(resultSet.getString("surname") + " " +
+                    courseDTO = new CourseDTO();
+                    courseDTO.setLecturerName(resultSet.getString("surname") + " " +
                             resultSet.getString("name") + " " + resultSet.getString("patronymic"));
-                    courseInfoDTO.setDuration(resultSet.getInt("duration"));
-                    courseInfoDTO.setCourseName(resultSet.getString("name_course"));
-                    courseInfoDTO.setThemeName(resultSet.getString("name_theme"));
+                    courseDTO.setDuration(resultSet.getInt("duration"));
+                    courseDTO.setCourseName(resultSet.getString("name_course"));
+                    courseDTO.setThemeName(resultSet.getString("name_theme"));
                     if (finished)
-                        courseInfoDTO.setCount(resultSet.getInt("mark"));
-                    courses.add(courseInfoDTO);
+                        courseDTO.setCount(resultSet.getInt("mark"));
+                    courses.add(courseDTO);
                 }
                 resultSet.close();
             }
@@ -158,10 +126,10 @@ public class CourseRepo {
         return courses;
     }
 
-    public List<CourseInfoDTO> findCoursesToRegisterByUserId(int id) {
+    public List<CourseDTO> findCoursesToRegisterByUserId(int id) {
         LOG.trace("Start tracing CourseRepo#findCoursesToRegisterByUserId");
-        CourseInfoDTO courseInfoDTO;
-        List<CourseInfoDTO> courses = new ArrayList<>();
+        CourseDTO courseDTO;
+        List<CourseDTO> courses = new ArrayList<>();
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 PreparedStatement statement = connection.prepareStatement(
@@ -172,14 +140,14 @@ public class CourseRepo {
                 statement.execute();
                 ResultSet resultSet = statement.getResultSet();
                 while (resultSet.next()) {
-                    courseInfoDTO = new CourseInfoDTO();
-                    courseInfoDTO.setCourseId(resultSet.getInt("id_course"));
-                    courseInfoDTO.setLecturerName(resultSet.getString("surname") + " " +
+                    courseDTO = new CourseDTO();
+                    courseDTO.setCourseId(resultSet.getInt("id_course"));
+                    courseDTO.setLecturerName(resultSet.getString("surname") + " " +
                             resultSet.getString("name") + " " + resultSet.getString("patronymic"));
-                    courseInfoDTO.setDuration(resultSet.getInt("duration"));
-                    courseInfoDTO.setCourseName(resultSet.getString("name_course"));
-                    courseInfoDTO.setThemeName(resultSet.getString("name_theme"));
-                    courses.add(courseInfoDTO);
+                    courseDTO.setDuration(resultSet.getInt("duration"));
+                    courseDTO.setCourseName(resultSet.getString("name_course"));
+                    courseDTO.setThemeName(resultSet.getString("name_theme"));
+                    courses.add(courseDTO);
                 }
                 resultSet.close();
             }
@@ -193,11 +161,11 @@ public class CourseRepo {
         return noOfRecords;
     }
 
-    public List<CourseInfoDTO> findSortedCourses(Object sort, Object sorting, Object idLecturer, Object idTheme,
-                                                 String ending) {
+    public List<CourseDTO> findSortedCourses(Object sort, Object sorting, Object idLecturer, Object idTheme,
+                                             String ending) {
 
-        CourseInfoDTO courseInfoDTO;
-        List<CourseInfoDTO> courses = new ArrayList<>();
+        CourseDTO courseDTO;
+        List<CourseDTO> courses = new ArrayList<>();
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 PreparedStatement statement;
@@ -261,16 +229,16 @@ public class CourseRepo {
                 statement.execute();
                 ResultSet resultSet = statement.getResultSet();
                 while (resultSet.next()) {
-                    courseInfoDTO = new CourseInfoDTO();
-                    courseInfoDTO.setCourseId(resultSet.getInt("id_course"));
-                    courseInfoDTO.setCourseName(resultSet.getString("name_course"));
-                    courseInfoDTO.setDuration(resultSet.getInt("duration"));
-                    courseInfoDTO.setThemeName(resultSet.getString("name_theme"));
-                    courseInfoDTO.setLecturerName(resultSet.getString("surname") + " " +
+                    courseDTO = new CourseDTO();
+                    courseDTO.setCourseId(resultSet.getInt("id_course"));
+                    courseDTO.setCourseName(resultSet.getString("name_course"));
+                    courseDTO.setDuration(resultSet.getInt("duration"));
+                    courseDTO.setThemeName(resultSet.getString("name_theme"));
+                    courseDTO.setLecturerName(resultSet.getString("surname") + " " +
                             resultSet.getString("name") + " " + resultSet.getString("patronymic"));
-                    courseInfoDTO.setStatusName(resultSet.getString("name_status"));
-                    courseInfoDTO.setCount(resultSet.getInt("COUNT"));
-                    courses.add(courseInfoDTO);
+                    courseDTO.setStatusName(resultSet.getString("name_status"));
+                    courseDTO.setCount(resultSet.getInt("COUNT"));
+                    courses.add(courseDTO);
                 }
                 resultSet.close();
                 resultSet = connection.createStatement().executeQuery("SELECT FOUND_ROWS()");
