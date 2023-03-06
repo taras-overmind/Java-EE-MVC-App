@@ -34,7 +34,6 @@ public class LogOutCommand extends Command {
         session.setAttribute("sort", null);
         session.setAttribute("sorting", null);
         session.setAttribute("user", null);
-//        session.invalidate();
         return new RedirectResult("?command=getLoginCommand");
     }
 }

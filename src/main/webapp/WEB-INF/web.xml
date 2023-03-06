@@ -37,7 +37,7 @@
 <!--    </servlet-mapping>-->
 
     <listener>
-        <listener-class>com.taras_overmind.epam_final_project.listener.ContextListener</listener-class>
+        <listener-class>com.taras_overmind.epam_final_project.context.ContextListener</listener-class>
     </listener>
 
     <filter>
@@ -88,9 +88,9 @@
 
 
 
-    <welcome-file-list>
-        <welcome-file>/WEB-INF/jsp/login.jsp</welcome-file>
-    </welcome-file-list>
+<!--    <welcome-file-list>-->
+<!--        <welcome-file>/WEB-INF/jsp/login.jsp</welcome-file>-->
+<!--    </welcome-file-list>-->
 
 
 

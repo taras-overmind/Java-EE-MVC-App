@@ -82,11 +82,11 @@ public class CommandAccessFilter implements Filter {
         accessMap.put(Role.ADMIN, asList(fConfig.getInitParameter("admin")));
         accessMap.put(Role.LECTURER, asList(fConfig.getInitParameter("lecturer")));
         accessMap.put(Role.STUDENT, asList(fConfig.getInitParameter("student")));
-        LOG.trace("Access map --> " + accessMap);
+//        LOG.trace("Access map --> " + accessMap);
 
         // commons
         commons = asList(fConfig.getInitParameter("common"));
-        LOG.trace("Common commands --> " + commons);
+//        LOG.trace("Common commands --> " + commons);
 
         // out of control
         outOfControl = asList(fConfig.getInitParameter("out-of-control"));

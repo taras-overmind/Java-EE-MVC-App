@@ -12,7 +12,7 @@ import java.util.List;
 public class CourseRepo {
 
     public static final Logger LOG = Logger.getLogger(CourseRepo.class);
-    private int noOfRecords=0;
+    private int numberOfRecords =0;
 
     public void createCourse(String name, int duration, int theme, int lecturer, int status) {
         LOG.trace("Starting tracing CourseRepo#createCourse");
@@ -157,9 +157,6 @@ public class CourseRepo {
         return courses;
     }
 
-    public int getNoOfRecords() {
-        return noOfRecords;
-    }
 
     public List<CourseDTO> findSortedCourses(Object sort, Object sorting, Object idLecturer, Object idTheme,
                                              String ending) {
@@ -243,12 +240,16 @@ public class CourseRepo {
                 resultSet.close();
                 resultSet = connection.createStatement().executeQuery("SELECT FOUND_ROWS()");
                 if (resultSet.next())
-                    noOfRecords = resultSet.getInt(1);
+                    numberOfRecords = resultSet.getInt(1);
             }
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
         }
         return courses;
+    }
+
+    public int getNumberOfRecords() {
+        return numberOfRecords;
     }
 
 }

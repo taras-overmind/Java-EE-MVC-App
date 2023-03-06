@@ -4,8 +4,9 @@ import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
 import com.taras_overmind.epam_final_project.command.student.GetStudentPageCommand;
+import com.taras_overmind.epam_final_project.context.AppContext;
 import com.taras_overmind.epam_final_project.db.dto.UserDTO;
-import com.taras_overmind.epam_final_project.db.repository.UserRepo;
+import com.taras_overmind.epam_final_project.db.service.UserService;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -23,9 +24,10 @@ public class GetUsersPageCommand extends Command {
             throws IOException, ServletException {
         LOG.trace("Start tracing GetUsersPageCommand");
 
+        UserService userService= AppContext.getInstance(request).getUserService();
         HttpSession session = request.getSession();
-        List<UserDTO> list1 = new UserRepo().findUsers(true);
-        List<UserDTO> list2 = new UserRepo().findUsers(false);
+        List<UserDTO> list1 = userService.findUsers(true);
+        List<UserDTO> list2 = userService.findUsers(false);
 
         session.setAttribute("result1", list1);
         session.setAttribute("result2", list2);

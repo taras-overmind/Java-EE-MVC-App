@@ -4,8 +4,9 @@ package com.taras_overmind.epam_final_project.command.common;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
-import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
-import com.taras_overmind.epam_final_project.db.repository.StudentRepo;
+import com.taras_overmind.epam_final_project.context.AppContext;
+import com.taras_overmind.epam_final_project.db.service.LecturerService;
+import com.taras_overmind.epam_final_project.db.service.StudentService;
 import com.taras_overmind.epam_final_project.db.service.UserService;
 
 import org.apache.log4j.Logger;
@@ -24,7 +25,6 @@ public class RegisterCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(RegisterCommand.class);
 
-    private final UserService userService = new UserService();
     @Serial
     private static final long serialVersionUID = -7190245479634943129L;
 
@@ -32,7 +32,9 @@ public class RegisterCommand extends Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward)
             throws IOException, ServletException {
         LOG.trace("Start tracing RegisterCommand");
-
+        UserService userService = AppContext.getInstance(request).getUserService();
+        StudentService studentService = AppContext.getInstance(request).getStudentService();
+        LecturerService lecturerService = AppContext.getInstance(request).getLecturerService();
         HttpSession session = request.getSession();
         RedirectResult redirect;
         String username = "", password = "", lastName = "", firstName = "", middleName = "";
@@ -41,8 +43,10 @@ public class RegisterCommand extends Command {
         if ((request.getParameter("username") != null) && (request.getParameter("password") != null) &&
                 request.getParameter("lastName") != null && request.getParameter("firstName") != null &&
                 request.getParameter("middleName") != null && request.getParameter("role") != null) {
-            username = new String(request.getParameter("username").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-            password = new String(request.getParameter("password").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
+            username = new String(request.getParameter("username").getBytes(StandardCharsets.ISO_8859_1),
+                    StandardCharsets.UTF_8);
+            password = new String(request.getParameter("password").getBytes(StandardCharsets.ISO_8859_1),
+                    StandardCharsets.UTF_8);
             firstName = request.getParameter("firstName");
             lastName = request.getParameter("lastName");
             middleName = request.getParameter("middleName");
@@ -53,14 +57,14 @@ public class RegisterCommand extends Command {
             session.setAttribute("wrongData", userService.registerCheck(username, password));
             redirect = new RedirectResult("?command=getRegisterCommand");
         } else {
-            var user = userService.getUserRepo().createUser(username, password, role);
+            var user = userService.createUser(username, password, role);
             if(role==1){
                 session.setAttribute("registerSuccess", "You registered successfully");
-                new StudentRepo().createStudent(lastName, firstName, middleName, user.getIdUser());
+                studentService.createStudent(lastName, firstName, middleName, user.getIdUser());
             }
             else{
                 session.setAttribute("registerSuccess", "You registered successfully. Wait for admin to confirm your role");
-                new LecturerRepo().createLecturer(lastName, firstName, middleName, user.getIdUser());
+                lecturerService.createLecturer(lastName, firstName, middleName, user.getIdUser());
             }
             redirect = new RedirectResult("?command=getLoginCommand");
         }

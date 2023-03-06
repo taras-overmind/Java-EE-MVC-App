@@ -1,9 +1,6 @@
 package com.taras_overmind.epam_final_project.db.entity;
 
 
-import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
-import com.taras_overmind.epam_final_project.db.repository.ThemeRepo;
-
 import java.io.Serializable;
 
 
@@ -11,10 +8,6 @@ public class CourseEntity implements Serializable{
 
 
     private static final long serialVersionUID = -5527657822689332544L;
-
-    private static final LecturerRepo lecturerRepo = new LecturerRepo();
-
-    private static final ThemeRepo themeRepo = new ThemeRepo();
 
     private int courseId;
     private String courseName;
@@ -70,9 +63,9 @@ public class CourseEntity implements Serializable{
         return themeId;
     }
 
-    public ThemeEntity getTheme(){
-        return themeRepo.getThemeById(themeId);
-    }
+//    public ThemeEntity getTheme(){
+//        return themeRepo.getThemeById(themeId);
+//    }
 
 
     public void setThemeId(int themeId) {
@@ -84,9 +77,9 @@ public class CourseEntity implements Serializable{
         return lecturerId;
     }
 
-    public LecturerEntity getLecturer(){
-        return lecturerRepo.getLecturerById(lecturerId);
-    }
+//    public LecturerEntity getLecturer(){
+//        return lecturerRepo.getLecturerById(lecturerId);
+//    }
 
 
     public void setLecturerId(int lecturerId) {

@@ -15,6 +15,7 @@ import java.util.List;
 public class StudentCourseRepo {
 
     private static final Logger LOG = Logger.getLogger(StudentCourseRepo.class.getName());
+
     public List<StudentCourseDTO> findStudentsByUserId(int id, boolean withMarks) {
         StudentCourseDTO studentCourseDTO;
         List<StudentCourseDTO> list = new ArrayList<>();
@@ -36,7 +37,7 @@ public class StudentCourseRepo {
                             + " " + resultSet.getString("patronymic"));
                     studentCourseDTO.setCourseName(resultSet.getString("name_course"));
                     studentCourseDTO.setId(resultSet.getInt("id_student_course"));
-                    if(withMarks)
+                    if (withMarks)
                         studentCourseDTO.setMark(resultSet.getInt("mark"));
                     list.add(studentCourseDTO);
                 }

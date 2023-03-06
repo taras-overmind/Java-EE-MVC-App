@@ -3,8 +3,8 @@ package com.taras_overmind.epam_final_project.command.admin;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
-import com.taras_overmind.epam_final_project.db.repository.CourseRepo;
-import com.taras_overmind.epam_final_project.db.repository.ThemeRepo;
+import com.taras_overmind.epam_final_project.context.AppContext;
+import com.taras_overmind.epam_final_project.db.service.CourseService;
 import com.taras_overmind.epam_final_project.db.service.ThemeService;
 import org.apache.log4j.Logger;
 
@@ -17,15 +17,13 @@ import java.io.IOException;
 public class CreateCourseCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(CreateCourseCommand.class);
-    private static final ThemeService themeService = new ThemeService();
-
-    private static final CourseRepo courseRepo = new CourseRepo();
 
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward)
             throws IOException, ServletException {
         LOG.trace("Start tracing CreateCourseCommand");
-
+        ThemeService themeService = AppContext.getInstance(request).getThemeService();
+        CourseService courseService = AppContext.getInstance(request).getCourseService();
         HttpSession session = request.getSession();
         String redirect = "?command=getCreateCourseCommand";
 
@@ -35,11 +33,11 @@ public class CreateCourseCommand extends Command {
             String themeName = request.getParameter("name_theme");
             String nameCourse = request.getParameter("name_course");
             int id_theme = themeService.themeCheck(themeName).getIdTheme();
-            session.setAttribute("themes", new ThemeRepo().getAllThemes());
+            session.setAttribute("themes",themeService.getAllThemes());
             if (duration < 0) {
                 session.setAttribute("wrongData", "Duration is negative");
             } else {
-                courseRepo.createCourse(nameCourse, duration, id_theme, id_lecturer, 1);
+                courseService.createCourse(nameCourse, duration, id_theme, id_lecturer, 1);
                 redirect = "?command=getCoursesCommand";
             }
         } catch (NumberFormatException ex) {

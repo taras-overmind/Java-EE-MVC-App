@@ -3,8 +3,9 @@ package com.taras_overmind.epam_final_project.command.student;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
+import com.taras_overmind.epam_final_project.context.AppContext;
 import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
-import com.taras_overmind.epam_final_project.db.repository.CourseRepo;
+import com.taras_overmind.epam_final_project.db.service.CourseService;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -20,8 +21,9 @@ public class GetCoursesToRegisterCommand extends Command {
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing GetCoursesToRegisterCommand");
+        CourseService courseService= AppContext.getInstance(request).getCourseService();
         HttpSession session = request.getSession();
-        List<CourseDTO> courses = new CourseRepo()
+        List<CourseDTO> courses = courseService
                 .findCoursesToRegisterByUserId(Integer.parseInt(String.valueOf(session.getAttribute("id"))));
         session.setAttribute("result", courses);
 

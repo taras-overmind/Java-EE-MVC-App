@@ -13,5 +13,6 @@ public final class Path {
     // commands
     public static final String LOGIN_COMMAND = "?command=getLoginCommand";
     public static final String COURSES_COMMAND = "?command=getLCoursesCommand";
+    public static final String CREATE_COURSE = "?command=getCreateCourseCommand";
 
 }

@@ -3,14 +3,14 @@ package com.taras_overmind.epam_final_project.command.common;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
-import com.taras_overmind.epam_final_project.db.entity.LecturerEntity;
-import com.taras_overmind.epam_final_project.db.entity.ThemeEntity;
-import com.taras_overmind.epam_final_project.db.repository.LecturerRepo;
-import com.taras_overmind.epam_final_project.db.repository.StatusRepo;
-import com.taras_overmind.epam_final_project.db.repository.ThemeRepo;
+import com.taras_overmind.epam_final_project.context.AppContext;
+import com.taras_overmind.epam_final_project.db.service.LecturerService;
+import com.taras_overmind.epam_final_project.db.service.StatusService;
+import com.taras_overmind.epam_final_project.db.service.ThemeService;
 import com.taras_overmind.epam_final_project.db.service.UserService;
 
 import org.apache.log4j.Logger;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,7 +18,6 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.Serial;
 import java.nio.charset.StandardCharsets;
-import java.util.List;
 
 
 public class LoginCommand extends Command {
@@ -26,13 +25,17 @@ public class LoginCommand extends Command {
 
     private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
-    private final UserService userService = new UserService();
     @Serial
     private static final long serialVersionUID = -7190245479634943129L;
 
     @Override
-    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward)
+            throws IOException, ServletException {
         LOG.trace("Start tracing LoginCommand");
+        UserService userService = AppContext.getInstance(request).getUserService();
+        StatusService statusService = AppContext.getInstance(request).getStatusService();
+        LecturerService lecturerService = AppContext.getInstance(request).getLecturerService();
+        ThemeService themeService = AppContext.getInstance(request).getThemeService();
         HttpSession session = request.getSession();
         RedirectResult redirect;
         String username = "", password = "";
@@ -44,22 +47,21 @@ public class LoginCommand extends Command {
         if (userService.loginCheck(username, password) != null) {
             session.setAttribute("wrongData", userService.loginCheck(username, password));
             redirect = new RedirectResult("?command=getLoginCommand");
-        } else{
+        } else {
             redirect = new RedirectResult("?command=getCoursesCommand");
-        var user = userService.getUserRepo().getUserByName(username);
-        session.setAttribute("id", user.getIdUser());
-        session.setAttribute("login", user.getLogin());
-        session.setAttribute("password", user.getPassword());
-        session.setAttribute("email", user.getEmail());
-        session.setAttribute("id_state", user.getStateId());
-        session.setAttribute("id_role", user.getRoleId());
+            var user = userService.getUserByName(username);
+            session.setAttribute("id", user.getIdUser());
+            session.setAttribute("login", user.getLogin());
+            session.setAttribute("password", user.getPassword());
+            session.setAttribute("email", user.getEmail());
+            session.setAttribute("id_state", user.getStateId());
+            session.setAttribute("id_role", user.getRoleId());
+            session.setAttribute("user", user);
+        }
 
-        List<LecturerEntity> lecturers = new LecturerRepo().getAllLecturers();
-        List<ThemeEntity> themes = new ThemeRepo().getAllThemes();
-        session.setAttribute("statuses", new StatusRepo().getAllStatuses());
-        session.setAttribute("themes", themes);
-        session.setAttribute("lecturers", lecturers);
-        session.setAttribute("user", user);}
+        session.setAttribute("statuses", statusService.getAllStatuses());
+        session.setAttribute("themes", themeService.getAllThemes());
+        session.setAttribute("lecturers", lecturerService.getAllLecturers());
 
 
         return redirect;
