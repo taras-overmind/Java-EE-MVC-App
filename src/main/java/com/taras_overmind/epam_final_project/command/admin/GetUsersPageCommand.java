@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.admin;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
@@ -25,14 +26,14 @@ public class GetUsersPageCommand extends Command {
         LOG.trace("Start tracing GetUsersPageCommand");
 
         UserService userService= AppContext.getInstance(request).getUserService();
-        HttpSession session = request.getSession();
+
         List<UserDTO> list1 = userService.findUsers(true);
         List<UserDTO> list2 = userService.findUsers(false);
 
-        session.setAttribute("result1", list1);
-        session.setAttribute("result2", list2);
+        request.setAttribute("result1", list1);
+        request.setAttribute("result2", list2);
 
 
-        return new ForwardResult("/WEB-INF/jsp/users.jsp");
+        return new ForwardResult(Path.PAGE_USERS);
     }
 }

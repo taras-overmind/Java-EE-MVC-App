@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.admin;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
@@ -19,7 +20,7 @@ public class GetCreateCoursePageCommand extends Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing GetCreateCoursePageCommand");
 
-        return new ForwardResult("/WEB-INF/jsp/createCourse.jsp");
+        return new ForwardResult(Path.PAGE_CREATE_COURSE);
 
     }
 }

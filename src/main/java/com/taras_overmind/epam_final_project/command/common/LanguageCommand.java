@@ -1,6 +1,7 @@
 package com.taras_overmind.epam_final_project.command.common;
 
 
+import com.taras_overmind.epam_final_project.Utils;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
@@ -26,10 +27,13 @@ public class LanguageCommand extends Command {
     @Override
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing LanguageCommand");
+
         HttpSession session = request.getSession();
         String language = request.getParameter("language");
+
         LOG.trace("Language is switched to " + language);
+
         session.setAttribute("language", language);
-        return new RedirectResult(request.getContextPath()+"?"+request.getParameter("url"));
+        return new RedirectResult(Utils.getCurrentURL(request));
     }
 }

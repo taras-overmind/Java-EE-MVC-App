@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.student;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
@@ -29,7 +30,7 @@ public class GetStudentPageCommand extends Command {
                 findUserCoursesByUserIdAndStatus(status, Integer.parseInt(String.valueOf(session.getAttribute("id"))));
 
         session.setAttribute("result", courses);
-        return new ForwardResult("/WEB-INF/jsp/student.jsp");
+        return new ForwardResult(Path.PAGE_STUDENT);
 
     }
 }

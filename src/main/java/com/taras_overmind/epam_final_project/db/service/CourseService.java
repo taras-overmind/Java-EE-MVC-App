@@ -1,5 +1,7 @@
 package com.taras_overmind.epam_final_project.db.service;
 
+import com.taras_overmind.epam_final_project.db.State;
+import com.taras_overmind.epam_final_project.db.Status;
 import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
 import com.taras_overmind.epam_final_project.db.repository.CourseRepo;
 
@@ -12,7 +14,7 @@ public class CourseService {
         this.courseRepo = courseRepo;
     }
 
-    public void createCourse(String name, int duration, int theme, int lecturer, int status) {
+    public void createCourse(String name, int duration, int theme, int lecturer, Status status) {
         courseRepo.createCourse(name, duration, theme, lecturer, status);
     }
 

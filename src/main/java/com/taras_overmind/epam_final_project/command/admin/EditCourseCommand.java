@@ -1,5 +1,7 @@
 package com.taras_overmind.epam_final_project.command.admin;
 
+import com.taras_overmind.epam_final_project.Path;
+import com.taras_overmind.epam_final_project.Utils;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
@@ -22,10 +24,11 @@ public class EditCourseCommand extends Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward)
             throws IOException, ServletException {
         LOG.trace("Start tracing EditCourseCommand");
+
         CourseService courseService = AppContext.getInstance(request).getCourseService();
         ThemeService themeService = AppContext.getInstance(request).getThemeService();
         HttpSession session = request.getSession();
-        String redirect = request.getContextPath()+"?"+request.getParameter("url");
+        String redirect = Utils.getCurrentURL(request);
 
         try {
             int id_lecturer = Integer.parseInt(request.getParameter("idLecturer"));
@@ -35,12 +38,14 @@ public class EditCourseCommand extends Command {
             String themeName = request.getParameter("name_theme");
             String nameCourse = request.getParameter("name_course");
             int id_theme = themeService.themeCheck(themeName).getIdTheme();
+
             session.setAttribute("themes", themeService.getAllThemes());
+
             if (duration < 0) {
                 session.setAttribute("wrongData", "Duration is negative");
             } else {
                 courseService.updateCourse(id_course, nameCourse, duration, id_theme, id_lecturer, status);
-                redirect = "?command=getCoursesCommand";
+                redirect = Path.COURSES;
             }
         } catch (NumberFormatException ex) {
             session.setAttribute("wrongData", "Wrong data");

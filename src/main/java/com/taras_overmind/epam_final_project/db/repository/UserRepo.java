@@ -2,6 +2,8 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
+import com.taras_overmind.epam_final_project.db.Role;
+import com.taras_overmind.epam_final_project.db.State;
 import com.taras_overmind.epam_final_project.db.entity.UserEntity;
 
 import com.taras_overmind.epam_final_project.db.dto.UserDTO;
@@ -46,7 +48,7 @@ public class UserRepo {
         return userEntity;
     }
 
-    public UserEntity createUser(String login, String password, int role) {
+    public UserEntity createUser(String login, String password, Role role) {
         LOG.trace("Start tracing UserRepo#createUser");
         UserEntity user = null;
         int id = -1;
@@ -57,8 +59,9 @@ public class UserRepo {
                     connection.setAutoCommit(false);
                     statement.setString(1, login);
                     statement.setString(2, password);
-                    statement.setInt(3, role);
-                    statement.setInt(4, role == 1 ? 1 : 0);
+                    statement.setInt(3, role.getId_role());
+                    statement.setInt(4,
+                            role.equals(Role.STUDENT) ? State.UNLOCKED.getId_state() : State.LOCKED.getId_state());
                     statement.executeUpdate();
                     PreparedStatement stmt = connection.prepareStatement(Query.SELECT_LAST_USER_ID);
                     stmt.execute();
@@ -75,22 +78,22 @@ public class UserRepo {
         } catch (SQLException ex) {
             LOG.error(ex.getLocalizedMessage());
         }
-        user = new UserEntity(id, login, password, role, role == 1 ? 1 : 0);
+        user = new UserEntity(id, login, password, role.getId_role(),
+                role.equals(Role.STUDENT) ? State.UNLOCKED.getId_state() : State.LOCKED.getId_state());
         return user;
     }
 
-    public void changeUserState(int id, String state) {
+    public void changeUserState(int id, State state) {
         LOG.trace("Start tracing UserRepo#changeUserState");
         try (Connection connection = ConnectionPool.getConnection()) {
             if ((connection != null)) {
-                try (PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER, Statement.RETURN_GENERATED_KEYS)) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.CHANGE_STATE_USER,
+                        Statement.RETURN_GENERATED_KEYS)) {
                     connection.setAutoCommit(false);
-                    if (state.equals("locked"))
-                        statement.setInt(1, 1);
-                    else if(state.equals("unlocked"))
-                        statement.setInt(1, 0);
+                    if(state.equals(State.LOCKED))
+                        statement.setInt(1, State.UNLOCKED.getId_state());
                     else
-                        throw new SQLException("Invalid state");
+                        statement.setInt(1, State.LOCKED.getId_state());
                     statement.setInt(2, id);
                     statement.executeUpdate();
                     connection.commit();

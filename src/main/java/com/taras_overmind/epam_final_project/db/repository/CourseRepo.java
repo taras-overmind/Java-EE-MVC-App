@@ -2,6 +2,7 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
+import com.taras_overmind.epam_final_project.db.Status;
 import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
 import org.apache.log4j.Logger;
 
@@ -14,7 +15,7 @@ public class CourseRepo {
     public static final Logger LOG = Logger.getLogger(CourseRepo.class);
     private int numberOfRecords =0;
 
-    public void createCourse(String name, int duration, int theme, int lecturer, int status) {
+    public void createCourse(String name, int duration, int theme, int lecturer, Status status) {
         LOG.trace("Starting tracing CourseRepo#createCourse");
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
@@ -24,7 +25,7 @@ public class CourseRepo {
                     statement.setInt(2, duration);
                     statement.setInt(3, theme);
                     statement.setInt(4, lecturer);
-                    statement.setInt(5, status);
+                    statement.setInt(5, status.getId_status());
                     statement.executeUpdate();
                     connection.commit();
                 } catch (SQLException ex) {

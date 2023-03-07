@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.lecturer;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
@@ -37,7 +38,7 @@ public class MarkStudentCommand extends Command {
             return journalService.setMarkForStudentByStudentCourseId(mark, id, status);
         } catch (NumberFormatException ex) {
             request.getSession().setAttribute("wrongData", "Enter a valid mark");
-            return new ForwardResult("/WEB-INF/jsp/lecturer.jsp");
+            return new ForwardResult(Path.PAGE_LECTURER);
         }
     }
 }

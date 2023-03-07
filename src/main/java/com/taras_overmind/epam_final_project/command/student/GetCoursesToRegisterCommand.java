@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.student;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
@@ -27,7 +28,7 @@ public class GetCoursesToRegisterCommand extends Command {
                 .findCoursesToRegisterByUserId(Integer.parseInt(String.valueOf(session.getAttribute("id"))));
         session.setAttribute("result", courses);
 
-        return new ForwardResult("/WEB-INF/jsp/coursesToRegister.jsp");
+        return new ForwardResult(Path.PAGE_COURSES_TO_REGISTER);
 
     }
 }

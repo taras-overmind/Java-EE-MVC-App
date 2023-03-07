@@ -25,12 +25,6 @@ public class UserEntity implements Serializable {
         this.roleId = roleId;
     }
 
-    public UserEntity(String login, String password, int roleId, int stateId) {
-        this.login = login;
-        this.password = password;
-        this.roleId = roleId;
-        this.stateId = stateId;
-    }
     public UserEntity(int id, String login, String password, int roleId, int stateId) {
         this.idUser = id;
         this.login = login;

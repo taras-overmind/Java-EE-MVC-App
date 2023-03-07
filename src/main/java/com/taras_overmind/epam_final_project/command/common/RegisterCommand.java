@@ -1,10 +1,12 @@
 package com.taras_overmind.epam_final_project.command.common;
 
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
 import com.taras_overmind.epam_final_project.context.AppContext;
+import com.taras_overmind.epam_final_project.db.Role;
 import com.taras_overmind.epam_final_project.db.service.LecturerService;
 import com.taras_overmind.epam_final_project.db.service.StudentService;
 import com.taras_overmind.epam_final_project.db.service.UserService;
@@ -32,41 +34,40 @@ public class RegisterCommand extends Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward)
             throws IOException, ServletException {
         LOG.trace("Start tracing RegisterCommand");
+
         UserService userService = AppContext.getInstance(request).getUserService();
         StudentService studentService = AppContext.getInstance(request).getStudentService();
         LecturerService lecturerService = AppContext.getInstance(request).getLecturerService();
-        HttpSession session = request.getSession();
-        RedirectResult redirect;
-        String username = "", password = "", lastName = "", firstName = "", middleName = "";
-        int role = 0;
 
-        if ((request.getParameter("username") != null) && (request.getParameter("password") != null) &&
-                request.getParameter("lastName") != null && request.getParameter("firstName") != null &&
-                request.getParameter("middleName") != null && request.getParameter("role") != null) {
-            username = new String(request.getParameter("username").getBytes(StandardCharsets.ISO_8859_1),
-                    StandardCharsets.UTF_8);
-            password = new String(request.getParameter("password").getBytes(StandardCharsets.ISO_8859_1),
-                    StandardCharsets.UTF_8);
-            firstName = request.getParameter("firstName");
-            lastName = request.getParameter("lastName");
-            middleName = request.getParameter("middleName");
-            role = request.getParameter("role").equals("1") ? 1 : 2;
-        }
+        HttpSession session = request.getSession();
+        RedirectResult redirect = new RedirectResult(Path.REGISTER);
+        String username, password, surname, name, patronymic;
+        Role role;
+
+
+        username = new String(request.getParameter("username").getBytes(StandardCharsets.ISO_8859_1),
+                StandardCharsets.UTF_8);
+        password = new String(request.getParameter("password").getBytes(StandardCharsets.ISO_8859_1),
+                StandardCharsets.UTF_8);
+        surname = request.getParameter("lastName");
+        name = request.getParameter("firstName");
+        patronymic = request.getParameter("middleName");
+        role = Role.valueOf(request.getParameter("role"));
+
 
         if (userService.registerCheck(username, password) != null) {
             session.setAttribute("wrongData", userService.registerCheck(username, password));
-            redirect = new RedirectResult("?command=getRegisterCommand");
         } else {
             var user = userService.createUser(username, password, role);
-            if(role==1){
+            if (role.equals(Role.STUDENT)) {
                 session.setAttribute("registerSuccess", "You registered successfully");
-                studentService.createStudent(lastName, firstName, middleName, user.getIdUser());
+                studentService.createStudent(surname, name, patronymic, user.getIdUser());
             }
-            else{
+            else {
                 session.setAttribute("registerSuccess", "You registered successfully. Wait for admin to confirm your role");
-                lecturerService.createLecturer(lastName, firstName, middleName, user.getIdUser());
+                lecturerService.createLecturer(surname, name, patronymic, user.getIdUser());
             }
-            redirect = new RedirectResult("?command=getLoginCommand");
+            redirect = new RedirectResult(Path.LOGIN_COMMAND);
         }
 
         return redirect;

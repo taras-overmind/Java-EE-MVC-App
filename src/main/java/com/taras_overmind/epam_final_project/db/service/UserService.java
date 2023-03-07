@@ -1,4 +1,6 @@
 package com.taras_overmind.epam_final_project.db.service;
+import com.taras_overmind.epam_final_project.db.Role;
+import com.taras_overmind.epam_final_project.db.State;
 import com.taras_overmind.epam_final_project.db.dto.UserDTO;
 import com.taras_overmind.epam_final_project.db.entity.UserEntity;
 import com.taras_overmind.epam_final_project.db.repository.UserRepo;
@@ -48,11 +50,11 @@ public class UserService {
         return userRepo.getUserByName(username);
     }
 
-    public UserEntity createUser(String login, String password, int role) {
+    public UserEntity createUser(String login, String password, Role role) {
         return userRepo.createUser(login, password, role);
     }
 
-    public void changeUserState(int id, String state) {
+    public void changeUserState(int id, State state) {
         userRepo.changeUserState(id, state);
     }
 

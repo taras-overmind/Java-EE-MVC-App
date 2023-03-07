@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.student;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
@@ -25,8 +26,7 @@ public class RegisterOnCourseCommand extends Command {
         UserService userService= AppContext.getInstance(request).getUserService();
 
         HttpSession session = request.getSession();
-        RedirectResult redirect;
-        redirect = new RedirectResult("?command=getStudentCommand");
+        RedirectResult redirect = new RedirectResult(Path.STUDENT);
         int id = Integer.parseInt(String.valueOf(session.getAttribute("id")));
         int courseId = Integer.parseInt(request.getParameter("id_course"));
         userService.registerUserOnCourse(id, courseId);

@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.common;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
@@ -32,12 +33,14 @@ public class LoginCommand extends Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward)
             throws IOException, ServletException {
         LOG.trace("Start tracing LoginCommand");
+
         UserService userService = AppContext.getInstance(request).getUserService();
         StatusService statusService = AppContext.getInstance(request).getStatusService();
         LecturerService lecturerService = AppContext.getInstance(request).getLecturerService();
         ThemeService themeService = AppContext.getInstance(request).getThemeService();
+
         HttpSession session = request.getSession();
-        RedirectResult redirect;
+        RedirectResult redirect=new RedirectResult(Path.LOGIN_COMMAND);
         String username = "", password = "";
 
         if ((request.getParameter("username") != null) && (request.getParameter("password") != null)) {
@@ -46,9 +49,8 @@ public class LoginCommand extends Command {
         }
         if (userService.loginCheck(username, password) != null) {
             session.setAttribute("wrongData", userService.loginCheck(username, password));
-            redirect = new RedirectResult("?command=getLoginCommand");
         } else {
-            redirect = new RedirectResult("?command=getCoursesCommand");
+            redirect = new RedirectResult(Path.COURSES);
             var user = userService.getUserByName(username);
             session.setAttribute("id", user.getIdUser());
             session.setAttribute("login", user.getLogin());
@@ -62,7 +64,6 @@ public class LoginCommand extends Command {
         session.setAttribute("statuses", statusService.getAllStatuses());
         session.setAttribute("themes", themeService.getAllThemes());
         session.setAttribute("lecturers", lecturerService.getAllLecturers());
-
 
         return redirect;
     }

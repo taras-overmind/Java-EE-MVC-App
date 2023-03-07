@@ -42,6 +42,7 @@ public class ContextListener implements ServletContextListener {
 
     private void initLog4J(ServletContext servletContext) {
         LOG.trace("Log4J initialization started");
+
         try {
             PropertyConfigurator.configure(servletContext.getRealPath("WEB-INF/log4j.properties"));
             LOG.debug("Log4j has been initialized");
@@ -49,6 +50,7 @@ public class ContextListener implements ServletContextListener {
             LOG.trace("Cannot configure Log4j");
             ex.printStackTrace();
         }
+
         LOG.trace("Log4J initialization finished");
     }
 

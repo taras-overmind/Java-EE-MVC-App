@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="lang" uri="/WEB-INF/tld/locale.tld" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -11,7 +10,7 @@
 </head>
 
 <body>
-<%@ include file="/WEB-INF/jspf/header.jspf"%>
+<%@ include file="/WEB-INF/jspf/header.jspf" %>
 <c:if test="${not empty sessionScope.wrongData}">
     <div class="alertError">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
@@ -50,12 +49,12 @@
         </div>
         <div>
             <input type="radio" id="contactChoice1"
-                   name="role" value="1" checked="checked">
+                   name="role" value="STUDENT" checked="checked">
             <label for="contactChoice1">Student</label>
 
             <input type="radio" id="contactChoice2"
-                   name="role" value="2">
-            <label for="contactChoice2">Teacher</label>
+                   name="role" value="LECTURER">
+            <label for="contactChoice2">Lecturer</label>
         </div>
 
         <button type="submit" id="login">Register</button>

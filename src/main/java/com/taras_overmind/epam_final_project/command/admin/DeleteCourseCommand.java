@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.admin;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
@@ -21,7 +22,7 @@ public class DeleteCourseCommand extends Command {
         CourseService courseService = AppContext.getInstance(request).getCourseService();
         courseService.deleteCourseByIdCourse(Integer.parseInt(request.getParameter("id_course")));
 
-        return new RedirectResult("?command=getCoursesCommand");
+        return new RedirectResult(Path.COURSES);
 
     }
 }

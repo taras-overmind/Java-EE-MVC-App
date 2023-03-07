@@ -35,7 +35,7 @@
                                 </th>
 
                             </tr>
-                            <c:forEach items="${sessionScope.result2}" var="row">
+                            <c:forEach items="${requestScope.result2}" var="row">
                                 <tr>
                                     <form action="controller" method="post">
                                         <input type="hidden" name="command" value="changeStateCommand">
@@ -65,7 +65,7 @@
                                 </th>
 
                             </tr>
-                            <c:forEach items="${sessionScope.result1}" var="row">
+                            <c:forEach items="${requestScope.result1}" var="row">
                                 <tr>
                                     <form action="controller" method="post">
                                         <input type="hidden" name="command" value="changeStateCommand">

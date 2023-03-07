@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.common;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
@@ -17,7 +18,7 @@ public class GetLoginPageCommand extends Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
         LOG.trace("Start tracing GetLoginPageCommand");
 
-        return new ForwardResult("/WEB-INF/jsp/login.jsp");
+        return new ForwardResult(Path.PAGE_LOGIN);
 
     }
 }

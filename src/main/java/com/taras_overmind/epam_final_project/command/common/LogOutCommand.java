@@ -1,5 +1,6 @@
 package com.taras_overmind.epam_final_project.command.common;
 
+import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.RedirectResult;
@@ -34,6 +35,7 @@ public class LogOutCommand extends Command {
         session.setAttribute("sort", null);
         session.setAttribute("sorting", null);
         session.setAttribute("user", null);
-        return new RedirectResult("?command=getLoginCommand");
+
+        return new RedirectResult(Path.LOGIN_COMMAND);
     }
 }
