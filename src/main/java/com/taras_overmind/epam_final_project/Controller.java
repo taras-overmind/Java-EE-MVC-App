@@ -54,9 +54,8 @@ public class Controller extends HttpServlet {
 
         String commandName = request.getParameter("command");
         LOG.trace("Request parameter: command --> " + commandName);
-        Command command;
         String forward = null;
-        command = CommandFactory.get(commandName);
+        Command command = CommandFactory.get(commandName);
 
         LOG.trace("Obtained command --> " + command);
 
@@ -65,7 +64,7 @@ public class Controller extends HttpServlet {
             commandResult = command.execute(request, response, forward);
         } catch (Exception ex) {
             request.setAttribute("errorMessage", ex.getMessage());
-            LOG.trace("Error occurred during executing command: "+ex.getMessage());
+            LOG.error("Error occurred during executing command: "+ex.getMessage());
         }
 
         views.get(commandResult.getClass()).render(commandResult, request, response);

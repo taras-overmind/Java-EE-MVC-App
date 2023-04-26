@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.SQLDataException;
 
 public class EditCourseCommand extends Command {
 
@@ -41,15 +42,15 @@ public class EditCourseCommand extends Command {
 
             session.setAttribute("themes", themeService.getAllThemes());
 
-            if (duration < 0) {
-                session.setAttribute("wrongData", "Duration is negative");
-            } else {
-                courseService.updateCourse(id_course, nameCourse, duration, id_theme, id_lecturer, status);
                 redirect = Path.COURSES;
-            }
-        } catch (NumberFormatException ex) {
-            session.setAttribute("wrongData", "Wrong data");
+                courseService.updateCourse(id_course, nameCourse, duration, id_theme, id_lecturer, status);
+
+        }catch (NumberFormatException | SQLDataException ex){
+            session.setAttribute("wrongData", ex.getMessage());
         }
+//        catch (IllegalArgumentException ex) {
+//            session.setAttribute("wrongData", "Wrong data");
+//        }
         return new RedirectResult(redirect);
     }
 

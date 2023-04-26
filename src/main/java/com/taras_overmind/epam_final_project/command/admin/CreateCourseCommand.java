@@ -35,19 +35,16 @@ public class CreateCourseCommand extends Command {
             int duration = Integer.parseInt(request.getParameter("duration"));
             String themeName = request.getParameter("name_theme");
             String nameCourse = request.getParameter("name_course");
-            int id_theme = themeService.themeCheck(themeName).getIdTheme();
 
+            int id_theme = themeService.themeCheck(themeName).getIdTheme();
             session.setAttribute("themes", themeService.getAllThemes());
 
-            if (duration < 0) {
-                session.setAttribute("wrongData", "Duration is negative");
-            } else {
-                courseService.createCourse(nameCourse, duration, id_theme, id_lecturer, Status.OPENED);
-                redirect = Path.COURSES;
-            }
-        } catch (NumberFormatException ex) {
-            session.setAttribute("wrongData", "Duration is not a number");
+            courseService.createCourse(nameCourse, duration, id_theme, id_lecturer, Status.OPENED);
+            redirect = Path.COURSES;
+        } catch (IllegalArgumentException ex) {
+            session.setAttribute("wrongData", "Duration must be a positive number");
         }
+
         return new RedirectResult(redirect);
     }
 

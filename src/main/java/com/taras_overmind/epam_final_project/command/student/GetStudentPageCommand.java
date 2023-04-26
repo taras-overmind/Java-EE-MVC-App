@@ -5,6 +5,7 @@ import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;
 import com.taras_overmind.epam_final_project.command.commandResult.ForwardResult;
 import com.taras_overmind.epam_final_project.context.AppContext;
+import com.taras_overmind.epam_final_project.db.Status;
 import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
 import com.taras_overmind.epam_final_project.db.service.CourseService;
 import org.apache.log4j.Logger;
@@ -25,7 +26,16 @@ public class GetStudentPageCommand extends Command {
         LOG.trace("Start tracing GetStudentPageCommand");
         HttpSession session = request.getSession();
         CourseService courseService= AppContext.getInstance(request).getCourseService();
-        String status = request.getParameter("table")==null?"1":request.getParameter("table");
+        Status status;
+        if(request.getParameter("table")==null)
+            status=Status.OPENED;
+        else if(request.getParameter("table").equals("2"))
+            status=Status.IN_PROGRESS;
+        else if(request.getParameter("table").equals("4"))
+            status=Status.FINISHED;
+        else
+            status=Status.OPENED;
+
         List<CourseDTO> courses=courseService.
                 findUserCoursesByUserIdAndStatus(status, Integer.parseInt(String.valueOf(session.getAttribute("id"))));
 

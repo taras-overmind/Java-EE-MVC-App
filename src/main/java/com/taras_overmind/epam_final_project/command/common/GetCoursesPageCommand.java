@@ -43,8 +43,7 @@ public class GetCoursesPageCommand extends Command {
         String ending = " LIMIT " + recordsPerPage * (current_page - 1) + ", " + recordsPerPage;
 
         List<CourseDTO> courses = courseService.findSortedCourses(sort, sorting, idLecturer, idTheme, ending);
-        for (var x : courses)
-            System.out.println(x.getCourseName());
+
         noOfRecords = courseService.getNumberOfRecords();
         int numberOfPages = (int) Math.ceil(noOfRecords * 1.0 / recordsPerPage);
 

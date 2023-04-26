@@ -10,7 +10,9 @@ public class JournalService {
         this.journalRepo = journalRepo;
     }
 
-    public RedirectResult setMarkForStudentByStudentCourseId(int mark, int id, String status) {
-        return journalRepo.setMarkForStudentByStudentCourseId(mark, id, status);
+    public void setMarkForStudentByStudentCourseId(int mark, int id, String status) throws NumberFormatException{
+        if (mark < 0 || mark > 100)
+            throw new NumberFormatException();
+        journalRepo.setMarkForStudentByStudentCourseId(mark, id, status);
     }
 }

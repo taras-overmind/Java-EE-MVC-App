@@ -19,6 +19,5 @@ public class GetLoginPageCommand extends Command {
         LOG.trace("Start tracing GetLoginPageCommand");
 
         return new ForwardResult(Path.PAGE_LOGIN);
-
     }
 }

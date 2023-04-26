@@ -2,6 +2,7 @@ package com.taras_overmind.epam_final_project.db.entity;
 
 
 import java.io.Serializable;
+import java.util.Objects;
 
 
 public class CourseEntity implements Serializable{
@@ -109,4 +110,16 @@ public class CourseEntity implements Serializable{
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CourseEntity that = (CourseEntity) o;
+        return courseId == that.courseId && duration == that.duration && themeId == that.themeId && lecturerId == that.lecturerId && statusId == that.statusId && courseName.equals(that.courseName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(courseId, courseName, duration, themeId, lecturerId, statusId);
+    }
 }

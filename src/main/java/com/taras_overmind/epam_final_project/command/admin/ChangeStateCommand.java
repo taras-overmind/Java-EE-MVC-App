@@ -18,18 +18,21 @@ import java.io.IOException;
 public class ChangeStateCommand extends Command {
     public static final Logger LOG = Logger.getLogger(ChangeStateCommand.class);
     @Override
-    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward) throws IOException, ServletException {
+    public CommandResult execute(HttpServletRequest request, HttpServletResponse response, String forward)
+            throws IOException, ServletException {
         LOG.trace("Start tracing ChangeStateCommand");
 
         UserService userService = AppContext.getInstance(request).getUserService();
         LecturerService lecturerService = AppContext.getInstance(request).getLecturerService();
+
+        String redirect = Utils.getCurrentURL(request);
 
         int id = Integer.parseInt(request.getParameter("id"));
         String name_state = request.getParameter("name_state").toUpperCase();
         userService.changeUserState(id, State.valueOf(name_state));
         request.getSession().setAttribute("lecturers", lecturerService.getAllLecturers());
 
-        String redirect = Utils.getCurrentURL(request);
+
         return new RedirectResult(redirect);
     }
 }

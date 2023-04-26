@@ -12,6 +12,14 @@
 
 <body>
 <%@ include file="/WEB-INF/jspf/header.jspf" %>
+<c:if test="${not empty sessionScope.wrongData}">
+    <div class="alertError">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Помилка: </strong>
+        <text>${sessionScope.wrongData} </text>
+    </div>
+    <c:remove var="wrongData" scope="session"/>
+</c:if>
 <div class="col-lg-10">
     <div class="panel panel-primary table-responsive">
         <div id="sortContainer">

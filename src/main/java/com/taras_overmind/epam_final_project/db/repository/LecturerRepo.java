@@ -15,7 +15,7 @@ public class LecturerRepo {
     public LecturerEntity createLecturer(String lastName, String firstName, String middleName, int user_id) {
 
         LOG.trace("Start tracing LecturerRepo#createLecturer");
-        LecturerEntity lecturer = null;
+        LecturerEntity lecturer;
         int id = -1;
 
         try (Connection connection = ConnectionPool.getConnection()) {

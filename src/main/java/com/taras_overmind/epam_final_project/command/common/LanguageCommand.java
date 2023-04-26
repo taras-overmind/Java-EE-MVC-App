@@ -16,10 +16,7 @@ import java.io.Serial;
 
 
 public class LanguageCommand extends Command {
-
-
     private static final Logger LOG = Logger.getLogger(LanguageCommand.class);
-
 
     @Serial
     private static final long serialVersionUID = 5063715519941606153L;

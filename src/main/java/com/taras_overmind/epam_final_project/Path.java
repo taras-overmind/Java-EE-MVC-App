@@ -18,6 +18,8 @@ public final class Path {
     public static final String CREATE_COURSE = "?command=getCreateCourseCommand";
     public static final String REGISTER = "?command=getRegisterCommand";
     public static final String STUDENT = "?command=getStudentCommand";
+    public static final String LECTURER = "?command=getLecturerCommand&table=2";
+
 
 
 }

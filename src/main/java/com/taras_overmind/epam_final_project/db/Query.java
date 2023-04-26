@@ -10,6 +10,8 @@ public class Query {
 
     //Simple select queries
     public static final String SELECT_ALL_USERS = "SELECT * FROM USERS";
+
+    public static final String FIND_COURSES_BY_ID = "SELECT * FROM COURSES WHERE ID_COURSE=?";
     public static final String SELECT_USER_BY_LOGIN = "SELECT * FROM USERS WHERE LOGIN = ?";
     public static final String SELECT_THEME_BY_ID = "SELECT * FROM THEMES WHERE theme_id = ?";
     public static final String SELECT_THEME_BY_NAME = "SELECT * FROM THEMES WHERE name_theme = ?";

@@ -5,6 +5,7 @@ import com.taras_overmind.epam_final_project.db.Status;
 import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
 import com.taras_overmind.epam_final_project.db.repository.CourseRepo;
 
+import java.sql.SQLDataException;
 import java.util.List;
 
 public class CourseService {
@@ -15,11 +16,17 @@ public class CourseService {
     }
 
     public void createCourse(String name, int duration, int theme, int lecturer, Status status) {
+        if(duration<0){
+            throw new IllegalArgumentException();
+        }
         courseRepo.createCourse(name, duration, theme, lecturer, status);
     }
 
 
-    public void updateCourse(int id_course, String name, int duration, int theme, int lecturer, int status) {
+    public void updateCourse(int id_course, String name, int duration, int theme, int lecturer, int status) throws SQLDataException {
+        if (duration < 0) {
+            throw new NumberFormatException("Duration is negative");
+        }
         courseRepo.updateCourse(id_course, name, duration, theme, lecturer, status);
     }
 
@@ -27,7 +34,7 @@ public class CourseService {
         courseRepo.deleteCourseByIdCourse(id);
     }
 
-    public List<CourseDTO> findUserCoursesByUserIdAndStatus(String status, int id_user) {
+    public List<CourseDTO> findUserCoursesByUserIdAndStatus(Status status, int id_user) {
         return courseRepo.findUserCoursesByUserIdAndStatus(status, id_user);
     }
 

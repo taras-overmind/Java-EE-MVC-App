@@ -13,6 +13,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class UserRepo {
 
     private static final Logger LOG = Logger.getLogger(ConnectionPool.class.getName());
@@ -50,7 +51,7 @@ public class UserRepo {
 
     public UserEntity createUser(String login, String password, Role role) {
         LOG.trace("Start tracing UserRepo#createUser");
-        UserEntity user = null;
+        UserEntity user;
         int id = -1;
 
         try (Connection connection = ConnectionPool.getConnection()) {

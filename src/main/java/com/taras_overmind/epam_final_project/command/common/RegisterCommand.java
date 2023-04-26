@@ -1,6 +1,5 @@
 package com.taras_overmind.epam_final_project.command.common;
 
-
 import com.taras_overmind.epam_final_project.Path;
 import com.taras_overmind.epam_final_project.command.Command;
 import com.taras_overmind.epam_final_project.command.commandResult.CommandResult;

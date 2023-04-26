@@ -2,18 +2,50 @@ package com.taras_overmind.epam_final_project.db.repository;
 
 import com.taras_overmind.epam_final_project.db.Query;
 import com.taras_overmind.epam_final_project.db.ConnectionPool;
+import com.taras_overmind.epam_final_project.db.State;
 import com.taras_overmind.epam_final_project.db.Status;
 import com.taras_overmind.epam_final_project.db.dto.CourseDTO;
+import com.taras_overmind.epam_final_project.db.entity.CourseEntity;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class CourseRepo {
 
     public static final Logger LOG = Logger.getLogger(CourseRepo.class);
     private int numberOfRecords =0;
+
+    public CourseEntity findCourseById(int id){
+        LOG.trace("Starting tracing CourseRepo#FindCourseById");
+        CourseEntity courseEntity=null;
+        try (Connection connection = ConnectionPool.getConnection()) {
+            if (connection != null) {
+                PreparedStatement statement = connection.prepareStatement(
+                        Query.FIND_COURSES_BY_ID);
+
+                connection.setAutoCommit(false);
+                statement.setInt(1, id);
+                statement.execute();
+                ResultSet resultSet = statement.getResultSet();
+                while (resultSet.next()) {
+                    courseEntity = new CourseEntity();
+                    courseEntity.setCourseId(resultSet.getInt("id_course"));
+                    courseEntity.setLecturerId(resultSet.getInt("id_lecturer"));
+                    courseEntity.setDuration(resultSet.getInt("duration"));
+                    courseEntity.setCourseName(resultSet.getString("name_course"));
+                    courseEntity.setThemeId(resultSet.getInt("id_theme"));
+                    courseEntity.setStatusId(resultSet.getInt("id_status"));
+                }
+                resultSet.close();
+            }
+        } catch (SQLException ex) {
+            LOG.info(ex.getLocalizedMessage());
+        }
+        return courseEntity;
+    }
 
     public void createCourse(String name, int duration, int theme, int lecturer, Status status) {
         LOG.trace("Starting tracing CourseRepo#createCourse");
@@ -38,8 +70,10 @@ public class CourseRepo {
         }
     }
 
-    public void updateCourse(int id_course, String name, int duration, int theme, int lecturer, int status) {
+    public void updateCourse(int id_course, String name, int duration, int theme, int lecturer, int status) throws SQLDataException{
         LOG.trace("Starting tracing CourseRepo#updateCourse");
+        if(findCourseById(id_course)==null)
+            throw new SQLDataException("Course does not exist");
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
                 try (PreparedStatement statement = connection.prepareStatement(Query.UPDATE_COURSE)) {
@@ -66,18 +100,19 @@ public class CourseRepo {
         LOG.trace("Starting tracing CourseRepo#deleteCourseByIdCourse");
         try (Connection connection = ConnectionPool.getConnection()) {
             if (connection != null) {
+                try (PreparedStatement statement = connection.prepareStatement(Query.DELETE_STUDENT_COURSE, Statement.RETURN_GENERATED_KEYS)) {
+                    connection.setAutoCommit(false);
+                    statement.setInt(1, id);
+                    statement.executeUpdate();
+                    connection.commit();
+                }
                 try (PreparedStatement statement = connection.prepareStatement(Query.DELETE_COURSE, Statement.RETURN_GENERATED_KEYS)) {
                     connection.setAutoCommit(false);
                     statement.setInt(1, id);
                     statement.executeUpdate();
                     connection.commit();
                 }
-                try (PreparedStatement statement = connection.prepareStatement(Query.DELETE_STUDENT_COURSE, Statement.RETURN_GENERATED_KEYS)) {
-                    connection.setAutoCommit(false);
-                    statement.setInt(1, id);
-                    statement.executeUpdate();
-                    connection.commit();
-                } catch (SQLException ex) {
+             catch (SQLException ex) {
                     LOG.error(ex.getLocalizedMessage());
                     connection.rollback();
                 }
@@ -87,19 +122,19 @@ public class CourseRepo {
         }
     }
 
-    public List<CourseDTO> findUserCoursesByUserIdAndStatus(String status, int id_user) {
+    public List<CourseDTO> findUserCoursesByUserIdAndStatus(Status status, int id_user) {
         LOG.trace("Start tracing CourseRepo#findUserCoursesByUserIdAndStatus");
         CourseDTO courseDTO;
         List<CourseDTO> courses = new ArrayList<>();
         try (Connection connection = ConnectionPool.getConnection()) {
-            boolean finished = status.equals("4");
+            boolean finished = status.equals(Status.FINISHED);
             if (connection != null) {
                 PreparedStatement statement;
                 if (!finished) {
                     statement = connection.prepareStatement(
                             Query.SELECT_INFO_ABOUT_COURSE_BY_USER_ID_AND_BY_COURSE_STATUS_ID);
 
-                    statement.setString(2, status);
+                    statement.setInt(2, status.getId_status());
                 } else {
                     statement = connection.prepareStatement(
                             Query.SELECT_FINISHED_COURSE_BY_USER_ID);
@@ -124,11 +159,14 @@ public class CourseRepo {
         } catch (SQLException ex) {
             LOG.info(ex.getLocalizedMessage());
         }
+        for(var x: courses)
+            System.out.println(x.getCourseName());
         return courses;
     }
 
     public List<CourseDTO> findCoursesToRegisterByUserId(int id) {
         LOG.trace("Start tracing CourseRepo#findCoursesToRegisterByUserId");
+
         CourseDTO courseDTO;
         List<CourseDTO> courses = new ArrayList<>();
         try (Connection connection = ConnectionPool.getConnection()) {
